@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'FPKSampleExtension' target in the 'FPKSampleExtension' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
