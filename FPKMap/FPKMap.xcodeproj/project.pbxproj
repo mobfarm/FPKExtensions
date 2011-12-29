@@ -8,19 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		951FE44414AC61F700DA455D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 951FE44214AC61F700DA455D /* InfoPlist.strings */; };
-		951FE44714AC624100DA455D /* FPKExtension-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 951FE44614AC623E00DA455D /* FPKExtension-Prefix.pch */; };
-		95862E5714AC7627002E11E8 /* FPKExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E5414AC75AD002E11E8 /* FPKExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95862E5814AC7629002E11E8 /* FPKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E5514AC75AD002E11E8 /* FPKExtension.m */; };
+		951FE44714AC624100DA455D /* FPKMap-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 951FE44614AC623E00DA455D /* FPKMap-Prefix.pch */; };
+		95A4146F14ACBC3E00249348 /* FPKMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A4146E14ACBC3B00249348 /* FPKMap.m */; };
+		95A4147014ACBC4600249348 /* FPKMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 95A4146D14ACBC3B00249348 /* FPKMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95A414A114ACBE6200249348 /* FPKMapAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 95A4149F14ACBE6200249348 /* FPKMapAnnotation.h */; settings = {ATTRIBUTES = (); }; };
+		95A414A214ACBE6200249348 /* FPKMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A414A014ACBE6200249348 /* FPKMapAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		951FE44314AC61F700DA455D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		951FE44514AC623E00DA455D /* FPKExtension-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKExtension-Info.plist"; sourceTree = "<group>"; };
-		951FE44614AC623E00DA455D /* FPKExtension-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPKExtension-Prefix.pch"; sourceTree = "<group>"; };
-		95862E5414AC75AD002E11E8 /* FPKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = FPKExtension.h; sourceTree = "<group>"; };
-		95862E5514AC75AD002E11E8 /* FPKExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPKExtension.m; sourceTree = "<group>"; };
-		95A4148714ACBD0F00249348 /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
-		95C1C2F314AB4CD400E74E62 /* FPKExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		951FE44514AC623E00DA455D /* FPKMap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKMap-Info.plist"; sourceTree = "<group>"; };
+		951FE44614AC623E00DA455D /* FPKMap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPKMap-Prefix.pch"; sourceTree = "<group>"; };
+		95A4146D14ACBC3B00249348 /* FPKMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPKMap.h; sourceTree = "<group>"; };
+		95A4146E14ACBC3B00249348 /* FPKMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPKMap.m; sourceTree = "<group>"; };
+		95A4147F14ACBCDD00249348 /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
+		95A4149F14ACBE6200249348 /* FPKMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPKMapAnnotation.h; sourceTree = "<group>"; };
+		95A414A014ACBE6200249348 /* FPKMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPKMapAnnotation.m; sourceTree = "<group>"; };
+		95A414A314ACBEA500249348 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		95C1C2F314AB4CD400E74E62 /* FPKMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,25 +39,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		95A4147714ACBC7C00249348 /* Frameworks */ = {
+		95A4147D14ACBCC900249348 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				95A4148614ACBD0F00249348 /* FPKShared.embeddedframework */,
+				95A4147E14ACBCDD00249348 /* FPKShared.embeddedframework */,
+				95A414A314ACBEA500249348 /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		95A4148614ACBD0F00249348 /* FPKShared.embeddedframework */ = {
+		95A4147E14ACBCDD00249348 /* FPKShared.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
-				95A4148714ACBD0F00249348 /* FPKShared.framework */,
-				95A4148814ACBD0F00249348 /* Resources */,
+				95A4147F14ACBCDD00249348 /* FPKShared.framework */,
+				95A4148014ACBCDD00249348 /* Resources */,
 			);
 			name = FPKShared.embeddedframework;
 			path = ../FPKShared/FPKShared.embeddedframework;
 			sourceTree = "<group>";
 		};
-		95A4148814ACBD0F00249348 /* Resources */ = {
+		95A4148014ACBCDD00249348 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -63,7 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				95C1C30114AB4CDA00E74E62 /* Classes */,
-				95A4147714ACBC7C00249348 /* Frameworks */,
+				95A4147D14ACBCC900249348 /* Frameworks */,
 				95C1C33A14AB630300E74E62 /* Supporting Files */,
 				95C1C2F414AB4CD400E74E62 /* Products */,
 			);
@@ -72,7 +78,7 @@
 		95C1C2F414AB4CD400E74E62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95C1C2F314AB4CD400E74E62 /* FPKExtension.framework */,
+				95C1C2F314AB4CD400E74E62 /* FPKMap.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,22 +86,24 @@
 		95C1C30114AB4CDA00E74E62 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				95862E5414AC75AD002E11E8 /* FPKExtension.h */,
-				95862E5514AC75AD002E11E8 /* FPKExtension.m */,
+				95A4146D14ACBC3B00249348 /* FPKMap.h */,
+				95A4146E14ACBC3B00249348 /* FPKMap.m */,
+				95A4149F14ACBE6200249348 /* FPKMapAnnotation.h */,
+				95A414A014ACBE6200249348 /* FPKMapAnnotation.m */,
 			);
 			name = Classes;
-			path = FPKExtension/Classes;
+			path = FPKMap/Classes;
 			sourceTree = "<group>";
 		};
 		95C1C33A14AB630300E74E62 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				951FE44214AC61F700DA455D /* InfoPlist.strings */,
-				951FE44514AC623E00DA455D /* FPKExtension-Info.plist */,
-				951FE44614AC623E00DA455D /* FPKExtension-Prefix.pch */,
+				951FE44514AC623E00DA455D /* FPKMap-Info.plist */,
+				951FE44614AC623E00DA455D /* FPKMap-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			path = FPKExtension;
+			path = FPKMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,17 +113,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95862E5714AC7627002E11E8 /* FPKExtension.h in Headers */,
-				951FE44714AC624100DA455D /* FPKExtension-Prefix.pch in Headers */,
+				95A4147014ACBC4600249348 /* FPKMap.h in Headers */,
+				951FE44714AC624100DA455D /* FPKMap-Prefix.pch in Headers */,
+				95A414A114ACBE6200249348 /* FPKMapAnnotation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		95C1C2F214AB4CD400E74E62 /* FPKExtension */ = {
+		95C1C2F214AB4CD400E74E62 /* FPKMap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95C1C2FE14AB4CD400E74E62 /* Build configuration list for PBXNativeTarget "FPKExtension" */;
+			buildConfigurationList = 95C1C2FE14AB4CD400E74E62 /* Build configuration list for PBXNativeTarget "FPKMap" */;
 			buildPhases = (
 				95C1C2EC14AB4CD400E74E62 /* ShellScript */,
 				95C1C2ED14AB4CD400E74E62 /* Sources */,
@@ -128,9 +137,9 @@
 			);
 			dependencies = (
 			);
-			name = FPKExtension;
+			name = FPKMap;
 			productName = FPKSampleExtension;
-			productReference = 95C1C2F314AB4CD400E74E62 /* FPKExtension.framework */;
+			productReference = 95C1C2F314AB4CD400E74E62 /* FPKMap.framework */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -142,7 +151,7 @@
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "MobFarm s.a.s.";
 			};
-			buildConfigurationList = 95C1C2EA14AB4CD400E74E62 /* Build configuration list for PBXProject "FPKExtension" */;
+			buildConfigurationList = 95C1C2EA14AB4CD400E74E62 /* Build configuration list for PBXProject "FPKMap" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -154,7 +163,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95C1C2F214AB4CD400E74E62 /* FPKExtension */,
+				95C1C2F214AB4CD400E74E62 /* FPKMap */,
 			);
 		};
 /* End PBXProject section */
@@ -204,7 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95862E5814AC7629002E11E8 /* FPKExtension.m in Sources */,
+				95A4146F14ACBC3E00249348 /* FPKMap.m in Sources */,
+				95A414A214ACBE6200249348 /* FPKMapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,18 +282,17 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/FPKShared.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FPKExtension/FPKExtension-Prefix.pch";
-				INFOPLIST_FILE = "FPKExtension/FPKExtension-Info.plist";
+				GCC_PREFIX_HEADER = "FPKMap/FPKMap-Prefix.pch";
+				INFOPLIST_FILE = "FPKMap/FPKMap-Info.plist";
 				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
-				PRODUCT_NAME = FPKExtension;
+				PRODUCT_NAME = FPKMap;
 				SKIP_INSTALL = YES;
 				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
 				WRAPPER_EXTENSION = framework;
@@ -300,18 +309,17 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/FPKShared.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FPKExtension/FPKExtension-Prefix.pch";
-				INFOPLIST_FILE = "FPKExtension/FPKExtension-Info.plist";
+				GCC_PREFIX_HEADER = "FPKMap/FPKMap-Prefix.pch";
+				INFOPLIST_FILE = "FPKMap/FPKMap-Info.plist";
 				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
-				PRODUCT_NAME = FPKExtension;
+				PRODUCT_NAME = FPKMap;
 				SKIP_INSTALL = YES;
 				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
 				WRAPPER_EXTENSION = framework;
@@ -321,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		95C1C2EA14AB4CD400E74E62 /* Build configuration list for PBXProject "FPKExtension" */ = {
+		95C1C2EA14AB4CD400E74E62 /* Build configuration list for PBXProject "FPKMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95C1C2FC14AB4CD400E74E62 /* Debug */,
@@ -330,7 +338,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95C1C2FE14AB4CD400E74E62 /* Build configuration list for PBXNativeTarget "FPKExtension" */ = {
+		95C1C2FE14AB4CD400E74E62 /* Build configuration list for PBXNativeTarget "FPKMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95C1C2FF14AB4CD400E74E62 /* Debug */,

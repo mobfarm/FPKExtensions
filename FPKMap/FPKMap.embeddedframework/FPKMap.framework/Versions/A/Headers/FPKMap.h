@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <FPKShared/FPKView.h>
+#import <MapKit/MapKit.h>
 
-@interface FPKExtension : UIView <FPKView>{
+@interface FPKMap : UIView <FPKView, MKMapViewDelegate>{
     CGRect _rect;
 }
 @end

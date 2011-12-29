@@ -15,7 +15,7 @@
 /* Begin PBXFileReference section */
 		951FE42514AC609000DA455D /* FPKYouTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = FPKYouTube.h; sourceTree = "<group>"; };
 		951FE42614AC609000DA455D /* FPKYouTube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPKYouTube.m; sourceTree = "<group>"; };
-		95A4145014AC9F7900249348 /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
+		9523C04714ACC60800171F7D /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
 		95C1C35514AB63E800E74E62 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		95EA03FD14AA12ED00886374 /* FPKYouTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKYouTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95EA040114AA12ED00886374 /* FPKYouTube-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKYouTube-Info.plist"; sourceTree = "<group>"; };
@@ -35,16 +35,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		95A4144F14AC9F7900249348 /* FPKShared.embeddedframework */ = {
+		9523C04614ACC60800171F7D /* FPKShared.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
-				95A4145014AC9F7900249348 /* FPKShared.framework */,
-				95A4145114AC9F7900249348 /* Resources */,
+				9523C04714ACC60800171F7D /* FPKShared.framework */,
+				9523C04814ACC60800171F7D /* Resources */,
 			);
-			path = FPKShared.embeddedframework;
+			name = FPKShared.embeddedframework;
+			path = ../FPKShared/FPKShared.embeddedframework;
 			sourceTree = "<group>";
 		};
-		95A4145114AC9F7900249348 /* Resources */ = {
+		9523C04814ACC60800171F7D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -95,7 +96,7 @@
 		95F1694C14AC8E1A00F8DE00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				95A4144F14AC9F7900249348 /* FPKShared.embeddedframework */,
+				9523C04614ACC60800171F7D /* FPKShared.embeddedframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

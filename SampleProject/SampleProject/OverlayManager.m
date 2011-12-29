@@ -13,7 +13,23 @@
  */
 
 #import <FPKYouTube/FPKYouTube.h>
+#import <FPKMap/FPKMap.h>
 
 @implementation OverlayManager
+
+- (FPKOverlayManager *)init
+{
+	self = [super init];
+	if (self != nil)
+	{
+        /**
+            Add Extensions to the array, or use the initWithExtension: method
+         
+         */
+        
+		[self setExtensions:[[NSArray alloc] initWithObjects:@"FPKMap", @"FPKYouTube", nil]];
+	}
+	return self;
+}
 
 @end

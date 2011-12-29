@@ -38,9 +38,16 @@
     pdfViewController.documentId = documentName;
     [pdfViewController setPadding:0.0];
     
-    NSArray *extensions = [[NSArray alloc] initWithObjects:@"FPKYouTube", nil];
+    /**
+
+    You can use initWithExtensions or set them manually in the init method.
+
+     NSArray *extensions = [[NSArray alloc] initWithObjects:@"FPKYouTube", nil];
+     OverlayManager *_overlayManager = [[[OverlayManager alloc] initWithExtensions:extensions] autorelease];
+
+     */
     
-    OverlayManager *_overlayManager = [[[OverlayManager alloc] initWithExtensions:extensions] autorelease];
+    OverlayManager *_overlayManager = [[[OverlayManager alloc] init] autorelease];
     
     [_overlayManager setOverlays:[[NSMutableArray alloc] init]];
     
