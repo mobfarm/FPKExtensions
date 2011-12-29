@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <FPKShared/FPKView.h>
+#import <FPKShared/FPKWebView.h>
 
-@interface FPKYouTube : UIWebView <FPKView>{
+@interface FPKYouTube : FPKWebView <FPKView>{
     CGRect _rect;
 }
 @end

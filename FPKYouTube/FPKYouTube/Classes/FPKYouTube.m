@@ -18,6 +18,12 @@
     {        
         [self setFrame:frame];
         _rect = frame;
+        
+        /**
+         As we are an FPKWebView we can remove the background, otherwise a grayish borded will appear sometimes
+         */
+        [self removeBackground];
+        
         self.autoresizesSubviews = YES;
         self.autoresizingMask=(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth);
 

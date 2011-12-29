@@ -14,6 +14,8 @@
 		95862E7514AC7E13002E11E8 /* FastPdfKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95862E7014AC7DCA002E11E8 /* FastPdfKit.framework */; };
 		95C1C34D14AB636C00E74E62 /* FPKShared-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 95C1C34C14AB636600E74E62 /* FPKShared-Prefix.pch */; };
 		95F1694214AC8D1700F8DE00 /* FPKView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F1694014AC8D0C00F8DE00 /* FPKView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95F1695C14AC9EED00F8DE00 /* FPKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F1695A14AC9EED00F8DE00 /* FPKWebView.m */; };
+		95F1695E14AC9EF900F8DE00 /* FPKWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F1695914AC9EED00F8DE00 /* FPKWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		95C1C34B14AB636600E74E62 /* FPKShared-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKShared-Info.plist"; sourceTree = "<group>"; };
 		95C1C34C14AB636600E74E62 /* FPKShared-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPKShared-Prefix.pch"; sourceTree = "<group>"; };
 		95F1694014AC8D0C00F8DE00 /* FPKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = FPKView.h; sourceTree = "<group>"; };
+		95F1695914AC9EED00F8DE00 /* FPKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPKWebView.h; sourceTree = "<group>"; };
+		95F1695A14AC9EED00F8DE00 /* FPKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPKWebView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 				95862E2014AC6923002E11E8 /* FPKOverlayManager.m */,
 				95862E2C14AC6977002E11E8 /* OpenUDID.h */,
 				95862E2D14AC6977002E11E8 /* OpenUDID.m */,
+				95F1695914AC9EED00F8DE00 /* FPKWebView.h */,
+				95F1695A14AC9EED00F8DE00 /* FPKWebView.m */,
 				95F1694014AC8D0C00F8DE00 /* FPKView.h */,
 			);
 			name = Classes;
@@ -122,6 +128,7 @@
 			files = (
 				95862E2F14AC697F002E11E8 /* OpenUDID.h in Headers */,
 				95862E4C14AC7230002E11E8 /* FPKOverlayManager.h in Headers */,
+				95F1695E14AC9EF900F8DE00 /* FPKWebView.h in Headers */,
 				95F1694214AC8D1700F8DE00 /* FPKView.h in Headers */,
 				95C1C34D14AB636C00E74E62 /* FPKShared-Prefix.pch in Headers */,
 			);
@@ -222,6 +229,7 @@
 			files = (
 				95862E2214AC6923002E11E8 /* FPKOverlayManager.m in Sources */,
 				95862E2E14AC6979002E11E8 /* OpenUDID.m in Sources */,
+				95F1695C14AC9EED00F8DE00 /* FPKWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

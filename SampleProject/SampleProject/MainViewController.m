@@ -14,7 +14,7 @@
 
 -(IBAction)actionOpenPlainDocument:(id)sender{
     /** Set document name */
-    NSString *documentName = @"Manual";
+    NSString *documentName = @"sample";
     
     /** Get temporary directory to save thumbnails */
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
@@ -36,7 +36,7 @@
     
     /** Set document id for thumbnail generation */
     pdfViewController.documentId = documentName;
-    
+    [pdfViewController setPadding:0.0];
     
     NSArray *extensions = [[NSArray alloc] initWithObjects:@"FPKYouTube", nil];
     
