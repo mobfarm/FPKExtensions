@@ -24,6 +24,7 @@
 - (UIView *)showAnnotationForOverlay:(BOOL)load withRect:(CGRect)rect andUri:(NSString *)uri onPage:(NSUInteger)page;
 - (void)setGlobalParametersFromAnnotation;
 - (void)setExtensions:(NSArray *)ext;
+- (FPKOverlayManager *)initWithExtensions:(NSArray *)ext;
 @end
 
 

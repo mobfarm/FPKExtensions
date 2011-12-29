@@ -38,8 +38,9 @@
     pdfViewController.documentId = documentName;
     
     
+    NSArray *extensions = [[NSArray alloc] initWithObjects:@"FPKYouTube", nil];
     
-    OverlayManager *_overlayManager = [[[OverlayManager alloc] init] autorelease];
+    OverlayManager *_overlayManager = [[[OverlayManager alloc] initWithExtensions:extensions] autorelease];
     
     [_overlayManager setOverlays:[[NSMutableArray alloc] init]];
     

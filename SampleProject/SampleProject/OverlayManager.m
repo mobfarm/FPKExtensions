@@ -7,18 +7,13 @@
 //
 
 #import "OverlayManager.h"
+
+/** 
+ Just import every Extension you need, that's it!
+ */
+
 #import <FPKYouTube/FPKYouTube.h>
 
 @implementation OverlayManager
-
-- (id)init
-{
-	self = [super init];
-	if (self != nil)
-	{
-		[self setExtensions:[[NSArray alloc] initWithObjects:@"FPKYouTube", nil]];
-	}
-	return self;
-}
 
 @end

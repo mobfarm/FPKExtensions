@@ -14,6 +14,16 @@
 @implementation FPKOverlayManager
 @synthesize overlays, documentViewController;
 
+- (FPKOverlayManager *)initWithExtensions:(NSArray *)ext
+{
+	self = [super init];
+	if (self != nil)
+	{
+		[self setExtensions:ext];
+	}
+	return self;
+}
+
 - (void)setExtensions:(NSArray *)ext{
     extensions = ext;
 }
