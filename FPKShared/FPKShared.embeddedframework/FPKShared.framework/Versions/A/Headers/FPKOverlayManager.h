@@ -8,14 +8,6 @@
 
 #import <FastPdfKit/MFDocumentViewController.h>
 
-@protocol FPKView
-- (UIView *)initWithParams:(NSDictionary *)params andFrame:(CGRect)frame;
-+ (NSArray *)acceptedPrefixes;
-+ (BOOL)respondsToPrefix:(NSString *)prefix;
-- (CGRect)rect;
-- (void)setRect:(CGRect)_rect;
-@end
-
 @protocol OverlayDataSourceDelegate <NSObject>
 @optional
 - (void)setGesturesDisabled:(BOOL)disabled;

@@ -7,14 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@protocol FPKView
-- (UIView *)initWithParams:(NSDictionary *)params andFrame:(CGRect)frame;
-+ (NSArray *)acceptedPrefixes;
-+ (BOOL)respondsToPrefix:(NSString *)prefix;
-- (CGRect)rect;
-- (void)setRect:(CGRect)_rect;
-@end
+#import <FPKShared/FPKView.h>
 
 @interface FPKYouTube : UIWebView <FPKView>{
     CGRect _rect;

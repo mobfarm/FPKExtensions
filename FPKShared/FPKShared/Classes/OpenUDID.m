@@ -104,7 +104,8 @@ static int const kOpenUDIDRedundancySlots = 100;
     //
 #if TARGET_OS_IPHONE	
     if([UIDevice instancesRespondToSelector:@selector(uniqueIdentifier)]){
-        _openUDID = [[UIDevice currentDevice] uniqueIdentifier];
+        // We Know that a warning will appear as the whole class in intended to replace this deprecation
+        _openUDID = [[UIDevice currentDevice] uniqueIdentifier]; // Deprecated
     }
     
 #endif

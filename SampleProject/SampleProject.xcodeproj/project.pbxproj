@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		952C0E7E14AC885D004E7D98 /* FPKYouTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952C0E7C14AC885D004E7D98 /* FPKYouTube.framework */; };
 		95862DED14AC634E002E11E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95862DEC14AC634E002E11E8 /* UIKit.framework */; };
 		95862DEF14AC634E002E11E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95862DEE14AC634E002E11E8 /* Foundation.framework */; };
 		95862DF114AC634E002E11E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95862DF014AC634E002E11E8 /* CoreGraphics.framework */; };
@@ -18,15 +17,14 @@
 		95862E0314AC634E002E11E8 /* MainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95862E0114AC634E002E11E8 /* MainViewController_iPhone.xib */; };
 		95862E0614AC634E002E11E8 /* MainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95862E0414AC634E002E11E8 /* MainViewController_iPad.xib */; };
 		95862E1714AC63D5002E11E8 /* Manual.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 95862E1614AC63D5002E11E8 /* Manual.pdf */; };
-		95862E6414AC7980002E11E8 /* OverlayManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 95862E6214AC7980002E11E8 /* OverlayManager.h */; };
 		95862E6514AC7980002E11E8 /* OverlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E6314AC7980002E11E8 /* OverlayManager.m */; };
-		95862E6C14AC7B3C002E11E8 /* PDFViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 95862E6A14AC7B3C002E11E8 /* PDFViewController.h */; };
 		95862E6D14AC7B3C002E11E8 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E6B14AC7B3C002E11E8 /* PDFViewController.m */; };
-		95F1693114AC88B900F8DE00 /* FPKShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F1692F14AC88B900F8DE00 /* FPKShared.framework */; };
-		95F1693814AC898200F8DE00 /* FastPdfKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F1693314AC898200F8DE00 /* FastPdfKit.framework */; };
 		95F1693914AC898200F8DE00 /* FastPdfKitFramework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 95F1693514AC898200F8DE00 /* FastPdfKitFramework.xcconfig */; };
 		95F1693A14AC898200F8DE00 /* FPKReaderBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95F1693614AC898200F8DE00 /* FPKReaderBundle.bundle */; };
 		95F1693B14AC898200F8DE00 /* Snippets.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95F1693714AC898200F8DE00 /* Snippets.txt */; };
+		95F1693C14AC8C5F00F8DE00 /* FastPdfKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F1693314AC898200F8DE00 /* FastPdfKit.framework */; };
+		95F1693D14AC8C6300F8DE00 /* FPKShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F1692F14AC88B900F8DE00 /* FPKShared.framework */; };
+		95F1693E14AC8C6700F8DE00 /* FPKYouTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952C0E7C14AC885D004E7D98 /* FPKYouTube.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,9 +63,9 @@
 				95862DED14AC634E002E11E8 /* UIKit.framework in Frameworks */,
 				95862DEF14AC634E002E11E8 /* Foundation.framework in Frameworks */,
 				95862DF114AC634E002E11E8 /* CoreGraphics.framework in Frameworks */,
-				952C0E7E14AC885D004E7D98 /* FPKYouTube.framework in Frameworks */,
-				95F1693114AC88B900F8DE00 /* FPKShared.framework in Frameworks */,
-				95F1693814AC898200F8DE00 /* FastPdfKit.framework in Frameworks */,
+				95F1693C14AC8C5F00F8DE00 /* FastPdfKit.framework in Frameworks */,
+				95F1693D14AC8C6300F8DE00 /* FPKShared.framework in Frameworks */,
+				95F1693E14AC8C6700F8DE00 /* FPKYouTube.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +258,7 @@
 				95862DF914AC634E002E11E8 /* main.m in Sources */,
 				95862DFD14AC634E002E11E8 /* AppDelegate.m in Sources */,
 				95862E0014AC634E002E11E8 /* MainViewController.m in Sources */,
-				95862E6414AC7980002E11E8 /* OverlayManager.h in Sources */,
 				95862E6514AC7980002E11E8 /* OverlayManager.m in Sources */,
-				95862E6C14AC7B3C002E11E8 /* PDFViewController.h in Sources */,
 				95862E6D14AC7B3C002E11E8 /* PDFViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,9 +344,6 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/FastPdfKit.embeddedframework\"",
-					"\"$(SRCROOT)/FPKYouTube.embeddedframework\"",
-					"\"$(SRCROOT)/FPKShared.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKYouTube/FPKYouTube.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
@@ -369,9 +362,6 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/FastPdfKit.embeddedframework\"",
-					"\"$(SRCROOT)/FPKYouTube.embeddedframework\"",
-					"\"$(SRCROOT)/FPKShared.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKYouTube/FPKYouTube.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",

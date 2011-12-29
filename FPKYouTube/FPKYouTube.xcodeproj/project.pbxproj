@@ -10,6 +10,7 @@
 		951FE42814AC609000DA455D /* FPKYouTube.m in Sources */ = {isa = PBXBuildFile; fileRef = 951FE42614AC609000DA455D /* FPKYouTube.m */; };
 		95862E8114AC7ED0002E11E8 /* FPKYouTube.h in Headers */ = {isa = PBXBuildFile; fileRef = 951FE42514AC609000DA455D /* FPKYouTube.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95EA040414AA12ED00886374 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95EA040214AA12ED00886374 /* InfoPlist.strings */; };
+		95F1695114AC8E3700F8DE00 /* FPKShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F1694E14AC8E3700F8DE00 /* FPKShared.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		95EA040114AA12ED00886374 /* FPKYouTube-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKYouTube-Info.plist"; sourceTree = "<group>"; };
 		95EA040314AA12ED00886374 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95EA040514AA12ED00886374 /* FPKYouTube-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPKYouTube-Prefix.pch"; sourceTree = "<group>"; };
+		95F1694614AC8D8E00F8DE00 /* FPKView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; name = FPKView.h; path = ../../FPKShared/FPKShared/Classes/FPKView.h; sourceTree = "<group>"; };
+		95F1694E14AC8E3700F8DE00 /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95F1695114AC8E3700F8DE00 /* FPKShared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				95EA040B14AA131D00886374 /* Classes */,
+				95F1694C14AC8E1A00F8DE00 /* Frameworks */,
 				95EA040014AA12ED00886374 /* Supporting Files */,
 				95EA03FE14AA12ED00886374 /* Products */,
 			);
@@ -55,6 +60,7 @@
 			children = (
 				95EA040114AA12ED00886374 /* FPKYouTube-Info.plist */,
 				95EA040214AA12ED00886374 /* InfoPlist.strings */,
+				95F1694614AC8D8E00F8DE00 /* FPKView.h */,
 				95EA040514AA12ED00886374 /* FPKYouTube-Prefix.pch */,
 				95C1C35514AB63E800E74E62 /* README.md */,
 			);
@@ -70,6 +76,31 @@
 			);
 			name = Classes;
 			path = FPKYouTube/Classes;
+			sourceTree = "<group>";
+		};
+		95F1694C14AC8E1A00F8DE00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95F1694D14AC8E3700F8DE00 /* FPKShared.embeddedframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95F1694D14AC8E3700F8DE00 /* FPKShared.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				95F1694E14AC8E3700F8DE00 /* FPKShared.framework */,
+				95F1694F14AC8E3700F8DE00 /* Resources */,
+			);
+			name = FPKShared.embeddedframework;
+			path = ../FPKShared/FPKShared.embeddedframework;
+			sourceTree = "<group>";
+		};
+		95F1694F14AC8E3700F8DE00 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +278,10 @@
 				DEPLOYMENT_POSTPROCESSING = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FPKYouTube/FPKYouTube-Prefix.pch";
@@ -276,6 +311,10 @@
 				DEPLOYMENT_POSTPROCESSING = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FPKYouTube/FPKYouTube-Prefix.pch";

@@ -10,11 +10,10 @@
 		95862E2214AC6923002E11E8 /* FPKOverlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E2014AC6923002E11E8 /* FPKOverlayManager.m */; };
 		95862E2E14AC6979002E11E8 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E2D14AC6977002E11E8 /* OpenUDID.m */; };
 		95862E2F14AC697F002E11E8 /* OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E2C14AC6977002E11E8 /* OpenUDID.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95862E4014AC6B45002E11E8 /* MFOverlayDrawable.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E3E14AC6B3D002E11E8 /* MFOverlayDrawable.h */; };
-		95862E4114AC6B48002E11E8 /* MFOverlayTouchable.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E3F14AC6B3D002E11E8 /* MFOverlayTouchable.h */; };
 		95862E4C14AC7230002E11E8 /* FPKOverlayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E2814AC694D002E11E8 /* FPKOverlayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95862E7514AC7E13002E11E8 /* FastPdfKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95862E7014AC7DCA002E11E8 /* FastPdfKit.framework */; };
 		95C1C34D14AB636C00E74E62 /* FPKShared-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 95C1C34C14AB636600E74E62 /* FPKShared-Prefix.pch */; };
+		95F1694214AC8D1700F8DE00 /* FPKView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F1694014AC8D0C00F8DE00 /* FPKView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +21,6 @@
 		95862E2814AC694D002E11E8 /* FPKOverlayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = FPKOverlayManager.h; sourceTree = "<group>"; };
 		95862E2C14AC6977002E11E8 /* OpenUDID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = OpenUDID.h; sourceTree = "<group>"; };
 		95862E2D14AC6977002E11E8 /* OpenUDID.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
-		95862E3E14AC6B3D002E11E8 /* MFOverlayDrawable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = MFOverlayDrawable.h; sourceTree = "<group>"; };
-		95862E3F14AC6B3D002E11E8 /* MFOverlayTouchable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = MFOverlayTouchable.h; sourceTree = "<group>"; };
 		95862E7014AC7DCA002E11E8 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
 		95862E7214AC7DCA002E11E8 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
 		95862E7314AC7DCA002E11E8 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
@@ -32,6 +29,7 @@
 		95C1C34A14AB636600E74E62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95C1C34B14AB636600E74E62 /* FPKShared-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKShared-Info.plist"; sourceTree = "<group>"; };
 		95C1C34C14AB636600E74E62 /* FPKShared-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPKShared-Prefix.pch"; sourceTree = "<group>"; };
+		95F1694014AC8D0C00F8DE00 /* FPKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = FPKView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,15 +44,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		95862E3714AC6A5E002E11E8 /* External Headers */ = {
-			isa = PBXGroup;
-			children = (
-				95862E3E14AC6B3D002E11E8 /* MFOverlayDrawable.h */,
-				95862E3F14AC6B3D002E11E8 /* MFOverlayTouchable.h */,
-			);
-			name = "External Headers";
-			sourceTree = "<group>";
-		};
 		95862E6E14AC7DB5002E11E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +96,7 @@
 				95862E2014AC6923002E11E8 /* FPKOverlayManager.m */,
 				95862E2C14AC6977002E11E8 /* OpenUDID.h */,
 				95862E2D14AC6977002E11E8 /* OpenUDID.m */,
-				95862E3714AC6A5E002E11E8 /* External Headers */,
+				95F1694014AC8D0C00F8DE00 /* FPKView.h */,
 			);
 			name = Classes;
 			path = FPKShared/Classes;
@@ -133,9 +122,8 @@
 			files = (
 				95862E2F14AC697F002E11E8 /* OpenUDID.h in Headers */,
 				95862E4C14AC7230002E11E8 /* FPKOverlayManager.h in Headers */,
+				95F1694214AC8D1700F8DE00 /* FPKView.h in Headers */,
 				95C1C34D14AB636C00E74E62 /* FPKShared-Prefix.pch in Headers */,
-				95862E4014AC6B45002E11E8 /* MFOverlayDrawable.h in Headers */,
-				95862E4114AC6B48002E11E8 /* MFOverlayTouchable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +282,10 @@
 		95C1C2FF14AB4CD400E74E62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
 				DEAD_CODE_STRIPPING = NO;
 				DEPLOYMENT_POSTPROCESSING = YES;
@@ -321,6 +313,10 @@
 		95C1C30014AB4CD400E74E62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
 				DEAD_CODE_STRIPPING = NO;
 				DEPLOYMENT_POSTPROCESSING = YES;

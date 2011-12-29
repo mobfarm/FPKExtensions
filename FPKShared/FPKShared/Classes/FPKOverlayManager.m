@@ -9,7 +9,7 @@
 #import "FPKOverlayManager.h"
 #import <FastPdfKit/FPKURIAnnotation.h>
 #import <FastPdfKit/MFDocumentManager.h>
-
+#import "FPKView.h"
 
 @implementation FPKOverlayManager
 @synthesize overlays, documentViewController;
@@ -182,7 +182,7 @@
         NSString *class = nil;
         if(extensions && [extensions count] > 0){
             for(NSString *extension in extensions){
-                if ([NSClassFromString(extension) respondsToPrefix:uriType]) {
+                if ((UIView <FPKView> *)[NSClassFromString(extension) respondsToPrefix:uriType]) {
                     class = extension;
                     NSLog(@"Found Extension %@ that supports %@", extension, uriType);
                 }
@@ -190,7 +190,7 @@
         }
         
         if (class && ((load && [[parameters objectForKey:@"load"] boolValue]) || !load)){
-            UIView *aView = (UIView *)[[NSClassFromString(class) alloc] initWithParams:dic andFrame:[documentViewController convertRect:rect toViewFromPage:page]];
+            UIView *aView = [(UIView <FPKView> *)[NSClassFromString(class) alloc] initWithParams:dic andFrame:[documentViewController convertRect:rect toViewFromPage:page]];
             retVal = aView;
             // [aView release];
         } else {
