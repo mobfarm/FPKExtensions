@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		951FE42814AC609000DA455D /* FPKYouTube.m in Sources */ = {isa = PBXBuildFile; fileRef = 951FE42614AC609000DA455D /* FPKYouTube.m */; };
+		95862E8114AC7ED0002E11E8 /* FPKYouTube.h in Headers */ = {isa = PBXBuildFile; fileRef = 951FE42514AC609000DA455D /* FPKYouTube.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95EA040414AA12ED00886374 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95EA040214AA12ED00886374 /* InfoPlist.strings */; };
-		95EA040E14AA132C00886374 /* FPKYouTube.h in Headers */ = {isa = PBXBuildFile; fileRef = 95EA040C14AA132C00886374 /* FPKYouTube.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95EA040F14AA132C00886374 /* FPKYouTube.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EA040D14AA132C00886374 /* FPKYouTube.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		951FE42514AC609000DA455D /* FPKYouTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = FPKYouTube.h; sourceTree = "<group>"; };
+		951FE42614AC609000DA455D /* FPKYouTube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPKYouTube.m; sourceTree = "<group>"; };
 		95C1C35514AB63E800E74E62 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		95EA03FD14AA12ED00886374 /* FPKYouTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKYouTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95EA040114AA12ED00886374 /* FPKYouTube-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKYouTube-Info.plist"; sourceTree = "<group>"; };
 		95EA040314AA12ED00886374 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95EA040514AA12ED00886374 /* FPKYouTube-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPKYouTube-Prefix.pch"; sourceTree = "<group>"; };
-		95EA040C14AA132C00886374 /* FPKYouTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPKYouTube.h; sourceTree = "<group>"; };
-		95EA040D14AA132C00886374 /* FPKYouTube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPKYouTube.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +65,11 @@
 		95EA040B14AA131D00886374 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				95EA040C14AA132C00886374 /* FPKYouTube.h */,
-				95EA040D14AA132C00886374 /* FPKYouTube.m */,
+				951FE42514AC609000DA455D /* FPKYouTube.h */,
+				951FE42614AC609000DA455D /* FPKYouTube.m */,
 			);
 			name = Classes;
-			path = FPKYouTube;
+			path = FPKYouTube/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,7 +79,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95EA040E14AA132C00886374 /* FPKYouTube.h in Headers */,
+				95862E8114AC7ED0002E11E8 /* FPKYouTube.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95EA040F14AA132C00886374 /* FPKYouTube.m in Sources */,
+				951FE42814AC609000DA455D /* FPKYouTube.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

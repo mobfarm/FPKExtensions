@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		952C0E7E14AC885D004E7D98 /* FPKYouTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952C0E7C14AC885D004E7D98 /* FPKYouTube.framework */; };
+		95862DED14AC634E002E11E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95862DEC14AC634E002E11E8 /* UIKit.framework */; };
+		95862DEF14AC634E002E11E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95862DEE14AC634E002E11E8 /* Foundation.framework */; };
+		95862DF114AC634E002E11E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95862DF014AC634E002E11E8 /* CoreGraphics.framework */; };
+		95862DF714AC634E002E11E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95862DF514AC634E002E11E8 /* InfoPlist.strings */; };
+		95862DF914AC634E002E11E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862DF814AC634E002E11E8 /* main.m */; };
+		95862DFD14AC634E002E11E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862DFC14AC634E002E11E8 /* AppDelegate.m */; };
+		95862E0014AC634E002E11E8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862DFF14AC634E002E11E8 /* MainViewController.m */; };
+		95862E0314AC634E002E11E8 /* MainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95862E0114AC634E002E11E8 /* MainViewController_iPhone.xib */; };
+		95862E0614AC634E002E11E8 /* MainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95862E0414AC634E002E11E8 /* MainViewController_iPad.xib */; };
+		95862E1714AC63D5002E11E8 /* Manual.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 95862E1614AC63D5002E11E8 /* Manual.pdf */; };
+		95862E6414AC7980002E11E8 /* OverlayManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 95862E6214AC7980002E11E8 /* OverlayManager.h */; };
+		95862E6514AC7980002E11E8 /* OverlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E6314AC7980002E11E8 /* OverlayManager.m */; };
+		95862E6C14AC7B3C002E11E8 /* PDFViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 95862E6A14AC7B3C002E11E8 /* PDFViewController.h */; };
+		95862E6D14AC7B3C002E11E8 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E6B14AC7B3C002E11E8 /* PDFViewController.m */; };
+		95F1693114AC88B900F8DE00 /* FPKShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F1692F14AC88B900F8DE00 /* FPKShared.framework */; };
+		95F1693814AC898200F8DE00 /* FastPdfKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F1693314AC898200F8DE00 /* FastPdfKit.framework */; };
+		95F1693914AC898200F8DE00 /* FastPdfKitFramework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 95F1693514AC898200F8DE00 /* FastPdfKitFramework.xcconfig */; };
+		95F1693A14AC898200F8DE00 /* FPKReaderBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95F1693614AC898200F8DE00 /* FPKReaderBundle.bundle */; };
+		95F1693B14AC898200F8DE00 /* Snippets.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95F1693714AC898200F8DE00 /* Snippets.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		952C0E7C14AC885D004E7D98 /* FPKYouTube.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKYouTube.framework; sourceTree = "<group>"; };
+		95862DE814AC634E002E11E8 /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95862DEC14AC634E002E11E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		95862DEE14AC634E002E11E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		95862DF014AC634E002E11E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		95862DF414AC634E002E11E8 /* SampleProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleProject-Info.plist"; sourceTree = "<group>"; };
+		95862DF614AC634E002E11E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		95862DF814AC634E002E11E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95862DFA14AC634E002E11E8 /* SampleProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleProject-Prefix.pch"; sourceTree = "<group>"; };
+		95862DFB14AC634E002E11E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95862DFC14AC634E002E11E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95862DFE14AC634E002E11E8 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = MainViewController.h; sourceTree = "<group>"; };
+		95862DFF14AC634E002E11E8 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		95862E0214AC634E002E11E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPhone.xib; sourceTree = "<group>"; };
+		95862E0514AC634E002E11E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPad.xib; sourceTree = "<group>"; };
+		95862E1614AC63D5002E11E8 /* Manual.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Manual.pdf; sourceTree = "<group>"; };
+		95862E6214AC7980002E11E8 /* OverlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = OverlayManager.h; sourceTree = "<group>"; };
+		95862E6314AC7980002E11E8 /* OverlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayManager.m; sourceTree = "<group>"; };
+		95862E6A14AC7B3C002E11E8 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = PDFViewController.h; sourceTree = "<group>"; };
+		95862E6B14AC7B3C002E11E8 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
+		95F1692F14AC88B900F8DE00 /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
+		95F1693314AC898200F8DE00 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
+		95F1693514AC898200F8DE00 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
+		95F1693614AC898200F8DE00 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
+		95F1693714AC898200F8DE00 /* Snippets.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Snippets.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95862DE514AC634E002E11E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95862DED14AC634E002E11E8 /* UIKit.framework in Frameworks */,
+				95862DEF14AC634E002E11E8 /* Foundation.framework in Frameworks */,
+				95862DF114AC634E002E11E8 /* CoreGraphics.framework in Frameworks */,
+				952C0E7E14AC885D004E7D98 /* FPKYouTube.framework in Frameworks */,
+				95F1693114AC88B900F8DE00 /* FPKShared.framework in Frameworks */,
+				95F1693814AC898200F8DE00 /* FastPdfKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		952C0E7B14AC885D004E7D98 /* FPKYouTube.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				952C0E7C14AC885D004E7D98 /* FPKYouTube.framework */,
+				952C0E7D14AC885D004E7D98 /* Resources */,
+			);
+			name = FPKYouTube.embeddedframework;
+			path = ../FPKYouTube/FPKYouTube.embeddedframework;
+			sourceTree = "<group>";
+		};
+		952C0E7D14AC885D004E7D98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		95862DDD14AC634E002E11E8 = {
+			isa = PBXGroup;
+			children = (
+				95862DF214AC634E002E11E8 /* SampleProject */,
+				95862DEB14AC634E002E11E8 /* Frameworks */,
+				95862DE914AC634E002E11E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95862DE914AC634E002E11E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95862DE814AC634E002E11E8 /* SampleProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95862DEB14AC634E002E11E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95F1693214AC898200F8DE00 /* FastPdfKit.embeddedframework */,
+				95F1692E14AC88B900F8DE00 /* FPKShared.embeddedframework */,
+				952C0E7B14AC885D004E7D98 /* FPKYouTube.embeddedframework */,
+				95862DEC14AC634E002E11E8 /* UIKit.framework */,
+				95862DEE14AC634E002E11E8 /* Foundation.framework */,
+				95862DF014AC634E002E11E8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95862DF214AC634E002E11E8 /* SampleProject */ = {
+			isa = PBXGroup;
+			children = (
+				95862DFB14AC634E002E11E8 /* AppDelegate.h */,
+				95862DFC14AC634E002E11E8 /* AppDelegate.m */,
+				95862DFE14AC634E002E11E8 /* MainViewController.h */,
+				95862DFF14AC634E002E11E8 /* MainViewController.m */,
+				95862E6A14AC7B3C002E11E8 /* PDFViewController.h */,
+				95862E6B14AC7B3C002E11E8 /* PDFViewController.m */,
+				95862E6214AC7980002E11E8 /* OverlayManager.h */,
+				95862E6314AC7980002E11E8 /* OverlayManager.m */,
+				95862DF314AC634E002E11E8 /* Supporting Files */,
+			);
+			path = SampleProject;
+			sourceTree = "<group>";
+		};
+		95862DF314AC634E002E11E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95862E0114AC634E002E11E8 /* MainViewController_iPhone.xib */,
+				95862E0414AC634E002E11E8 /* MainViewController_iPad.xib */,
+				95862E1614AC63D5002E11E8 /* Manual.pdf */,
+				95862DF414AC634E002E11E8 /* SampleProject-Info.plist */,
+				95862DF514AC634E002E11E8 /* InfoPlist.strings */,
+				95862DF814AC634E002E11E8 /* main.m */,
+				95862DFA14AC634E002E11E8 /* SampleProject-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95F1692E14AC88B900F8DE00 /* FPKShared.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				95F1692F14AC88B900F8DE00 /* FPKShared.framework */,
+				95F1693014AC88B900F8DE00 /* Resources */,
+			);
+			name = FPKShared.embeddedframework;
+			path = ../FPKShared/FPKShared.embeddedframework;
+			sourceTree = "<group>";
+		};
+		95F1693014AC88B900F8DE00 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		95F1693214AC898200F8DE00 /* FastPdfKit.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				95F1693314AC898200F8DE00 /* FastPdfKit.framework */,
+				95F1693414AC898200F8DE00 /* Resources */,
+			);
+			name = FastPdfKit.embeddedframework;
+			path = ../FPKShared/FastPdfKit.embeddedframework;
+			sourceTree = "<group>";
+		};
+		95F1693414AC898200F8DE00 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95F1693514AC898200F8DE00 /* FastPdfKitFramework.xcconfig */,
+				95F1693614AC898200F8DE00 /* FPKReaderBundle.bundle */,
+				95F1693714AC898200F8DE00 /* Snippets.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95862DE714AC634E002E11E8 /* SampleProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95862E0914AC634E002E11E8 /* Build configuration list for PBXNativeTarget "SampleProject" */;
+			buildPhases = (
+				95862DE414AC634E002E11E8 /* Sources */,
+				95862DE514AC634E002E11E8 /* Frameworks */,
+				95862DE614AC634E002E11E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleProject;
+			productName = SampleProject;
+			productReference = 95862DE814AC634E002E11E8 /* SampleProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95862DDF14AC634E002E11E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MF;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "MobFarm s.a.s.";
+			};
+			buildConfigurationList = 95862DE214AC634E002E11E8 /* Build configuration list for PBXProject "SampleProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 95862DDD14AC634E002E11E8;
+			productRefGroup = 95862DE914AC634E002E11E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95862DE714AC634E002E11E8 /* SampleProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95862DE614AC634E002E11E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95862DF714AC634E002E11E8 /* InfoPlist.strings in Resources */,
+				95862E0314AC634E002E11E8 /* MainViewController_iPhone.xib in Resources */,
+				95862E0614AC634E002E11E8 /* MainViewController_iPad.xib in Resources */,
+				95862E1714AC63D5002E11E8 /* Manual.pdf in Resources */,
+				95F1693914AC898200F8DE00 /* FastPdfKitFramework.xcconfig in Resources */,
+				95F1693A14AC898200F8DE00 /* FPKReaderBundle.bundle in Resources */,
+				95F1693B14AC898200F8DE00 /* Snippets.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95862DE414AC634E002E11E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95862DF914AC634E002E11E8 /* main.m in Sources */,
+				95862DFD14AC634E002E11E8 /* AppDelegate.m in Sources */,
+				95862E0014AC634E002E11E8 /* MainViewController.m in Sources */,
+				95862E6414AC7980002E11E8 /* OverlayManager.h in Sources */,
+				95862E6514AC7980002E11E8 /* OverlayManager.m in Sources */,
+				95862E6C14AC7B3C002E11E8 /* PDFViewController.h in Sources */,
+				95862E6D14AC7B3C002E11E8 /* PDFViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95862DF514AC634E002E11E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95862DF614AC634E002E11E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		95862E0114AC634E002E11E8 /* MainViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95862E0214AC634E002E11E8 /* en */,
+			);
+			name = MainViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		95862E0414AC634E002E11E8 /* MainViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95862E0514AC634E002E11E8 /* en */,
+			);
+			name = MainViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95862E0714AC634E002E11E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95862E0814AC634E002E11E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95862E0A14AC634E002E11E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95F1693514AC898200F8DE00 /* FastPdfKitFramework.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/FPKYouTube.embeddedframework\"",
+					"\"$(SRCROOT)/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKYouTube/FPKYouTube.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
+				INFOPLIST_FILE = "SampleProject/SampleProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		95862E0B14AC634E002E11E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95F1693514AC898200F8DE00 /* FastPdfKitFramework.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/FPKYouTube.embeddedframework\"",
+					"\"$(SRCROOT)/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKYouTube/FPKYouTube.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
+				INFOPLIST_FILE = "SampleProject/SampleProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95862DE214AC634E002E11E8 /* Build configuration list for PBXProject "SampleProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95862E0714AC634E002E11E8 /* Debug */,
+				95862E0814AC634E002E11E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95862E0914AC634E002E11E8 /* Build configuration list for PBXNativeTarget "SampleProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95862E0A14AC634E002E11E8 /* Debug */,
+				95862E0B14AC634E002E11E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95862DDF14AC634E002E11E8 /* Project object */;
+}
