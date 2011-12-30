@@ -1,0 +1,24 @@
+appledoc \
+-h \
+-d \
+-u \
+--docset-publisher-name "MobFarm" \
+--docset-bundle-name "FastPdfKit Extensions" \
+--docset-bundle-id com.mobfarm.fastpdfkit.extensions \
+--docset-publisher-id "com.mobfarm" \
+--keep-intermediate-files \
+-o ~/git/FPKExtensions/Docs \
+-t ~/git/appledoc/Templates \
+-p "FastPdfKit Extensions" \
+-c "MobFarm" \
+--company-id com.mobfarm \
+--docset-feed-url "http://doc.fastpdfkit.com/extensions/docset.atom" \
+--docset-package-url "http://doc.fastpdfkit.com/extensions/docset.xar" \
+--docset-atom-filename "docset.atom" \
+--docset-package-filename "docset.xar" \
+-v "0.9.0" \
+--index-desc ~/git/FPKExtensions/FPKShared/FPKShared/Resources/index.md \
+--ignore ~/git/FPKExtensions/FPKShared/FastPdfKit.embeddedframework \
+--include ~/git/FPKExtensions/FPKShared/FPKShared/Resources/README-template.md \
+--include ~/git/FPKExtensions/FPKShared/FPKShared/Resources/fpk-icon.png \
+~/git/FPKExtensions

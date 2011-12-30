@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/FPKMap</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Complete the documentation</Abstract>
 			<DeclaredIn>FPKMap.h</DeclaredIn>
 			
 			<NodeRef refid="2"/>

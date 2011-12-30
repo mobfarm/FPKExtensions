@@ -63,3 +63,37 @@ The standard `extensions` array should contain every supported Extension like
 											 		@"FPKTransitionGallery", 
 											 		@"YourExtensionName",
 											 		nil];
+											
+											
+											
+## Add an Extension to your application
+
+To add an Extension to your application you need create a subclass of **FPKOverlayManager**, just like **OverlayManager** in the sample project.
+
+Add the **FPKShared.embeddedframework** to the Navigation bar.
+Then simply drag the desired Extension .embeddedframework folder to the Navigation bar, for example the **FPKYouTube.embeddedframework**. 
+
+In the **FPKOverlayManager** subclass `#import` the framework.
+
+	#import <FPKYouTube/FPKYouTube.h>
+	
+And add the Extension name as NSString to the Extensions array like `@"FPKYouTube"` in the custom init method.
+
+	- (FPKOverlayManager *)init
+	{
+		self = [super init];
+		if (self != nil)
+		{
+			[self setExtensions:[[NSArray alloc] initWithObjects:@"FPKMap", @"FPKYouTube", nil]];
+		}
+		return self;
+	}
+
+## Official Extensions
+
+* FPKMap;
+* FPKYouTube.
+
+More to come...
+
+If you've developed an Extension and want to share it with the community, please send a pull request on [github](http://git.io/fpke).

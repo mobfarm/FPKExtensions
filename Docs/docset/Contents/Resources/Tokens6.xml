@@ -1,25 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/MainViewController.html">
+	<File path="Classes/FPKYouTube.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/MainViewController</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>MainViewController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/FPKYouTube</TokenIdentifier>
+			<Abstract type="html">Complete the documentation</Abstract>
+			<DeclaredIn>FPKYouTube.h</DeclaredIn>
 			
 			<NodeRef refid="6"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/MainViewController/viewDidLoad</TokenIdentifier>
-			<Abstract type="html">Release the pdf controller</Abstract>
-			<DeclaredIn>MainViewController.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/FPKYouTube/initWithParams:andFrame:</TokenIdentifier>
+			<Abstract type="html">complete the description</Abstract>
+			<DeclaredIn>FPKYouTube.m</DeclaredIn>			
 			
-			<Declaration>- (void)viewDidLoad</Declaration>
+			<Declaration>- (UIView *)initWithParams:(NSDictionary *)params andFrame:(CGRect)frame</Declaration>
 			
 			
-			<Anchor>//api/name/viewDidLoad</Anchor>
+			<Anchor>//api/name/initWithParams:andFrame:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FPKYouTube/acceptedPrefixes</TokenIdentifier>
+			<Abstract type="html">         As we are an FPKWebView we can remove the background, otherwise a grayish borded will appear sometimes
+         </Abstract>
+			<DeclaredIn>FPKYouTube.m</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)acceptedPrefixes</Declaration>
+			
+			
+			<Anchor>//api/name/acceptedPrefixes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FPKYouTube/respondsToPrefix:</TokenIdentifier>
+			<Abstract type="html">complete the description</Abstract>
+			<DeclaredIn>FPKYouTube.m</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)respondsToPrefix:(NSString *)prefix</Declaration>
+			
+			
+			<Anchor>//api/name/respondsToPrefix:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FPKYouTube/rect</TokenIdentifier>
+			<Abstract type="html">complete the description</Abstract>
+			<DeclaredIn>FPKYouTube.m</DeclaredIn>			
+			
+			<Declaration>- (CGRect)rect</Declaration>
+			
+			<ReturnValue><Abstract type="html">rect</Abstract></ReturnValue>
+			<Anchor>//api/name/rect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FPKYouTube/setRect:</TokenIdentifier>
+			<Abstract type="html">complete the description</Abstract>
+			<DeclaredIn>FPKYouTube.m</DeclaredIn>			
+			
+			<Declaration>- (void)setRect:(CGRect)aRect</Declaration>
+			
+			
+			<Anchor>//api/name/setRect:</Anchor>
 		</Token>
 		
 	</File>

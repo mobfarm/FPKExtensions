@@ -1,15 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/OpenUDID.html">
+	<File path="Classes/MainViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/OpenUDID</TokenIdentifier>
-			<Abstract type="html">Class useful to replace the replace the deprecated since iOS 5.0 [[UIDevice currentDevice] uniqueIdentifier]; method.</Abstract>
-			<DeclaredIn>OpenUDID.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/MainViewController</TokenIdentifier>
+			<Abstract type="html">Complete the documentation</Abstract>
+			<DeclaredIn>MainViewController.h</DeclaredIn>
 			
 			<NodeRef refid="7"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MainViewController/actionOpenPlainDocument:</TokenIdentifier>
+			<Abstract type="html">Complete the documentation</Abstract>
+			<DeclaredIn>MainViewController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)actionOpenPlainDocument:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/actionOpenPlainDocument:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MainViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html">Release the pdf controller</Abstract>
+			<DeclaredIn>MainViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

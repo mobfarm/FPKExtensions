@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>README Document</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />	
+		<meta name="generator" content="appledoc 2.0.5 (build 748)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">FastPdfKit Extensions </a></h1>
+				<a id="developerHome" href="../index.html">MobFarm</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode" id="pageTitleHeader">README Document</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<a title="README Document" name="top"></a>
+			<div id="overview_contents" role="main">
+				<div id="container">	
+					<h1>FastPdfKit Extensions</h1>
+
+<p>In this repository you&rsquo;ll find every annotation supported out of the box by FastPdfKit. You can place a pull request to add your own <strong>extension</strong>.</p>
+
+<h2>Structure</h2>
+
+<p>Each Extension is packed in its own <strong>framework</strong>. The framework is a fake framework created with the amazing <a href="https://github.com/kstenerud/iOS-Universal-Framework">iOS-Universal-Framework</a> created by <a href="https://github.com/kstenerud">Karl Stenerud</a>.</p>
+
+<p>We&rsquo;ve chosen this approach to maintain separated the classes, images and xibs of each Extension and let you choose which one add to your app, just dragging the corresponding framework.</p>
+
+<h2>Available Extensions</h2>
+
+<p>FPK Prefix identifies an official extension and will be</p>
+
+<ul>
+<li><a href="../Classes/FPKYouTube.html">FPKYouTube</a></li>
+<li><a href="../Classes/FPKMap.html">FPKMap</a></li>
+<li>FPKMovie</li>
+<li>FPKAudio</li>
+<li>FPKWebUdid</li>
+<li>FPKTransitionGallery</li>
+<li>FPKTouchGallery</li>
+<li>FPKSlidingGallery</li>
+<li>FPKMessagePopup</li>
+<li>FPKiCarouselPopup</li>
+<li>FPKWeb</li>
+<li>FPKImagePopup</li>
+<li>FPKVideoPopup</li>
+<li>FPKNavigation</li>
+<li>FPKEmail</li>
+<li>FPKiMessage</li>
+<li>FPKShareKit</li>
+<li>FPKScreenshot</li>
+<li>FPKVerticalImageGallery</li>
+</ul>
+
+
+<h2>Create an Extension</h2>
+
+<p>To create an Extension you can create a copy of the <strong>FPKSampleExtension</strong> folder and open it with Xcode.</p>
+
+<p>Rename the target and the project with a descriptive name.</p>
+
+<p>Add your objects to the projects, classes, xibs and images. Please name the images and the xib document with a prefix, so they doesn&rsquo;t conflict with other extension ones. You can even pack the xibs and images in a bundle.</p>
+
+<p>Add every document to the framework target and build for iOS Device.</p>
+
+<p>A new folder called ExtensionName.embeddedframework will appear in the project root.</p>
+
+<p>You need to set as public just the headers that you need to access from the external project.</p>
+
+<p>If you need to use the same classes for many Extensions you should add them in a separate Framework. For ours we use the FPKShared extension.</p>
+
+<h2>Use an Extensions</h2>
+
+<p>To use the Extension in a project that uses FastPdfKit, just drag the .embeddedframework folder in the Xcode Navigation Bar.</p>
+
+<p>Then <code>#import</code> the <code>&lt;ExtensionName/ExtensionName.h&gt;</code> in your <code>MFOverlayDataSource</code> subclass.</p>
+
+<p>Add the ExtensionName as string to the <code>extensions</code> array.</p>
+
+<p>The standard <code>extensions</code> array should contain every supported Extension like</p>
+
+<pre><code>NSArray *extensions = [NSArray arrayWithObjects:@"FPKYouTube",
+                                                @"FPKMap",
+                                                @"FPKTransitionGallery", 
+                                                @"YourExtensionName",
+                                                nil];
+</code></pre>
+
+<h2>Add an Extension to your application</h2>
+
+<p>To add an Extension to your application you need create a subclass of <strong><a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a></strong>, just like <strong><a href="../Classes/OverlayManager.html">OverlayManager</a></strong> in the sample project.</p>
+
+<p>Add the <strong>FPKShared.embeddedframework</strong> to the Navigation bar.
+Then simply drag the desired Extension .embeddedframework folder to the Navigation bar, for example the <strong><a href="../Classes/FPKYouTube.html">FPKYouTube</a>.embeddedframework</strong>.</p>
+
+<p>In the <strong><a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a></strong> subclass <code>#import</code> the framework.</p>
+
+<pre><code>#import &lt;FPKYouTube/FPKYouTube.h&gt;
+</code></pre>
+
+<p>And add the Extension name as NSString to the Extensions array like <code>@"FPKYouTube"</code> in the custom init method.</p>
+
+<pre><code>- (FPKOverlayManager *)init
+{
+    self = [super init];
+    if (self != nil)
+    {
+        [self setExtensions:[[NSArray alloc] initWithObjects:@"FPKMap", @"FPKYouTube", nil]];
+    }
+    return self;
+}
+</code></pre>
+
+<h2>Official Extensions</h2>
+
+<ul>
+<li><a href="../Classes/FPKMap.html">FPKMap</a>;</li>
+<li><a href="../Classes/FPKYouTube.html">FPKYouTube</a>.</li>
+</ul>
+
+
+<p>More to come&hellip;</p>
+
+<p>If you&rsquo;ve developed an Extension and want to share it with the community, please send a pull request on <a href="http://git.io/fpke">github</a>.</p>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2011 MobFarm. All rights reserved. (Last updated: 2011-12-30)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 748)</a>.</span></p>
+						
+					
+					</div>
+				</div>
+			</div>
+		</article>
+	</body>
+</html>

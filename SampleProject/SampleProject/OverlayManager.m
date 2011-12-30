@@ -9,6 +9,8 @@
 #import "OverlayManager.h"
 
 /** 
+ @bug Complete the documentation
+
  Just import every Extension you need, that's it!
  */
 
@@ -22,11 +24,10 @@
 	self = [super init];
 	if (self != nil)
 	{
-        /**
-            Add Extensions to the array, or use the initWithExtension: method
-         
+		/**
+            Add Extensions to the array, or use the initWithExtension: method         
          */
-        
+                
 		[self setExtensions:[[NSArray alloc] initWithObjects:@"FPKMap", @"FPKYouTube", nil]];
 	}
 	return self;

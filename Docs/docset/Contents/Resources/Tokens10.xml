@@ -1,26 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/OverlayDataSourceDelegate.html">
+	<File path="Protocols/FPKView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/OverlayDataSourceDelegate</TokenIdentifier>
-			<Abstract type="html">complete the description</Abstract>
-			<DeclaredIn>FPKOverlayManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/FPKView</TokenIdentifier>
+			<Abstract type="html">Complete the description and remove the icon</Abstract>
+			<DeclaredIn>FPKView.h</DeclaredIn>
 			
 			<NodeRef refid="10"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/OverlayDataSourceDelegate/setGesturesDisabled:</TokenIdentifier>
-			<Abstract type="html">complete the description
-@param disabled</Abstract>
-			<DeclaredIn>FPKOverlayManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/FPKView/initWithParams:andFrame:</TokenIdentifier>
+			<Abstract type="html">complete the description</Abstract>
+			<DeclaredIn>FPKView.h</DeclaredIn>			
 			
-			<Declaration>- (void)setGesturesDisabled:(BOOL)disabled</Declaration>
+			<Declaration>- (UIView *)initWithParams:(NSDictionary *)params andFrame:(CGRect)frame</Declaration>
 			
 			
-			<Anchor>//api/name/setGesturesDisabled:</Anchor>
+			<Anchor>//api/name/initWithParams:andFrame:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FPKView/acceptedPrefixes</TokenIdentifier>
+			<Abstract type="html">complete the description</Abstract>
+			<DeclaredIn>FPKView.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)acceptedPrefixes</Declaration>
+			
+			
+			<Anchor>//api/name/acceptedPrefixes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FPKView/respondsToPrefix:</TokenIdentifier>
+			<Abstract type="html">complete the description</Abstract>
+			<DeclaredIn>FPKView.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)respondsToPrefix:(NSString *)prefix</Declaration>
+			
+			
+			<Anchor>//api/name/respondsToPrefix:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FPKView/rect</TokenIdentifier>
+			<Abstract type="html">complete the description</Abstract>
+			<DeclaredIn>FPKView.h</DeclaredIn>			
+			
+			<Declaration>- (CGRect)rect</Declaration>
+			
+			<ReturnValue><Abstract type="html">rect</Abstract></ReturnValue>
+			<Anchor>//api/name/rect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FPKView/setRect:</TokenIdentifier>
+			<Abstract type="html">complete the description</Abstract>
+			<DeclaredIn>FPKView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setRect:(CGRect)rect</Declaration>
+			
+			
+			<Anchor>//api/name/setRect:</Anchor>
 		</Token>
 		
 	</File>

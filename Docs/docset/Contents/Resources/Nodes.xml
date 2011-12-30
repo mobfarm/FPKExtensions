@@ -18,6 +18,7 @@
 						<NodeRef refid="6"/>
 						<NodeRef refid="7"/>
 						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
 						
 					</Subnodes>
 				</Node>
@@ -28,8 +29,8 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="9"/>
 						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
 						
 					</Subnodes>
 				</Node>
@@ -47,36 +48,40 @@
 			<Path>Classes/FPKMap.html</Path>
 		</Node>
 		<Node id="3">
+			<Name>FPKMapAnnotation</Name>
+			<Path>Classes/FPKMapAnnotation.html</Path>
+		</Node>
+		<Node id="4">
 			<Name>FPKOverlayManager</Name>
 			<Path>Classes/FPKOverlayManager.html</Path>
 		</Node>
-		<Node id="4">
+		<Node id="5">
 			<Name>FPKWebView</Name>
 			<Path>Classes/FPKWebView.html</Path>
 		</Node>
-		<Node id="5">
+		<Node id="6">
 			<Name>FPKYouTube</Name>
 			<Path>Classes/FPKYouTube.html</Path>
 		</Node>
-		<Node id="6">
+		<Node id="7">
 			<Name>MainViewController</Name>
 			<Path>Classes/MainViewController.html</Path>
 		</Node>
-		<Node id="7">
+		<Node id="8">
 			<Name>OpenUDID</Name>
 			<Path>Classes/OpenUDID.html</Path>
 		</Node>
-		<Node id="8">
+		<Node id="9">
 			<Name>OverlayManager</Name>
 			<Path>Classes/OverlayManager.html</Path>
 		</Node>
 		
 		
-		<Node id="9">
+		<Node id="10">
 			<Name>FPKView</Name>
 			<Path>Protocols/FPKView.html</Path>
 		</Node>
-		<Node id="10">
+		<Node id="11">
 			<Name>OverlayDataSourceDelegate</Name>
 			<Path>Protocols/OverlayDataSourceDelegate.html</Path>
 		</Node>

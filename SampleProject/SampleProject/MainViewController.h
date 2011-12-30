@@ -11,7 +11,17 @@
 
 @class MFDocumentManager;
 
+/**
+ @bug Complete the documentation
+
+*/
+
 @interface MainViewController : UIViewController
+
+/**
+ @bug Complete the documentation
+
+*/
 
 -(IBAction)actionOpenPlainDocument:(id)sender;
 

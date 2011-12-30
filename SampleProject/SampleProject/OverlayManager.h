@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <FPKShared/FPKOverlayManager.h>
+/**
+ @bug Complete the documentation
+ 
+*/
+
 
 @interface OverlayManager : FPKOverlayManager
 
