@@ -11,7 +11,6 @@
 		95862E2E14AC6979002E11E8 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E2D14AC6977002E11E8 /* OpenUDID.m */; };
 		95862E2F14AC697F002E11E8 /* OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E2C14AC6977002E11E8 /* OpenUDID.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95862E4C14AC7230002E11E8 /* FPKOverlayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E2814AC694D002E11E8 /* FPKOverlayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95862E7514AC7E13002E11E8 /* FastPdfKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95862E7014AC7DCA002E11E8 /* FastPdfKit.framework */; };
 		95C1C34D14AB636C00E74E62 /* FPKShared-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 95C1C34C14AB636600E74E62 /* FPKShared-Prefix.pch */; };
 		95F1694214AC8D1700F8DE00 /* FPKView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F1694014AC8D0C00F8DE00 /* FPKView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95F1695C14AC9EED00F8DE00 /* FPKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F1695A14AC9EED00F8DE00 /* FPKWebView.m */; };
@@ -23,14 +22,15 @@
 		95862E2814AC694D002E11E8 /* FPKOverlayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = FPKOverlayManager.h; sourceTree = "<group>"; };
 		95862E2C14AC6977002E11E8 /* OpenUDID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = OpenUDID.h; sourceTree = "<group>"; };
 		95862E2D14AC6977002E11E8 /* OpenUDID.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
-		95862E7014AC7DCA002E11E8 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
-		95862E7214AC7DCA002E11E8 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
-		95862E7314AC7DCA002E11E8 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
-		95862E7414AC7DCA002E11E8 /* Snippets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snippets.txt; sourceTree = "<group>"; };
 		95C1C2F314AB4CD400E74E62 /* FPKShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C1C34A14AB636600E74E62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95C1C34B14AB636600E74E62 /* FPKShared-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKShared-Info.plist"; sourceTree = "<group>"; };
 		95C1C34C14AB636600E74E62 /* FPKShared-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPKShared-Prefix.pch"; sourceTree = "<group>"; };
+		95DA060314ADB527005DBB26 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
+		95DA060514ADB527005DBB26 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
+		95DA060614ADB527005DBB26 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
+		95DA060714ADB527005DBB26 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = file; path = Resources; sourceTree = "<group>"; };
+		95DA060814ADB527005DBB26 /* Snippets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snippets.txt; sourceTree = "<group>"; };
 		95F1694014AC8D0C00F8DE00 /* FPKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = FPKView.h; sourceTree = "<group>"; };
 		95F1695914AC9EED00F8DE00 /* FPKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPKWebView.h; sourceTree = "<group>"; };
 		95F1695A14AC9EED00F8DE00 /* FPKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPKWebView.m; sourceTree = "<group>"; };
@@ -41,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95862E7514AC7E13002E11E8 /* FastPdfKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,28 +50,9 @@
 		95862E6E14AC7DB5002E11E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				95862E6F14AC7DCA002E11E8 /* FastPdfKit.embeddedframework */,
+				95DA060214ADB527005DBB26 /* FastPdfKit.embeddedframework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		95862E6F14AC7DCA002E11E8 /* FastPdfKit.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				95862E7014AC7DCA002E11E8 /* FastPdfKit.framework */,
-				95862E7114AC7DCA002E11E8 /* Resources */,
-			);
-			path = FastPdfKit.embeddedframework;
-			sourceTree = "<group>";
-		};
-		95862E7114AC7DCA002E11E8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				95862E7214AC7DCA002E11E8 /* FastPdfKitFramework.xcconfig */,
-				95862E7314AC7DCA002E11E8 /* FPKReaderBundle.bundle */,
-				95862E7414AC7DCA002E11E8 /* Snippets.txt */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		95C1C2E514AB4CD400E74E62 = {
@@ -117,6 +97,26 @@
 			);
 			name = "Supporting Files";
 			path = FPKShared;
+			sourceTree = "<group>";
+		};
+		95DA060214ADB527005DBB26 /* FastPdfKit.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				95DA060314ADB527005DBB26 /* FastPdfKit.framework */,
+				95DA060414ADB527005DBB26 /* Resources */,
+			);
+			path = FastPdfKit.embeddedframework;
+			sourceTree = "<group>";
+		};
+		95DA060414ADB527005DBB26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95DA060514ADB527005DBB26 /* FastPdfKitFramework.xcconfig */,
+				95DA060614ADB527005DBB26 /* FPKReaderBundle.bundle */,
+				95DA060714ADB527005DBB26 /* Resources */,
+				95DA060814ADB527005DBB26 /* Snippets.txt */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

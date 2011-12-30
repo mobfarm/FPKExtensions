@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-#import "PDFViewController.h"
+#import <FastPdfKit/ReaderViewController.h>
 #import "OverlayManager.h"
 
 @implementation MainViewController
@@ -29,7 +29,7 @@
 	MFDocumentManager *documentManager = [[MFDocumentManager alloc]initWithFileUrl:documentUrl];
     
 	/** Instancing the readerViewController */
-    PDFViewController *pdfViewController = [[PDFViewController alloc]initWithDocumentManager:documentManager];
+    ReaderViewController *pdfViewController = [[ReaderViewController alloc]initWithDocumentManager:documentManager];
     
     /** Set resources folder on the manager */
     documentManager.resourceFolder = thumbnailsPath;
@@ -39,23 +39,24 @@
     [pdfViewController setPadding:0.0];
     
     /**
-
-    You can use initWithExtensions or set them manually in the init method.
+     Instantiating the FPKOverlayManager (you can find in the the FPKShared framework) to manage extensions.
+     
+     You can use initWithExtensions or set them manually in the init method.
 
      NSArray *extensions = [[NSArray alloc] initWithObjects:@"FPKYouTube", nil];
      OverlayManager *_overlayManager = [[[OverlayManager alloc] initWithExtensions:extensions] autorelease];
-
      */
     
     OverlayManager *_overlayManager = [[[OverlayManager alloc] init] autorelease];
+
+    /** Add the FPKOverlayManager as OverlayViewDataSource to the ReaderViewController */
+    [pdfViewController addOverlayViewDataSource:_overlayManager];
     
-    [_overlayManager setOverlays:[[NSMutableArray alloc] init]];
+    /** Rester as DocumentDelegate to receive tap */
+    [pdfViewController addDocumentDelegate:_overlayManager];
     
-    [pdfViewController addOverlayViewDataSource:_overlayManager];    
-    [pdfViewController setOverlayManager:_overlayManager];
-    
+    /** Set the DocumentViewController to obtain access the the conversion methods */
     [_overlayManager setDocumentViewController:(MFDocumentViewController <OverlayDataSourceDelegate> *)pdfViewController];
-    [_overlayManager setGlobalParametersFromAnnotation];
     
 	/** Present the pdf on screen in a modal view */
     [self presentModalViewController:pdfViewController animated:YES]; 

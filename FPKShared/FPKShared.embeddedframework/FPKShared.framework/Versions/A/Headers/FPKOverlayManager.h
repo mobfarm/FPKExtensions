@@ -13,7 +13,7 @@
 - (void)setGesturesDisabled:(BOOL)disabled;
 @end
 
-@interface FPKOverlayManager : NSObject <FPKOverlayViewDataSource>{
+@interface FPKOverlayManager : NSObject <FPKOverlayViewDataSource, MFDocumentViewControllerDelegate>{
     NSMutableArray *overlays;
     NSArray *extensions;
     MFDocumentViewController <OverlayDataSourceDelegate> * documentViewController;
@@ -22,7 +22,6 @@
 @property(nonatomic, assign) MFDocumentViewController <OverlayDataSourceDelegate> * documentViewController;
 
 - (UIView *)showAnnotationForOverlay:(BOOL)load withRect:(CGRect)rect andUri:(NSString *)uri onPage:(NSUInteger)page;
-- (void)setGlobalParametersFromAnnotation;
 - (void)setExtensions:(NSArray *)ext;
 - (FPKOverlayManager *)initWithExtensions:(NSArray *)ext;
 @end

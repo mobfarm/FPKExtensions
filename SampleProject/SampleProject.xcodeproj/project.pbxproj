@@ -20,11 +20,10 @@
 		95862E0314AC634E002E11E8 /* MainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95862E0114AC634E002E11E8 /* MainViewController_iPhone.xib */; };
 		95862E0614AC634E002E11E8 /* MainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95862E0414AC634E002E11E8 /* MainViewController_iPad.xib */; };
 		95862E6514AC7980002E11E8 /* OverlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E6314AC7980002E11E8 /* OverlayManager.m */; };
-		95862E6D14AC7B3C002E11E8 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E6B14AC7B3C002E11E8 /* PDFViewController.m */; };
-		95F1693914AC898200F8DE00 /* FastPdfKitFramework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 95F1693514AC898200F8DE00 /* FastPdfKitFramework.xcconfig */; };
-		95F1693A14AC898200F8DE00 /* FPKReaderBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95F1693614AC898200F8DE00 /* FPKReaderBundle.bundle */; };
-		95F1693B14AC898200F8DE00 /* Snippets.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95F1693714AC898200F8DE00 /* Snippets.txt */; };
-		95F1693C14AC8C5F00F8DE00 /* FastPdfKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F1693314AC898200F8DE00 /* FastPdfKit.framework */; };
+		95DA062F14ADBC80005DBB26 /* FastPdfKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DA062A14ADBC80005DBB26 /* FastPdfKit.framework */; };
+		95DA063014ADBC80005DBB26 /* FastPdfKitFramework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 95DA062C14ADBC80005DBB26 /* FastPdfKitFramework.xcconfig */; };
+		95DA063114ADBC80005DBB26 /* FPKReaderBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95DA062D14ADBC80005DBB26 /* FPKReaderBundle.bundle */; };
+		95DA063214ADBC80005DBB26 /* Snippets.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95DA062E14ADBC80005DBB26 /* Snippets.txt */; };
 		95F1693E14AC8C6700F8DE00 /* FPKYouTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952C0E7C14AC885D004E7D98 /* FPKYouTube.framework */; };
 		95F1695814AC9E6000F8DE00 /* sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 95F1695714AC9E6000F8DE00 /* sample.pdf */; };
 /* End PBXBuildFile section */
@@ -50,12 +49,10 @@
 		95862E0514AC634E002E11E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPad.xib; sourceTree = "<group>"; };
 		95862E6214AC7980002E11E8 /* OverlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = OverlayManager.h; sourceTree = "<group>"; };
 		95862E6314AC7980002E11E8 /* OverlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayManager.m; sourceTree = "<group>"; };
-		95862E6A14AC7B3C002E11E8 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = PDFViewController.h; sourceTree = "<group>"; };
-		95862E6B14AC7B3C002E11E8 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
-		95F1693314AC898200F8DE00 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
-		95F1693514AC898200F8DE00 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
-		95F1693614AC898200F8DE00 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
-		95F1693714AC898200F8DE00 /* Snippets.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Snippets.txt; sourceTree = "<group>"; };
+		95DA062A14ADBC80005DBB26 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
+		95DA062C14ADBC80005DBB26 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
+		95DA062D14ADBC80005DBB26 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
+		95DA062E14ADBC80005DBB26 /* Snippets.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Snippets.txt; sourceTree = "<group>"; };
 		95F1695714AC9E6000F8DE00 /* sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sample.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,10 +65,10 @@
 				95862DED14AC634E002E11E8 /* UIKit.framework in Frameworks */,
 				95862DEF14AC634E002E11E8 /* Foundation.framework in Frameworks */,
 				95862DF114AC634E002E11E8 /* CoreGraphics.framework in Frameworks */,
-				95F1693C14AC8C5F00F8DE00 /* FastPdfKit.framework in Frameworks */,
 				95F1693E14AC8C6700F8DE00 /* FPKYouTube.framework in Frameworks */,
 				952ADE5B14ACC01A00805BE1 /* FPKMap.framework in Frameworks */,
 				9523C05214ACC63700171F7D /* FPKShared.framework in Frameworks */,
+				95DA062F14ADBC80005DBB26 /* FastPdfKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				95862DF214AC634E002E11E8 /* SampleProject */,
+				95862DF314AC634E002E11E8 /* Supporting Files */,
 				95862DEB14AC634E002E11E8 /* Frameworks */,
 				95862DE914AC634E002E11E8 /* Products */,
 			);
@@ -149,9 +147,9 @@
 		95862DEB14AC634E002E11E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95DA062914ADBC80005DBB26 /* FastPdfKit.embeddedframework */,
 				9523C04F14ACC63700171F7D /* FPKShared.embeddedframework */,
 				952ADE5814ACC01A00805BE1 /* FPKMap.embeddedframework */,
-				95F1693214AC898200F8DE00 /* FastPdfKit.embeddedframework */,
 				952C0E7B14AC885D004E7D98 /* FPKYouTube.embeddedframework */,
 				95862DEC14AC634E002E11E8 /* UIKit.framework */,
 				95862DEE14AC634E002E11E8 /* Foundation.framework */,
@@ -170,9 +168,6 @@
 				95862DFF14AC634E002E11E8 /* MainViewController.m */,
 				95862E6214AC7980002E11E8 /* OverlayManager.h */,
 				95862E6314AC7980002E11E8 /* OverlayManager.m */,
-				95862E6A14AC7B3C002E11E8 /* PDFViewController.h */,
-				95862E6B14AC7B3C002E11E8 /* PDFViewController.m */,
-				95862DF314AC634E002E11E8 /* Supporting Files */,
 			);
 			path = SampleProject;
 			sourceTree = "<group>";
@@ -189,24 +184,25 @@
 				95862DFA14AC634E002E11E8 /* SampleProject-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = SampleProject;
 			sourceTree = "<group>";
 		};
-		95F1693214AC898200F8DE00 /* FastPdfKit.embeddedframework */ = {
+		95DA062914ADBC80005DBB26 /* FastPdfKit.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
-				95F1693314AC898200F8DE00 /* FastPdfKit.framework */,
-				95F1693414AC898200F8DE00 /* Resources */,
+				95DA062A14ADBC80005DBB26 /* FastPdfKit.framework */,
+				95DA062B14ADBC80005DBB26 /* Resources */,
 			);
 			name = FastPdfKit.embeddedframework;
 			path = ../FPKShared/FastPdfKit.embeddedframework;
 			sourceTree = "<group>";
 		};
-		95F1693414AC898200F8DE00 /* Resources */ = {
+		95DA062B14ADBC80005DBB26 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				95F1693514AC898200F8DE00 /* FastPdfKitFramework.xcconfig */,
-				95F1693614AC898200F8DE00 /* FPKReaderBundle.bundle */,
-				95F1693714AC898200F8DE00 /* Snippets.txt */,
+				95DA062C14ADBC80005DBB26 /* FastPdfKitFramework.xcconfig */,
+				95DA062D14ADBC80005DBB26 /* FPKReaderBundle.bundle */,
+				95DA062E14ADBC80005DBB26 /* Snippets.txt */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -266,10 +262,10 @@
 				95862DF714AC634E002E11E8 /* InfoPlist.strings in Resources */,
 				95862E0314AC634E002E11E8 /* MainViewController_iPhone.xib in Resources */,
 				95862E0614AC634E002E11E8 /* MainViewController_iPad.xib in Resources */,
-				95F1693914AC898200F8DE00 /* FastPdfKitFramework.xcconfig in Resources */,
-				95F1693A14AC898200F8DE00 /* FPKReaderBundle.bundle in Resources */,
-				95F1693B14AC898200F8DE00 /* Snippets.txt in Resources */,
 				95F1695814AC9E6000F8DE00 /* sample.pdf in Resources */,
+				95DA063014ADBC80005DBB26 /* FastPdfKitFramework.xcconfig in Resources */,
+				95DA063114ADBC80005DBB26 /* FPKReaderBundle.bundle in Resources */,
+				95DA063214ADBC80005DBB26 /* Snippets.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +280,6 @@
 				95862DFD14AC634E002E11E8 /* AppDelegate.m in Sources */,
 				95862E0014AC634E002E11E8 /* MainViewController.m in Sources */,
 				95862E6514AC7980002E11E8 /* OverlayManager.m in Sources */,
-				95862E6D14AC7B3C002E11E8 /* PDFViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +360,7 @@
 		};
 		95862E0A14AC634E002E11E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95F1693514AC898200F8DE00 /* FastPdfKitFramework.xcconfig */;
+			baseConfigurationReference = 95DA062C14ADBC80005DBB26 /* FastPdfKitFramework.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -385,7 +380,7 @@
 		};
 		95862E0B14AC634E002E11E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95F1693514AC898200F8DE00 /* FastPdfKitFramework.xcconfig */;
+			baseConfigurationReference = 95DA062C14ADBC80005DBB26 /* FastPdfKitFramework.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
