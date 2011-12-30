@@ -14,7 +14,7 @@
 #pragma mark -
 #pragma mark Initialization
 
--(UIView *)initWithParams:(NSDictionary *)params andFrame:(CGRect)frame{
+-(UIView *)initWithParams:(NSDictionary *)params andFrame:(CGRect)frame from:(FPKOverlayManager *)manager{
     if (self = [super init]) 
     {        
         [self setFrame:frame];

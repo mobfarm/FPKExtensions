@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		95862E5714AC7627002E11E8 /* FPKExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E5414AC75AD002E11E8 /* FPKExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95862E5814AC7629002E11E8 /* FPKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E5514AC75AD002E11E8 /* FPKExtension.m */; };
+		95862E5714AC7627002E11E8 /* ExtensionName.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E5414AC75AD002E11E8 /* ExtensionName.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95862E5814AC7629002E11E8 /* ExtensionName.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E5514AC75AD002E11E8 /* ExtensionName.m */; };
 		95C534B914ADEC28005B130E /* FPKExtension-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 95C534B614ADEC17005B130E /* FPKExtension-Prefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		95862E5414AC75AD002E11E8 /* FPKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = FPKExtension.h; sourceTree = "<group>"; };
-		95862E5514AC75AD002E11E8 /* FPKExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPKExtension.m; sourceTree = "<group>"; };
+		953C457F14ADF87B00468EE6 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
+		953C458114ADF87B00468EE6 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
+		953C458214ADF87B00468EE6 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
+		953C458314ADF87B00468EE6 /* Snippets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snippets.txt; sourceTree = "<group>"; };
+		95862E5414AC75AD002E11E8 /* ExtensionName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionName.h; sourceTree = "<group>"; };
+		95862E5514AC75AD002E11E8 /* ExtensionName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionName.m; sourceTree = "<group>"; };
 		95A4148714ACBD0F00249348 /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
 		95C1C2F314AB4CD400E74E62 /* FPKExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C534B514ADEC17005B130E /* FPKExtension-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKExtension-Info.plist"; sourceTree = "<group>"; };
@@ -33,9 +37,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		953C457E14ADF87B00468EE6 /* FastPdfKit.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				953C457F14ADF87B00468EE6 /* FastPdfKit.framework */,
+				953C458014ADF87B00468EE6 /* Resources */,
+			);
+			name = FastPdfKit.embeddedframework;
+			path = ../FPKShared/FastPdfKit.embeddedframework;
+			sourceTree = "<group>";
+		};
+		953C458014ADF87B00468EE6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				953C458114ADF87B00468EE6 /* FastPdfKitFramework.xcconfig */,
+				953C458214ADF87B00468EE6 /* FPKReaderBundle.bundle */,
+				953C458314ADF87B00468EE6 /* Snippets.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		95A4147714ACBC7C00249348 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				953C457E14ADF87B00468EE6 /* FastPdfKit.embeddedframework */,
 				95A4148614ACBD0F00249348 /* FPKShared.embeddedframework */,
 			);
 			name = Frameworks;
@@ -79,8 +104,8 @@
 		95C1C30114AB4CDA00E74E62 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				95862E5414AC75AD002E11E8 /* FPKExtension.h */,
-				95862E5514AC75AD002E11E8 /* FPKExtension.m */,
+				95862E5414AC75AD002E11E8 /* ExtensionName.h */,
+				95862E5514AC75AD002E11E8 /* ExtensionName.m */,
 			);
 			name = Classes;
 			path = FPKExtension/Classes;
@@ -104,7 +129,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95862E5714AC7627002E11E8 /* FPKExtension.h in Headers */,
+				95862E5714AC7627002E11E8 /* ExtensionName.h in Headers */,
 				95C534B914ADEC28005B130E /* FPKExtension-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,7 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95862E5814AC7629002E11E8 /* FPKExtension.m in Sources */,
+				95862E5814AC7629002E11E8 /* ExtensionName.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +296,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -298,6 +324,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

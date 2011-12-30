@@ -1,19 +1,19 @@
 //
-//  FPKExtension.m
-//  Overlay
+//  FPKFadeGallery.m
+//  FastPdfKit Extension
 //
 //  Created by Matteo Gavagnin on 11/3/11.
 //  Copyright (c) 2011 MobFarm. All rights reserved.
 //
 
-#import "FPKExtension.h"
+#import "FPKFadeGallery.h"
 
-@implementation FPKExtension
+@implementation FPKFadeGallery
 
 #pragma mark -
 #pragma mark Initialization
 
--(UIView *)initWithParams:(NSDictionary *)params andFrame:(CGRect)frame{
+-(UIView *)initWithParams:(NSDictionary *)params andFrame:(CGRect)frame from:(FPKOverlayManager *)manager{
     if (self = [super init]) 
     {        
         [self setFrame:frame];
@@ -24,11 +24,11 @@
 }
 
 + (NSArray *)acceptedPrefixes{
-    return [NSArray arrayWithObjects:@"the-prefix", nil];
+    return [NSArray arrayWithObjects:@"galleryfade", nil];
 }
 
 + (BOOL)respondsToPrefix:(NSString *)prefix{
-    if([prefix isEqualToString:@"the-prefix"])
+    if([prefix isEqualToString:@"galleryfade"])
         return YES;
     else 
         return NO;

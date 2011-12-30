@@ -68,6 +68,7 @@
         
         uriType = [NSString stringWithFormat:@"%@", [arrayParameter objectAtIndex:0]];
         [dic setObject:uriType forKey:@"prefix"];
+        [dic setObject:[NSNumber numberWithBool:load] forKey:@"load"];
         
         // NSLog(@"URI Type %@", uriType);
         
@@ -114,7 +115,7 @@
         }
         
         if (class && ((load && [[parameters objectForKey:@"load"] boolValue]) || !load)){
-            UIView *aView = [(UIView <FPKView> *)[NSClassFromString(class) alloc] initWithParams:dic andFrame:[documentViewController convertRect:rect toViewFromPage:page]];
+            UIView *aView = [(UIView <FPKView> *)[NSClassFromString(class) alloc] initWithParams:dic andFrame:[documentViewController convertRect:rect toViewFromPage:page] from:self];
             retVal = aView;
             // [aView release];
         } else {

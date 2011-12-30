@@ -10,6 +10,11 @@
 #import <FPKShared/FPKView.h>
 #import <MapKit/MapKit.h>
 
+/**
+ @bug Complete the documentation
+
+*/
+
 @interface FPKMap : UIView <FPKView, MKMapViewDelegate>{
     CGRect _rect;
 }

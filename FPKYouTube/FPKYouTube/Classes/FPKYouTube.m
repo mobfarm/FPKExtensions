@@ -1,9 +1,6 @@
 //
 //  FPKYouTube.m
-//  Overlay
-//
-//  Created by Matteo Gavagnin on 11/3/11.
-//  Copyright (c) 2011 MobFarm. All rights reserved.
+//  FastPdfKit Extension
 //
 
 #import "FPKYouTube.h"
@@ -13,7 +10,7 @@
 #pragma mark -
 #pragma mark Initialization
 
--(UIView *)initWithParams:(NSDictionary *)params andFrame:(CGRect)frame{
+- (UIView *)initWithParams:(NSDictionary *)params andFrame:(CGRect)frame from:(FPKOverlayManager *)manager{
     if (self = [super init]) 
     {        
         [self setFrame:frame];

@@ -51,7 +51,7 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/initWithParams:andFrame:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithParams:andFrame:</option>
+	<option value="//api/name/initWithParams:andFrame:from:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithParams:andFrame:from:</option>
 	
 	<option value="//api/name/rect">&nbsp;&nbsp;&nbsp;&nbsp;- rect</option>
 	
@@ -93,7 +93,7 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithParams:andFrame:">initWithParams:andFrame:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithParams:andFrame:from:">initWithParams:andFrame:from:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rect">rect</a></span></li>
 	
@@ -157,8 +157,9 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithParams:andFrame:">&ndash;&nbsp;initWithParams:andFrame:</a></code>
-		<span class="tooltip"><p>complete the description</p></span>
+		<code><a href="#//api/name/initWithParams:andFrame:from:">&ndash;&nbsp;initWithParams:andFrame:from:</a></code>
+		<span class="tooltip"><p>This method is invocated by the <a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a> if the Extension supports the requested prefix.
+You should return the <strong>UIView</strong> to be placed over the page. You can also return <code>nil</code> and perform some other operations like presenting a modal view on the</p></span>
 	</span>
 	
 	
@@ -329,20 +330,60 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithParams:andFrame:" title="initWithParams:andFrame:"></a>
-	<h3 class="subsubtitle method-title">initWithParams:andFrame:</h3>
+	<a name="//api/name/initWithParams:andFrame:from:" title="initWithParams:andFrame:from:"></a>
+	<h3 class="subsubtitle method-title">initWithParams:andFrame:from:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>complete the description</p>
+		<p>This method is invocated by the <a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a> if the Extension supports the requested prefix.
+You should return the <strong>UIView</strong> to be placed over the page. You can also return <code>nil</code> and perform some other operations like presenting a modal view on the</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (UIView *)initWithParams:(NSDictionary *)<em>params</em> andFrame:(CGRect)<em>frame</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (UIView *)initWithParams:(NSDictionary *)<em>params</em> andFrame:(CGRect)<em>frame</em> from:(FPKOverlayManager *)<em>manager</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>This dictionary contains all the parameters extracted from the url</p>
+
+<ul>
+<li><strong>prefix</strong> the part in the url before <code>://</code></li>
+<li><strong>path</strong> the part in the url after <code>://</code></li>
+<li><strong>params</strong> another NSDictionary that contains the parsed paramenters after the <code>://</code>
+
+<ul>
+<li> <strong>resource</strong> the part before <code>?</code></li>
+<li> &hellip; custom parameters included in the annotation separated by <code>&amp;</code></li>
+</ul>
+</li>
+<li><strong>load</strong> YES if the call for the view is made when the pdf page is going to be loaded, NO if the call is made when the user taps on the annotation area</li>
+</ul>
+</dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>frame</em></dt>
+			<dd><p>The annotation frame in pdf page coordinates. If the <code>padding</code> parameter is specified in the url, the frame is a CGRectInset of the real annotation frame. This feature is useful if the pdf have been created with Adobe InDesign that creates the annotation 2 pixel wider than the original object. Just specify in the url a param <code>?padding=2</code> and the frame will be setted accordingly.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>manager</em></dt>
+			<dd><p>The <a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a> that can be used to perform many operations like accessing the <a href="http://doc.fastpdfkit.com/Classes/MFDocumentViewController.html">MFDocumentViewController</a> or the <a href="http://doc.fastpdfkit.com/Classes/MFDocumentManager.html">MFDocumentManager</a>.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><strong>UIView</strong> that will be placed over the pdf page by the <a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a>.</p>
+	</div>
 	
 	
 	
@@ -350,11 +391,8 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<div class="bug"><p>complete the description</p>
-
-<p>@param params</p>
-
-<p>@param frame</p></div>
+		<p>This method is invocated by the <a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a> if the Extension supports the requested prefix.
+You should return the <strong>UIView</strong> to be placed over the page. You can also return <code>nil</code> and perform some other operations like presenting a modal view on the</p>
 	</div>
 	
 	

@@ -40,8 +40,8 @@
     </TOC>
 	<Library>
 		<Node id="1">
-			<Name>FPKExtension</Name>
-			<Path>Classes/FPKExtension.html</Path>
+			<Name>FPKFadeGallery</Name>
+			<Path>Classes/FPKFadeGallery.html</Path>
 		</Node>
 		<Node id="2">
 			<Name>FPKMap</Name>

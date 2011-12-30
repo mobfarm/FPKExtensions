@@ -1,12 +1,10 @@
 //
 //  FPKOverlayManager.h
-//  Overlay
-//
-//  Created by Matteo Gavagnin on 11/1/11.
-//  Copyright (c) 2011 MobFarm S.r.l. All rights reserved.
+//  FastPdfKit Extension
 //
 
 #import <FastPdfKit/MFDocumentViewController.h>
+#import <FPKShared/FPKOverlayManager.h>
 
 /**
  @bug complete the description

@@ -17,7 +17,7 @@ FPK Prefix identifies an official extension and will be
 * FPKMovie
 * FPKAudio
 * FPKWebUdid
-* FPKTransitionGallery
+* FPKFadeGallery
 * FPKTouchGallery
 * FPKSlidingGallery
 * FPKMessagePopup

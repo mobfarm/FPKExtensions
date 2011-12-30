@@ -1,9 +1,6 @@
 //
 //  FPKYouTube.h
-//  Overlay
-//
-//  Created by Matteo Gavagnin on 11/3/11.
-//  Copyright (c) 2011 MobFarm. All rights reserved.
+//  FastPdfKit Extension
 //
 
 #import <UIKit/UIKit.h>
