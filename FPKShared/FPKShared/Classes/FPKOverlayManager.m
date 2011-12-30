@@ -12,7 +12,7 @@
 #import "FPKView.h"
 
 @implementation FPKOverlayManager
-@synthesize overlays, documentViewController;
+@synthesize documentViewController;
 
 - (FPKOverlayManager *)initWithExtensions:(NSArray *)ext
 {

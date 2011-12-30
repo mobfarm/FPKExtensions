@@ -35,11 +35,21 @@
 
 #import <Foundation/Foundation.h>
 
-//
-// Usage:
-//    #include "OpenUDID.h"
-//    NSString* openUDID = [OpenUDID value];
-//
+/**
+ Class useful to replace the replace the deprecated since iOS 5.0 `[[UIDevice currentDevice] uniqueIdentifier];` method.
+ 
+ The code has been initiated by Yann Lechelle (cofounder Appsfire) and is available for iOS and MacOS on [github](https://github.com/ylechelle/OpenUDID).
+ 
+ Contributors:
+ 
+ - [https://github.com/ylechelle](https://github.com/ylechelle) (initiator & iOS code)
+ - [https://github.com/samrobbins](https://github.com/samrobbins) (Mac OS port)
+ - [https://github.com/vieux](https://github.com/vieux) (Android version) 
+ 
+ ## Usage
+    #include "OpenUDID.h"
+    NSString* openUDID = [OpenUDID value];
+*/
 
 #define kOpenUDIDErrorNone          0
 #define kOpenUDIDErrorOptedOut      1

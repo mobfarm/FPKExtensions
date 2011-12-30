@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FPKMap.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FPKMap</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FPKMap.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FPKMap/initWithParams:andFrame:</TokenIdentifier>
+			<Abstract type="html">complete the description</Abstract>
+			<DeclaredIn>FPKMap.m</DeclaredIn>			
+			
+			<Declaration>- (UIView *)initWithParams:(NSDictionary *)params andFrame:(CGRect)frame</Declaration>
+			
+			
+			<Anchor>//api/name/initWithParams:andFrame:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FPKMap/acceptedPrefixes</TokenIdentifier>
+			<Abstract type="html">complete the description</Abstract>
+			<DeclaredIn>FPKMap.m</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)acceptedPrefixes</Declaration>
+			
+			
+			<Anchor>//api/name/acceptedPrefixes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FPKMap/respondsToPrefix:</TokenIdentifier>
+			<Abstract type="html">complete the description</Abstract>
+			<DeclaredIn>FPKMap.m</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)respondsToPrefix:(NSString *)prefix</Declaration>
+			
+			
+			<Anchor>//api/name/respondsToPrefix:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FPKMap/rect</TokenIdentifier>
+			<Abstract type="html">complete the description</Abstract>
+			<DeclaredIn>FPKMap.m</DeclaredIn>			
+			
+			<Declaration>- (CGRect)rect</Declaration>
+			
+			<ReturnValue><Abstract type="html">rect</Abstract></ReturnValue>
+			<Anchor>//api/name/rect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FPKMap/setRect:</TokenIdentifier>
+			<Abstract type="html">complete the description</Abstract>
+			<DeclaredIn>FPKMap.m</DeclaredIn>			
+			
+			<Declaration>- (void)setRect:(CGRect)aRect</Declaration>
+			
+			
+			<Anchor>//api/name/setRect:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

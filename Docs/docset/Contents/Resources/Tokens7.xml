@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OpenUDID.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OpenUDID</TokenIdentifier>
+			<Abstract type="html">Class useful to replace the replace the deprecated since iOS 5.0 [[UIDevice currentDevice] uniqueIdentifier]; method.</Abstract>
+			<DeclaredIn>OpenUDID.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

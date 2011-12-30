@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.mobfarm.fastpdfkit.extensions</string>
+	<key>CFBundleName</key>
+	<string>FastPdfKit Extensions</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.9.0</string>
+	<key>CFBundleVersion</key>
+	<string>0.9.0</string>
+	
+	
+	
+	
+	<key>DocSetFeedName</key>
+	<string>FastPdfKit Extensions Documentation</string>
+	<key>DocSetFeedURL</key>
+	<string>http://doc.fastpdfkit.com/extensions/docset.atom</string>
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	
+	<key>DocSetPublisherIdentifier</key>
+	<string>com.mobfarm</string>
+	<key>DocSetPublisherName</key>
+	<string>MobFarm</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2011 MobFarm. All rights reserved.</string>
+</dict>
+</plist>
