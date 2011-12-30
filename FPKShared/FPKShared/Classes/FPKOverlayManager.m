@@ -42,6 +42,10 @@
     [self showAnnotationForOverlay:NO withRect:rect andUri:uri onPage:page];
 }
 
+-(UIView *)overlayViewWithTag:(int)tag{
+    return [documentViewController.view viewWithTag:tag];
+}
+
 - (UIView *)showAnnotationForOverlay:(BOOL)load withRect:(CGRect)rect andUri:(NSString *)uri onPage:(NSUInteger)page{
     NSMutableDictionary * dic = [[NSMutableDictionary alloc] init];
     

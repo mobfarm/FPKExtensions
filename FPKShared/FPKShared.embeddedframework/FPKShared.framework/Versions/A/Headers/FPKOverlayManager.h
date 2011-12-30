@@ -73,6 +73,10 @@
  */
 - (UIView *)showAnnotationForOverlay:(BOOL)load withRect:(CGRect)rect andUri:(NSString *)uri onPage:(NSUInteger)page;
 
+/** 
+ @bug complete description
+ */
+-(UIView *)overlayViewWithTag:(int)tag;
 @end
 
 

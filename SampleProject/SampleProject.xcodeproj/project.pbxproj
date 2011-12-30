@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9517AA4214AE331000DF2082 /* FPKGalleryTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9517AA4014AE331000DF2082 /* FPKGalleryTap.framework */; };
+		9517AA4514AE332700DF2082 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9517AA4414AE332700DF2082 /* QuartzCore.framework */; };
 		9523C05214ACC63700171F7D /* FPKShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9523C05014ACC63700171F7D /* FPKShared.framework */; };
 		952ADE5B14ACC01A00805BE1 /* FPKMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952ADE5914ACC01A00805BE1 /* FPKMap.framework */; };
 		952ADE5E14ACC09500805BE1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952ADE5D14ACC09500805BE1 /* MapKit.framework */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9517AA4014AE331000DF2082 /* FPKGalleryTap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKGalleryTap.framework; sourceTree = "<group>"; };
+		9517AA4414AE332700DF2082 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9523C05014ACC63700171F7D /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
 		952ADE5914ACC01A00805BE1 /* FPKMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKMap.framework; sourceTree = "<group>"; };
 		952ADE5D14ACC09500805BE1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -71,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9517AA4514AE332700DF2082 /* QuartzCore.framework in Frameworks */,
 				952ADE5E14ACC09500805BE1 /* MapKit.framework in Frameworks */,
 				95862DED14AC634E002E11E8 /* UIKit.framework in Frameworks */,
 				95862DEF14AC634E002E11E8 /* Foundation.framework in Frameworks */,
@@ -80,12 +85,29 @@
 				9523C05214ACC63700171F7D /* FPKShared.framework in Frameworks */,
 				95DA062F14ADBC80005DBB26 /* FastPdfKit.framework in Frameworks */,
 				953A0C0014AE055900200288 /* FPKGalleryFade.framework in Frameworks */,
+				9517AA4214AE331000DF2082 /* FPKGalleryTap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9517AA3F14AE331000DF2082 /* FPKGalleryTap.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				9517AA4014AE331000DF2082 /* FPKGalleryTap.framework */,
+				9517AA4114AE331000DF2082 /* Resources */,
+			);
+			path = FPKGalleryTap.embeddedframework;
+			sourceTree = "<group>";
+		};
+		9517AA4114AE331000DF2082 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		9523C04F14ACC63700171F7D /* FPKShared.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +211,7 @@
 		95862DEB14AC634E002E11E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9517AA3F14AE331000DF2082 /* FPKGalleryTap.embeddedframework */,
 				953A0BFD14AE055900200288 /* FPKGalleryFade.embeddedframework */,
 				95DA062914ADBC80005DBB26 /* FastPdfKit.embeddedframework */,
 				9523C04F14ACC63700171F7D /* FPKShared.embeddedframework */,
@@ -198,6 +221,7 @@
 				95862DEE14AC634E002E11E8 /* Foundation.framework */,
 				952ADE5D14ACC09500805BE1 /* MapKit.framework */,
 				95862DF014AC634E002E11E8 /* CoreGraphics.framework */,
+				9517AA4414AE332700DF2082 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -415,6 +439,7 @@
 					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKMap/FPKMap.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKGalleryFade/FPKGalleryFade.embeddedframework\"",
+					"\"$(SRCROOT)/FPKGalleryTap.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
@@ -436,6 +461,7 @@
 					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKMap/FPKMap.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKGalleryFade/FPKGalleryFade.embeddedframework\"",
+					"\"$(SRCROOT)/FPKGalleryTap.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
