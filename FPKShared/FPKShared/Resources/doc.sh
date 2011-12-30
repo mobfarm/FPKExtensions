@@ -20,5 +20,7 @@ appledoc \
 --index-desc ~/git/FPKExtensions/FPKShared/FPKShared/Resources/index.md \
 --ignore *.embeddedframework \
 --include ~/git/FPKExtensions/FPKShared/FPKShared/Resources/README-template.md \
+--include ~/git/FPKExtensions/FPKShared/FPKShared/Resources/FPKExtension-template.md \
 --include ~/git/FPKExtensions/FPKShared/FPKShared/Resources/fpk-icon.png \
+--include ~/git/FPKExtensions/FPKShared/FPKShared/Resources/rename-project.png \
 ~/git/FPKExtensions

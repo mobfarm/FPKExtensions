@@ -1,4 +1,4 @@
-# FastPdfKit Extensions
+# Create a new FastPdfKit Extension
 
 Empty project to create your own FastPdfKit Extension.
 
@@ -10,7 +10,7 @@ The first steps needed are to change the Extension name to the chosen one:
 * Open the **FPKExtension** project in Xcode;
 * Rename the project to your extension name;
 
-	![Rename Project](./FPK/rename-project.png)
+	<img src="../docs/rename-project.png" />
 
 * Rename the **ExtensionName** **.h/.m** documents;
 * Replace the placeholders `ExtensionName` with the extension name;
@@ -29,4 +29,4 @@ Start writing your code:
 
 When you build the target, a new **.embeddedframework** folder will be created in the root folder.
 
-To use the just created Extension just drag that folder to the Navigation bar of the **SampleProject** or in your own app.
+To use the just created Extension just drag that folder to the Navigation bar of the **SampleProject** or in your own app and follow the [Readme](./README.html) for the Extension usage.

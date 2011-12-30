@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/FPKGalleryFade</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Complete Description</Abstract>
 			<DeclaredIn>FPKGalleryFade.h</DeclaredIn>
 			
 			<NodeRef refid="1"/>
