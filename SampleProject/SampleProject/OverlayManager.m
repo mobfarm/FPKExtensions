@@ -16,6 +16,7 @@
 
 #import <FPKYouTube/FPKYouTube.h>
 #import <FPKMap/FPKMap.h>
+#import <FPKGalleryFade/FPKGalleryFade.h>
 
 @implementation OverlayManager
 
@@ -28,7 +29,7 @@
             Add Extensions to the array, or use the initWithExtension: method         
          */
                 
-		[self setExtensions:[[NSArray alloc] initWithObjects:@"FPKMap", @"FPKYouTube", nil]];
+		[self setExtensions:[[NSArray alloc] initWithObjects:@"FPKMap", @"FPKYouTube", @"FPKGalleryFade", nil]];
 	}
 	return self;
 }

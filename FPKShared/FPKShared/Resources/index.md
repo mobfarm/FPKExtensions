@@ -14,9 +14,9 @@ If you are interested in **using existing extension** simply take a look at thes
 * MainViewController and the actionOpenPlainDocument: method;
 * OverlayManager with an example of `#import`ing frameworks.
 
-If you want to **create your own extension** start dig into these classes:
+If you want to **create your own extension** start dig into these classes and protocols:
 
-* FPKExtension with the list of methods you need to implement;
+* FPKView with the list of methods you need to implement;
 * FPKYouTube the simplest Extension ever made;
 * FPKOverlayManager to learn how the Extensions are managed.
 

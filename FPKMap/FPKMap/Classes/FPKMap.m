@@ -19,7 +19,6 @@
     {        
         [self setFrame:frame];
         _rect = frame;
-        [self setBackgroundColor:[UIColor redColor]];
                 
         MKMapView *map = [[MKMapView alloc] initWithFrame:CGRectMake(0.0, 0.0, frame.size.width, frame.size.height)];
         [map setDelegate:self];

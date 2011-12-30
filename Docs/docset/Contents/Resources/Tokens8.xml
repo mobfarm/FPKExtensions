@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/OpenUDID.html">
+	<File path="Protocols/FPKOverlayManagerDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/OpenUDID</TokenIdentifier>
-			<Abstract type="html">Class useful to replace the replace the deprecated since iOS 5.0 [[UIDevice currentDevice] uniqueIdentifier]; method.</Abstract>
-			<DeclaredIn>OpenUDID.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/FPKOverlayManagerDelegate</TokenIdentifier>
+			<Abstract type="html">complete the description</Abstract>
+			<DeclaredIn>FPKOverlayManager.h</DeclaredIn>
 			
 			<NodeRef refid="8"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FPKOverlayManagerDelegate/setGesturesDisabled:</TokenIdentifier>
+			<Abstract type="html">complete the description
+@param disabled</Abstract>
+			<DeclaredIn>FPKOverlayManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)setGesturesDisabled:(BOOL)disabled</Declaration>
+			
+			
+			<Anchor>//api/name/setGesturesDisabled:</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

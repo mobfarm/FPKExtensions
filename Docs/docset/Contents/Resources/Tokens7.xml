@@ -1,37 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/MainViewController.html">
+	<File path="Classes/OverlayManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/MainViewController</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/OverlayManager</TokenIdentifier>
 			<Abstract type="html">Complete the documentation</Abstract>
-			<DeclaredIn>MainViewController.h</DeclaredIn>
+			<DeclaredIn>OverlayManager.h</DeclaredIn>
 			
 			<NodeRef refid="7"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/MainViewController/actionOpenPlainDocument:</TokenIdentifier>
-			<Abstract type="html">Complete the documentation</Abstract>
-			<DeclaredIn>MainViewController.h</DeclaredIn>			
-			
-			<Declaration>- (IBAction)actionOpenPlainDocument:(id)sender</Declaration>
-			
-			
-			<Anchor>//api/name/actionOpenPlainDocument:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/MainViewController/viewDidLoad</TokenIdentifier>
-			<Abstract type="html">Release the pdf controller</Abstract>
-			<DeclaredIn>MainViewController.m</DeclaredIn>			
-			
-			<Declaration>- (void)viewDidLoad</Declaration>
-			
-			
-			<Anchor>//api/name/viewDidLoad</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

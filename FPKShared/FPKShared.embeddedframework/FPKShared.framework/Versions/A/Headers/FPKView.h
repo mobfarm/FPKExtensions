@@ -1,9 +1,6 @@
 //
 //  FPKView.h
-//  FPKShared
-//
-//  Created by Matteo Gavagnin on 12/29/11.
-//  Copyright (c) 2011 MobFarm s.a.s. All rights reserved.
+//  FastPdfKit Extension
 //
 
 #import <Foundation/Foundation.h>

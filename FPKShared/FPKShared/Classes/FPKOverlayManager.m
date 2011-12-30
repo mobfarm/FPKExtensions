@@ -97,19 +97,13 @@
             }
             [dic setObject:parameters forKey:@"params"];
         } 
-        
-        // Setting inset padding if present in the annotation parameters
-        if([parameters objectForKey:@"padding"]){
-            int padding = [[parameters objectForKey:@"padding"] intValue];
-            rect = CGRectInset(rect, padding, padding);
-        }
-                 
+         
         NSString *class = nil;
         if(extensions && [extensions count] > 0){
             for(NSString *extension in extensions){
                 if ((UIView <FPKView> *)[NSClassFromString(extension) respondsToPrefix:uriType]) {
                     class = extension;
-                    NSLog(@"Found Extension %@ that supports %@", extension, uriType);
+                    NSLog(@"FPKOverlayManager - Found Extension %@ that supports %@", extension, uriType);
                 }
             } 
         }
@@ -119,7 +113,7 @@
             retVal = aView;
             // [aView release];
         } else {
-            NSLog(@"No Extension found that supports %@", uriType);
+            NSLog(@"FPKOverlayManager - No Extension found that supports %@", uriType);
         }
     }
     

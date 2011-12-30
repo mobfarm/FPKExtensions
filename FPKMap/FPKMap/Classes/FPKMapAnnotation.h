@@ -8,12 +8,6 @@
 
 #import <MapKit/MapKit.h>
 
-/**
- @bug Complete the documentation
-
-*/
-
-
 @interface FPKMapAnnotation : NSObject <MKAnnotation> {
     UIImage *image;
     NSNumber *latitude;

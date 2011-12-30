@@ -108,7 +108,7 @@
 				95862E5514AC75AD002E11E8 /* ExtensionName.m */,
 			);
 			name = Classes;
-			path = FPKExtension/Classes;
+			path = FPK/Classes;
 			sourceTree = "<group>";
 		};
 		95C1C33A14AB630300E74E62 /* Supporting Files */ = {

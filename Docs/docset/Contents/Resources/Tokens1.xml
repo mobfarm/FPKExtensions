@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/FPKFadeGallery.html">
+	<File path="Classes/FPKGalleryFade.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/FPKFadeGallery</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/FPKGalleryFade</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>FPKFadeGallery.h</DeclaredIn>
+			<DeclaredIn>FPKGalleryFade.h</DeclaredIn>
 			
 			<NodeRef refid="1"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FPKFadeGallery/initWithParams:andFrame:from:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FPKGalleryFade/initWithParams:andFrame:from:</TokenIdentifier>
 			<Abstract type="html">This method is invocated by the FPKOverlayManager if the Extension supports the requested prefix.
 You should return the UIView to be placed over the page. You can also return nil and perform some other operations like presenting a modal view on the</Abstract>
-			<DeclaredIn>FPKFadeGallery.m</DeclaredIn>			
+			<DeclaredIn>FPKGalleryFade.m</DeclaredIn>			
 			
 			<Declaration>- (UIView *)initWithParams:(NSDictionary *)params andFrame:(CGRect)frame from:(FPKOverlayManager *)manager</Declaration>
 			<Parameters>
@@ -42,9 +42,9 @@ You should return the UIView to be placed over the page. You can also return nil
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FPKFadeGallery/acceptedPrefixes</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/FPKGalleryFade/acceptedPrefixes</TokenIdentifier>
 			<Abstract type="html">complete the description</Abstract>
-			<DeclaredIn>FPKFadeGallery.m</DeclaredIn>			
+			<DeclaredIn>FPKGalleryFade.m</DeclaredIn>			
 			
 			<Declaration>+ (NSArray *)acceptedPrefixes</Declaration>
 			
@@ -53,9 +53,9 @@ You should return the UIView to be placed over the page. You can also return nil
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FPKFadeGallery/respondsToPrefix:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/FPKGalleryFade/respondsToPrefix:</TokenIdentifier>
 			<Abstract type="html">complete the description</Abstract>
-			<DeclaredIn>FPKFadeGallery.m</DeclaredIn>			
+			<DeclaredIn>FPKGalleryFade.m</DeclaredIn>			
 			
 			<Declaration>+ (BOOL)respondsToPrefix:(NSString *)prefix</Declaration>
 			
@@ -64,9 +64,9 @@ You should return the UIView to be placed over the page. You can also return nil
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FPKFadeGallery/rect</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FPKGalleryFade/rect</TokenIdentifier>
 			<Abstract type="html">complete the description</Abstract>
-			<DeclaredIn>FPKFadeGallery.m</DeclaredIn>			
+			<DeclaredIn>FPKGalleryFade.m</DeclaredIn>			
 			
 			<Declaration>- (CGRect)rect</Declaration>
 			
@@ -75,9 +75,9 @@ You should return the UIView to be placed over the page. You can also return nil
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FPKFadeGallery/setRect:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FPKGalleryFade/setRect:</TokenIdentifier>
 			<Abstract type="html">complete the description</Abstract>
-			<DeclaredIn>FPKFadeGallery.m</DeclaredIn>			
+			<DeclaredIn>FPKGalleryFade.m</DeclaredIn>			
 			
 			<Declaration>- (void)setRect:(CGRect)aRect</Declaration>
 			

@@ -4,14 +4,13 @@
 //
 
 #import <FastPdfKit/MFDocumentViewController.h>
-#import <FPKShared/FPKOverlayManager.h>
 
 /**
  @bug complete the description
  */
 
 
-@protocol OverlayDataSourceDelegate <NSObject>
+@protocol FPKOverlayManagerDelegate <NSObject>
 @optional
 
 /**
@@ -30,14 +29,14 @@
 @interface FPKOverlayManager : NSObject <FPKOverlayViewDataSource, MFDocumentViewControllerDelegate>{
     NSMutableArray *overlays;
     NSArray *extensions;
-    MFDocumentViewController <OverlayDataSourceDelegate> * documentViewController;
+    MFDocumentViewController <FPKOverlayManagerDelegate> * documentViewController;
 }
 
 /**
  You need to assign to the FPKOverlayManager the MFDocumentViewController in order to access its MFDocumentManager and the coordinate conversion methods.
  */
 
-@property(nonatomic, assign) MFDocumentViewController <OverlayDataSourceDelegate> * documentViewController;
+@property(nonatomic, assign) MFDocumentViewController <FPKOverlayManagerDelegate> * documentViewController;
 
 /**
  Method to set the supported Extensions.
