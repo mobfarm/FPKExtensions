@@ -26,7 +26,7 @@
      - ... custom parameters included in the annotation separated by `&`
  * **load** YES if the call for the view is made when the pdf page is going to be loaded, NO if the call is made when the user taps on the annotation area
  
- @param frame The annotation frame in pdf page coordinates. If the `padding` parameter is specified in the url, the frame is a CGRectInset of the real annotation frame. This feature is useful if the pdf have been created with Adobe InDesign that creates the annotation 2 pixel wider than the original object. Just specify in the url a param `?padding=2` and the frame will be setted accordingly.
+ @param frame The annotation frame in pdf page coordinates. If the `padding` parameter is specified in the url, the frame is a CGRectInset of the real annotation frame. This feature is useful if the pdf has been created with Adobe InDesign that creates the annotation 2 pixel wider than the original object. Just specify in the url a param `?padding=2` and the frame will be setted accordingly.
  
  @param manager The FPKOverlayManager that can be used to perform many operations like accessing the [MFDocumentViewController](http://doc.fastpdfkit.com/Classes/MFDocumentViewController.html) or the [MFDocumentManager](http://doc.fastpdfkit.com/Classes/MFDocumentManager.html).
  
