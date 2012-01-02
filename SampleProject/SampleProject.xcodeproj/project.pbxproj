@@ -32,6 +32,7 @@
 		958B8A6A14B1C9EA00969E28 /* FPKWebPopup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958B8A6714B1C9EA00969E28 /* FPKWebPopup.framework */; };
 		958B8A6B14B1C9EA00969E28 /* fpkwebpopup-safari.png in Resources */ = {isa = PBXBuildFile; fileRef = 958B8A6914B1C9EA00969E28 /* fpkwebpopup-safari.png */; };
 		95B39F4D14B1B49200777401 /* FPKGalleryTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B39F4B14B1B49200777401 /* FPKGalleryTap.framework */; };
+		95BE37B514B1E72A008D9A49 /* FPKGallerySlide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BE37B314B1E72A008D9A49 /* FPKGallerySlide.framework */; };
 		95DA062F14ADBC80005DBB26 /* FastPdfKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DA062A14ADBC80005DBB26 /* FastPdfKit.framework */; };
 		95DA063014ADBC80005DBB26 /* FastPdfKitFramework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 95DA062C14ADBC80005DBB26 /* FastPdfKitFramework.xcconfig */; };
 		95DA063114ADBC80005DBB26 /* FPKReaderBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95DA062D14ADBC80005DBB26 /* FPKReaderBundle.bundle */; };
@@ -72,6 +73,7 @@
 		958B8A6714B1C9EA00969E28 /* FPKWebPopup.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKWebPopup.framework; sourceTree = "<group>"; };
 		958B8A6914B1C9EA00969E28 /* fpkwebpopup-safari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fpkwebpopup-safari.png"; sourceTree = "<group>"; };
 		95B39F4B14B1B49200777401 /* FPKGalleryTap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKGalleryTap.framework; sourceTree = "<group>"; };
+		95BE37B314B1E72A008D9A49 /* FPKGallerySlide.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKGallerySlide.framework; sourceTree = "<group>"; };
 		95DA062A14ADBC80005DBB26 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
 		95DA062C14ADBC80005DBB26 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
 		95DA062D14ADBC80005DBB26 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				95B39F4D14B1B49200777401 /* FPKGalleryTap.framework in Frameworks */,
 				958B8A5814B1BEB500969E28 /* FPKMessage.framework in Frameworks */,
 				958B8A6A14B1C9EA00969E28 /* FPKWebPopup.framework in Frameworks */,
+				95BE37B514B1E72A008D9A49 /* FPKGallerySlide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +208,7 @@
 		95862DEB14AC634E002E11E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95BE37B214B1E72A008D9A49 /* FPKGallerySlide.embeddedframework */,
 				958B8A6614B1C9EA00969E28 /* FPKWebPopup.embeddedframework */,
 				958B8A5414B1BEB500969E28 /* FPKMessage.embeddedframework */,
 				95B39F4A14B1B49200777401 /* FPKGalleryTap.embeddedframework */,
@@ -296,6 +300,23 @@
 			sourceTree = "<group>";
 		};
 		95B39F4C14B1B49200777401 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		95BE37B214B1E72A008D9A49 /* FPKGallerySlide.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				95BE37B314B1E72A008D9A49 /* FPKGallerySlide.framework */,
+				95BE37B414B1E72A008D9A49 /* Resources */,
+			);
+			name = FPKGallerySlide.embeddedframework;
+			path = ../FPKGallerySlide/FPKGallerySlide.embeddedframework;
+			sourceTree = "<group>";
+		};
+		95BE37B414B1E72A008D9A49 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -492,8 +513,8 @@
 					"\"$(SRCROOT)/../FPKGalleryFade/FPKGalleryFade.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKGalleryTap/FPKGalleryTap.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKMessage/FPKMessage.embeddedframework\"",
-					"\"$(SRCROOT)/FPKMessage.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKWebPopup/FPKWebPopup.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKGallerySlide/FPKGallerySlide.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
@@ -517,8 +538,8 @@
 					"\"$(SRCROOT)/../FPKGalleryFade/FPKGalleryFade.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKGalleryTap/FPKGalleryTap.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKMessage/FPKMessage.embeddedframework\"",
-					"\"$(SRCROOT)/FPKMessage.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKWebPopup/FPKWebPopup.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKGallerySlide/FPKGallerySlide.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
