@@ -574,8 +574,6 @@
 					"\"$(SRCROOT)/../FPKWebPopup/FPKWebPopup.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKGallerySlide/FPKGallerySlide.embeddedframework\"",
 					"\"$(SRCROOT)/../Common/Common.embeddedframework\"",
-					"\"$(SRCROOT)/FPKPayPal.embeddedframework\"",
-					"\"$(SRCROOT)/Common.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKPayPal/FPKPayPal.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -584,7 +582,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Common.embeddedframework/Resources\"",
 					"\"$(SRCROOT)/../Common/Common.embeddedframework/Resources\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -608,8 +605,6 @@
 					"\"$(SRCROOT)/../FPKWebPopup/FPKWebPopup.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKGallerySlide/FPKGallerySlide.embeddedframework\"",
 					"\"$(SRCROOT)/../Common/Common.embeddedframework\"",
-					"\"$(SRCROOT)/FPKPayPal.embeddedframework\"",
-					"\"$(SRCROOT)/Common.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKPayPal/FPKPayPal.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -618,7 +613,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Common.embeddedframework/Resources\"",
 					"\"$(SRCROOT)/../Common/Common.embeddedframework/Resources\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";

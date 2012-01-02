@@ -37,6 +37,14 @@
     [documentViewController setGesturesDisabled:lock];
 }
 
+-(void)documentViewController:(MFDocumentViewController *)dvc willRemoveOverlayView:(UIView *)view{
+    for(UIView <FPKView> *view in overlays){
+        if([view respondsToSelector:@selector(willRemoveOverlayView:)]){
+            [view willRemoveOverlayView:self];
+        }
+    }
+}
+
 - (void)documentViewController:(MFDocumentViewController *)dvc didReceiveTapOnAnnotationRect:(CGRect)rect withUri:(NSString *)uri onPage:(NSUInteger)page{
     /** We are registered as delegate for the documentViewController, so we can receive tap on annotations */
     [self showAnnotationForOverlay:NO withRect:rect andUri:uri onPage:page];

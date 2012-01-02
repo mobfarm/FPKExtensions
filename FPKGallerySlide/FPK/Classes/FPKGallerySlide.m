@@ -44,14 +44,14 @@
                     }
                 }
                 
-                UIImagesScrollView *pagingViewController = [[UIImagesScrollView alloc] initWithFrame:origin 
+                pagingViewController = (id *)[[UIImagesScrollView alloc] initWithFrame:origin 
                                                                                          andArrayImg:uiImages
                                                                                              andLoop:loop
                                                             ];
                 [uiImages release];
                 
-                [self addSubview:pagingViewController];
-                [pagingViewController release];
+                [self addSubview:(UIImagesScrollView *)pagingViewController];
+                [(UIImagesScrollView *)pagingViewController release];
             } else {
                 NSLog(@"FPKGallerySlide - Parameter images not found or empty, check the uri, it should be in the form: ");
                 NSLog(@"FPKGallerySlide - galleryslide://?images=img1.png,img2.png,img3.png");
@@ -59,6 +59,10 @@
         }
     }
     return self;  
+}
+
+- (void)willRemoveOverlayView:(FPKOverlayManager *)manager{
+    [(UIImagesScrollView *)pagingViewController invalidateTimer];
 }
 
 + (NSArray *)acceptedPrefixes{

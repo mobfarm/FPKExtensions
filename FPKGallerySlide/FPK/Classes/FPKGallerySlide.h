@@ -7,5 +7,6 @@
 
 @interface FPKGallerySlide : UIView <FPKView>{
     CGRect _rect;
+    id *pagingViewController; 
 }
 @end

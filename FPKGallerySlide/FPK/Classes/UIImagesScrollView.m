@@ -95,6 +95,12 @@
     return self;
 }
 
+- (void)invalidateTimer{
+    if (timerScrollImage) {
+        [timerScrollImage invalidate];
+    }
+}
+
 -(void)autoScrollImage:(id)sender{
     
     numberOfLoopOk++;

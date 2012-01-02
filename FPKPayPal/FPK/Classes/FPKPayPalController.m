@@ -188,15 +188,16 @@
 			alert = [[UIAlertView alloc] initWithTitle:@"Order failed" 
 											   message:@"Your order failed. Touch \"Pay with PayPal\" to try again." 
 											  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alert show];
+            [alert release];
 			break;
 		case PAYMENTSTATUS_CANCELED:
-			alert = [[UIAlertView alloc] initWithTitle:@"Order canceled" 
-											   message:@"You canceled your order. Touch \"Pay with PayPal\" to try again." 
-											  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//			alert = [[UIAlertView alloc] initWithTitle:@"Order canceled" 
+//											   message:@"You canceled your order. Touch \"Pay with PayPal\" to try again." 
+//											  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 			break;
 	}
-	[alert show];
-	[alert release];
+	
 }
 
 //adjustAmountsForAddress:andCurrency:andAmount:andTax:andShipping:andErrorCode: is optional. you only need to
