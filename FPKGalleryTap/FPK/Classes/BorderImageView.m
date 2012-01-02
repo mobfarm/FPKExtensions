@@ -14,7 +14,7 @@
 -(void)setSelected:(BOOL)selected withColor:(UIColor *)color{
     if (selected) {
         [self.layer setBorderColor:[color CGColor]];
-        [self.layer setBorderWidth:3.0];
+        [self.layer setBorderWidth:2.0];
     } else {
         // [self.layer setBorderWidth:0.0];
         [self.layer setBorderColor:[color CGColor]];

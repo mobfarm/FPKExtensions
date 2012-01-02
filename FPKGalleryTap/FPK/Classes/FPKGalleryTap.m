@@ -102,17 +102,29 @@
         withTransitionAnimation:animating 
         withDuration:time];
     
-    if([[[params objectForKey:@"params"] objectForKey:@"color"] isEqualToString:@"red"])
-        [(BorderImageView *)[manager overlayViewWithTag:[[[params objectForKey:@"params"] objectForKey:@"id"] intValue]] setSelected:YES withColor:[UIColor colorWithRed:219.0/255.0 green:0.0/255.0 blue:93.0/255.0 alpha:1.0]];
-    else
-        [(BorderImageView *)[manager overlayViewWithTag:[[[params objectForKey:@"params"] objectForKey:@"id"] intValue]] setSelected:YES withColor:[UIColor greenColor]]; 
+    if([[[params objectForKey:@"params"] objectForKey:@"color"] isEqualToString:@"red"]){
+        if([[params objectForKey:@"params"] objectForKey:@"r"] && [[params objectForKey:@"params"] objectForKey:@"g"] && [[params objectForKey:@"params"] objectForKey:@"b"]){
+            [(BorderImageView *)[manager overlayViewWithTag:[[[params objectForKey:@"params"] objectForKey:@"id"] intValue]] setSelected:YES withColor:
+                [UIColor colorWithRed:[[[params objectForKey:@"params"] objectForKey:@"r"] floatValue]/255.0
+                             green:[[[params objectForKey:@"params"] objectForKey:@"g"] floatValue]/255.0
+                              blue:[[[params objectForKey:@"params"] objectForKey:@"b"] floatValue]/255.0
+                             alpha:1.0
+                 ]
+             ];   
+        }
+    }
+    else{
+        // rgb parameters not present, defaulting to red
+        [(BorderImageView *)[manager overlayViewWithTag:[[[params objectForKey:@"params"] objectForKey:@"id"] intValue]] setSelected:YES withColor:[UIColor redColor]]; 
+    
+    }
     
     // Removing the border from the other buttons
     if([[params objectForKey:@"params"] objectForKey:@"others"]){
         NSArray *tags = [[[params objectForKey:@"params"] objectForKey:@"others"] componentsSeparatedByString:@","];;
         if([tags count] > 0){
             for (NSString *tag in tags) {
-                [(BorderImageView *)[manager overlayViewWithTag:[tag intValue]] setSelected:NO withColor:[UIColor whiteColor]];                                    
+                [(BorderImageView *)[manager overlayViewWithTag:[tag intValue]] setSelected:NO withColor:[UIColor clearColor]];                                    
             }
         }
     }
@@ -144,10 +156,19 @@
         }
         
         if([[[params objectForKey:@"params"] objectForKey:@"selected"] boolValue]){
-            if([[[params objectForKey:@"params"] objectForKey:@"color"] isEqualToString:@"red"])
-                [inner setSelected:YES withColor:[UIColor colorWithRed:219.0/255.0 green:0.0/255.0 blue:93.0/255.0 alpha:1.0]];
-            else
-                [inner setSelected:YES withColor:[UIColor greenColor]];
+            if([[params objectForKey:@"params"] objectForKey:@"r"] && [[params objectForKey:@"params"] objectForKey:@"g"] && [[params objectForKey:@"params"] objectForKey:@"b"]){
+                [inner setSelected:YES withColor:
+                    [UIColor colorWithRed:[[[params objectForKey:@"params"] objectForKey:@"r"] floatValue]/255.0
+                                 green:[[[params objectForKey:@"params"] objectForKey:@"g"] floatValue]/255.0
+                                  blue:[[[params objectForKey:@"params"] objectForKey:@"b"] floatValue]/255.0
+                                 alpha:1.0
+                    ]
+                 ];
+            }
+            else{
+                // rgb parameters not present, defaulting to red
+                [inner setSelected:YES withColor:[UIColor redColor]];            
+            }
         } else {
             [inner setSelected:NO withColor:[UIColor whiteColor]];
         }                            

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9517AA4214AE331000DF2082 /* FPKGalleryTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9517AA4014AE331000DF2082 /* FPKGalleryTap.framework */; };
 		9517AA4514AE332700DF2082 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9517AA4414AE332700DF2082 /* QuartzCore.framework */; };
 		9523C05214ACC63700171F7D /* FPKShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9523C05014ACC63700171F7D /* FPKShared.framework */; };
 		952ADE5B14ACC01A00805BE1 /* FPKMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952ADE5914ACC01A00805BE1 /* FPKMap.framework */; };
@@ -28,6 +27,7 @@
 		95862E0314AC634E002E11E8 /* MainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95862E0114AC634E002E11E8 /* MainViewController_iPhone.xib */; };
 		95862E0614AC634E002E11E8 /* MainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95862E0414AC634E002E11E8 /* MainViewController_iPad.xib */; };
 		95862E6514AC7980002E11E8 /* OverlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E6314AC7980002E11E8 /* OverlayManager.m */; };
+		95B39F4D14B1B49200777401 /* FPKGalleryTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B39F4B14B1B49200777401 /* FPKGalleryTap.framework */; };
 		95DA062F14ADBC80005DBB26 /* FastPdfKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DA062A14ADBC80005DBB26 /* FastPdfKit.framework */; };
 		95DA063014ADBC80005DBB26 /* FastPdfKitFramework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 95DA062C14ADBC80005DBB26 /* FastPdfKitFramework.xcconfig */; };
 		95DA063114ADBC80005DBB26 /* FPKReaderBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95DA062D14ADBC80005DBB26 /* FPKReaderBundle.bundle */; };
@@ -36,7 +36,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9517AA4014AE331000DF2082 /* FPKGalleryTap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKGalleryTap.framework; sourceTree = "<group>"; };
 		9517AA4414AE332700DF2082 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9523C05014ACC63700171F7D /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
 		952ADE5914ACC01A00805BE1 /* FPKMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKMap.framework; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		95862E0514AC634E002E11E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPad.xib; sourceTree = "<group>"; };
 		95862E6214AC7980002E11E8 /* OverlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = OverlayManager.h; sourceTree = "<group>"; };
 		95862E6314AC7980002E11E8 /* OverlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayManager.m; sourceTree = "<group>"; };
+		95B39F4B14B1B49200777401 /* FPKGalleryTap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKGalleryTap.framework; sourceTree = "<group>"; };
 		95DA062A14ADBC80005DBB26 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
 		95DA062C14ADBC80005DBB26 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
 		95DA062D14ADBC80005DBB26 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
@@ -85,29 +85,13 @@
 				9523C05214ACC63700171F7D /* FPKShared.framework in Frameworks */,
 				95DA062F14ADBC80005DBB26 /* FastPdfKit.framework in Frameworks */,
 				953A0C0014AE055900200288 /* FPKGalleryFade.framework in Frameworks */,
-				9517AA4214AE331000DF2082 /* FPKGalleryTap.framework in Frameworks */,
+				95B39F4D14B1B49200777401 /* FPKGalleryTap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9517AA3F14AE331000DF2082 /* FPKGalleryTap.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				9517AA4014AE331000DF2082 /* FPKGalleryTap.framework */,
-				9517AA4114AE331000DF2082 /* Resources */,
-			);
-			path = FPKGalleryTap.embeddedframework;
-			sourceTree = "<group>";
-		};
-		9517AA4114AE331000DF2082 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		9523C04F14ACC63700171F7D /* FPKShared.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,7 +195,7 @@
 		95862DEB14AC634E002E11E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9517AA3F14AE331000DF2082 /* FPKGalleryTap.embeddedframework */,
+				95B39F4A14B1B49200777401 /* FPKGalleryTap.embeddedframework */,
 				953A0BFD14AE055900200288 /* FPKGalleryFade.embeddedframework */,
 				95DA062914ADBC80005DBB26 /* FastPdfKit.embeddedframework */,
 				9523C04F14ACC63700171F7D /* FPKShared.embeddedframework */,
@@ -251,6 +235,23 @@
 			);
 			name = "Supporting Files";
 			path = SampleProject;
+			sourceTree = "<group>";
+		};
+		95B39F4A14B1B49200777401 /* FPKGalleryTap.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				95B39F4B14B1B49200777401 /* FPKGalleryTap.framework */,
+				95B39F4C14B1B49200777401 /* Resources */,
+			);
+			name = FPKGalleryTap.embeddedframework;
+			path = ../FPKGalleryTap/FPKGalleryTap.embeddedframework;
+			sourceTree = "<group>";
+		};
+		95B39F4C14B1B49200777401 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		95DA062914ADBC80005DBB26 /* FastPdfKit.embeddedframework */ = {
@@ -439,7 +440,7 @@
 					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKMap/FPKMap.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKGalleryFade/FPKGalleryFade.embeddedframework\"",
-					"\"$(SRCROOT)/FPKGalleryTap.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKGalleryTap/FPKGalleryTap.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
@@ -461,7 +462,7 @@
 					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKMap/FPKMap.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKGalleryFade/FPKGalleryFade.embeddedframework\"",
-					"\"$(SRCROOT)/FPKGalleryTap.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKGalleryTap/FPKGalleryTap.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
