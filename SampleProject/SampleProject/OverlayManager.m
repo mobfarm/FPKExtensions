@@ -18,6 +18,7 @@
 #import <FPKMap/FPKMap.h>
 #import <FPKGalleryFade/FPKGalleryFade.h>
 #import <FPKGalleryTap/FPKGalleryTap.h>
+#import <FPKMessage/FPKMessage.h>
 
 @implementation OverlayManager
 
@@ -30,7 +31,7 @@
             Add Extensions to the array, or use the initWithExtension: method         
          */
                 
-		[self setExtensions:[[NSArray alloc] initWithObjects:@"FPKGalleryTap", @"FPKMap", @"FPKYouTube", @"FPKGalleryFade", nil]];
+		[self setExtensions:[[NSArray alloc] initWithObjects:@"FPKMessage", @"FPKGalleryTap", @"FPKMap", @"FPKYouTube", @"FPKGalleryFade", nil]];
 	}
 	return self;
 }

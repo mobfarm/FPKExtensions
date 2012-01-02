@@ -7,37 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		95862E2214AC6923002E11E8 /* FPKOverlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E2014AC6923002E11E8 /* FPKOverlayManager.m */; };
-		95862E2E14AC6979002E11E8 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E2D14AC6977002E11E8 /* OpenUDID.m */; };
-		95862E2F14AC697F002E11E8 /* OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E2C14AC6977002E11E8 /* OpenUDID.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95862E4C14AC7230002E11E8 /* FPKOverlayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E2814AC694D002E11E8 /* FPKOverlayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95B39F5514B1B91C00777401 /* DDSocialDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B39F5314B1B90200777401 /* DDSocialDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95B39F5614B1B92000777401 /* DDSocialDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B39F5414B1B90200777401 /* DDSocialDialog.m */; };
-		95C1C34D14AB636C00E74E62 /* FPKShared-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 95C1C34C14AB636600E74E62 /* FPKShared-Prefix.pch */; };
-		95F1694214AC8D1700F8DE00 /* FPKView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F1694014AC8D0C00F8DE00 /* FPKView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95F1695C14AC9EED00F8DE00 /* FPKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F1695A14AC9EED00F8DE00 /* FPKWebView.m */; };
-		95F1695E14AC9EF900F8DE00 /* FPKWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F1695914AC9EED00F8DE00 /* FPKWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95862E5714AC7627002E11E8 /* FPKMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E5414AC75AD002E11E8 /* FPKMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95862E5814AC7629002E11E8 /* FPKMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E5514AC75AD002E11E8 /* FPKMessage.m */; };
+		95B39F6B14B1BCD000777401 /* fpkmessage-info.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B39F6A14B1BCD000777401 /* fpkmessage-info.png */; };
+		95C534B914ADEC28005B130E /* FPKMessage-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 95C534B614ADEC17005B130E /* FPKMessage-Prefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		95862E2014AC6923002E11E8 /* FPKOverlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPKOverlayManager.m; sourceTree = "<group>"; };
-		95862E2814AC694D002E11E8 /* FPKOverlayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = FPKOverlayManager.h; sourceTree = "<group>"; };
-		95862E2C14AC6977002E11E8 /* OpenUDID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = OpenUDID.h; sourceTree = "<group>"; };
-		95862E2D14AC6977002E11E8 /* OpenUDID.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
-		95B39F5314B1B90200777401 /* DDSocialDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = DDSocialDialog.h; sourceTree = "<group>"; };
-		95B39F5414B1B90200777401 /* DDSocialDialog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDSocialDialog.m; sourceTree = "<group>"; };
-		95C1C2F314AB4CD400E74E62 /* FPKShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		95C1C34A14AB636600E74E62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		95C1C34B14AB636600E74E62 /* FPKShared-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKShared-Info.plist"; sourceTree = "<group>"; };
-		95C1C34C14AB636600E74E62 /* FPKShared-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPKShared-Prefix.pch"; sourceTree = "<group>"; };
-		95DA060314ADB527005DBB26 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
-		95DA060514ADB527005DBB26 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
-		95DA060614ADB527005DBB26 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
-		95DA060714ADB527005DBB26 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = text; path = Resources; sourceTree = "<group>"; };
-		95DA060814ADB527005DBB26 /* Snippets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snippets.txt; sourceTree = "<group>"; };
-		95F1694014AC8D0C00F8DE00 /* FPKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = FPKView.h; sourceTree = "<group>"; };
-		95F1695914AC9EED00F8DE00 /* FPKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPKWebView.h; sourceTree = "<group>"; };
-		95F1695A14AC9EED00F8DE00 /* FPKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPKWebView.m; sourceTree = "<group>"; };
+		953C457F14ADF87B00468EE6 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
+		953C458114ADF87B00468EE6 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
+		953C458214ADF87B00468EE6 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
+		953C458314ADF87B00468EE6 /* Snippets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snippets.txt; sourceTree = "<group>"; };
+		95862E5414AC75AD002E11E8 /* FPKMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = FPKMessage.h; sourceTree = "<group>"; };
+		95862E5514AC75AD002E11E8 /* FPKMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPKMessage.m; sourceTree = "<group>"; };
+		95A4148714ACBD0F00249348 /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
+		95B39F6A14B1BCD000777401 /* fpkmessage-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fpkmessage-info.png"; sourceTree = "<group>"; };
+		95C1C2F314AB4CD400E74E62 /* FPKMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C534B514ADEC17005B130E /* FPKMessage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKMessage-Info.plist"; sourceTree = "<group>"; };
+		95C534B614ADEC17005B130E /* FPKMessage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPKMessage-Prefix.pch"; sourceTree = "<group>"; };
+		95C534B814ADEC1E005B130E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,31 +39,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		95862E6E14AC7DB5002E11E8 /* Frameworks */ = {
+		953C457E14ADF87B00468EE6 /* FastPdfKit.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
-				95DA060214ADB527005DBB26 /* FastPdfKit.embeddedframework */,
+				953C457F14ADF87B00468EE6 /* FastPdfKit.framework */,
+				953C458014ADF87B00468EE6 /* Resources */,
+			);
+			name = FastPdfKit.embeddedframework;
+			path = ../FPKShared/FastPdfKit.embeddedframework;
+			sourceTree = "<group>";
+		};
+		953C458014ADF87B00468EE6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				953C458114ADF87B00468EE6 /* FastPdfKitFramework.xcconfig */,
+				953C458214ADF87B00468EE6 /* FPKReaderBundle.bundle */,
+				953C458314ADF87B00468EE6 /* Snippets.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		95A4147714ACBC7C00249348 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				953C457E14ADF87B00468EE6 /* FastPdfKit.embeddedframework */,
+				95A4148614ACBD0F00249348 /* FPKShared.embeddedframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		95B39F5114B1B8E200777401 /* External */ = {
+		95A4148614ACBD0F00249348 /* FPKShared.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
-				95862E2C14AC6977002E11E8 /* OpenUDID.h */,
-				95862E2D14AC6977002E11E8 /* OpenUDID.m */,
-				95B39F5314B1B90200777401 /* DDSocialDialog.h */,
-				95B39F5414B1B90200777401 /* DDSocialDialog.m */,
+				95A4148714ACBD0F00249348 /* FPKShared.framework */,
+				95A4148814ACBD0F00249348 /* Resources */,
 			);
-			name = External;
+			name = FPKShared.embeddedframework;
+			path = ../FPKShared/FPKShared.embeddedframework;
+			sourceTree = "<group>";
+		};
+		95A4148814ACBD0F00249348 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		95C1C2E514AB4CD400E74E62 = {
 			isa = PBXGroup;
 			children = (
 				95C1C30114AB4CDA00E74E62 /* Classes */,
-				95862E6E14AC7DB5002E11E8 /* Frameworks */,
-				95C1C34814AB636600E74E62 /* Supporting Files */,
+				95A4147714ACBC7C00249348 /* Frameworks */,
+				95C1C33A14AB630300E74E62 /* Supporting Files */,
 				95C1C2F414AB4CD400E74E62 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,7 +98,7 @@
 		95C1C2F414AB4CD400E74E62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95C1C2F314AB4CD400E74E62 /* FPKShared.framework */,
+				95C1C2F314AB4CD400E74E62 /* FPKMessage.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,46 +106,23 @@
 		95C1C30114AB4CDA00E74E62 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				95862E2814AC694D002E11E8 /* FPKOverlayManager.h */,
-				95862E2014AC6923002E11E8 /* FPKOverlayManager.m */,
-				95F1695914AC9EED00F8DE00 /* FPKWebView.h */,
-				95F1695A14AC9EED00F8DE00 /* FPKWebView.m */,
-				95F1694014AC8D0C00F8DE00 /* FPKView.h */,
-				95B39F5114B1B8E200777401 /* External */,
+				95862E5414AC75AD002E11E8 /* FPKMessage.h */,
+				95862E5514AC75AD002E11E8 /* FPKMessage.m */,
 			);
 			name = Classes;
-			path = FPKShared/Classes;
+			path = FPK/Classes;
 			sourceTree = "<group>";
 		};
-		95C1C34814AB636600E74E62 /* Supporting Files */ = {
+		95C1C33A14AB630300E74E62 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				95C1C34914AB636600E74E62 /* InfoPlist.strings */,
-				95C1C34B14AB636600E74E62 /* FPKShared-Info.plist */,
-				95C1C34C14AB636600E74E62 /* FPKShared-Prefix.pch */,
+				95B39F6A14B1BCD000777401 /* fpkmessage-info.png */,
+				95C534B714ADEC1E005B130E /* InfoPlist.strings */,
+				95C534B514ADEC17005B130E /* FPKMessage-Info.plist */,
+				95C534B614ADEC17005B130E /* FPKMessage-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			path = FPKShared;
-			sourceTree = "<group>";
-		};
-		95DA060214ADB527005DBB26 /* FastPdfKit.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				95DA060314ADB527005DBB26 /* FastPdfKit.framework */,
-				95DA060414ADB527005DBB26 /* Resources */,
-			);
-			path = FastPdfKit.embeddedframework;
-			sourceTree = "<group>";
-		};
-		95DA060414ADB527005DBB26 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				95DA060514ADB527005DBB26 /* FastPdfKitFramework.xcconfig */,
-				95DA060614ADB527005DBB26 /* FPKReaderBundle.bundle */,
-				95DA060714ADB527005DBB26 /* Resources */,
-				95DA060814ADB527005DBB26 /* Snippets.txt */,
-			);
-			path = Resources;
+			path = FPK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,21 +132,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95862E2F14AC697F002E11E8 /* OpenUDID.h in Headers */,
-				95862E4C14AC7230002E11E8 /* FPKOverlayManager.h in Headers */,
-				95F1695E14AC9EF900F8DE00 /* FPKWebView.h in Headers */,
-				95B39F5514B1B91C00777401 /* DDSocialDialog.h in Headers */,
-				95F1694214AC8D1700F8DE00 /* FPKView.h in Headers */,
-				95C1C34D14AB636C00E74E62 /* FPKShared-Prefix.pch in Headers */,
+				95862E5714AC7627002E11E8 /* FPKMessage.h in Headers */,
+				95C534B914ADEC28005B130E /* FPKMessage-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		95C1C2F214AB4CD400E74E62 /* FPKShared */ = {
+		95C1C2F214AB4CD400E74E62 /* FPKMessage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95C1C2FE14AB4CD400E74E62 /* Build configuration list for PBXNativeTarget "FPKShared" */;
+			buildConfigurationList = 95C1C2FE14AB4CD400E74E62 /* Build configuration list for PBXNativeTarget "FPKMessage" */;
 			buildPhases = (
 				95C1C2EC14AB4CD400E74E62 /* ShellScript */,
 				95C1C2ED14AB4CD400E74E62 /* Sources */,
@@ -167,9 +155,9 @@
 			);
 			dependencies = (
 			);
-			name = FPKShared;
+			name = FPKMessage;
 			productName = FPKSampleExtension;
-			productReference = 95C1C2F314AB4CD400E74E62 /* FPKShared.framework */;
+			productReference = 95C1C2F314AB4CD400E74E62 /* FPKMessage.framework */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -181,7 +169,7 @@
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "MobFarm s.a.s.";
 			};
-			buildConfigurationList = 95C1C2EA14AB4CD400E74E62 /* Build configuration list for PBXProject "FPKShared" */;
+			buildConfigurationList = 95C1C2EA14AB4CD400E74E62 /* Build configuration list for PBXProject "FPKMessage" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -193,7 +181,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95C1C2F214AB4CD400E74E62 /* FPKShared */,
+				95C1C2F214AB4CD400E74E62 /* FPKMessage */,
 			);
 		};
 /* End PBXProject section */
@@ -203,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B39F6B14B1BCD000777401 /* fpkmessage-info.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,20 +231,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95862E2214AC6923002E11E8 /* FPKOverlayManager.m in Sources */,
-				95862E2E14AC6979002E11E8 /* OpenUDID.m in Sources */,
-				95F1695C14AC9EED00F8DE00 /* FPKWebView.m in Sources */,
-				95B39F5614B1B92000777401 /* DDSocialDialog.m in Sources */,
+				95862E5814AC7629002E11E8 /* FPKMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		95C1C34914AB636600E74E62 /* InfoPlist.strings */ = {
+		95C534B714ADEC1E005B130E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				95C1C34A14AB636600E74E62 /* en */,
+				95C534B814ADEC1E005B130E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -306,10 +292,6 @@
 		95C1C2FF14AB4CD400E74E62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
 				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
 				DEAD_CODE_STRIPPING = NO;
 				DEPLOYMENT_POSTPROCESSING = YES;
@@ -317,17 +299,18 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FPKShared/FPKShared-Prefix.pch";
-				INFOPLIST_FILE = "FPKShared/FPKShared-Info.plist";
+				GCC_PREFIX_HEADER = "FPK/FPKMessage-Prefix.pch";
+				INFOPLIST_FILE = "FPK/FPKMessage-Info.plist";
 				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
-				PRODUCT_NAME = FPKShared;
+				PRODUCT_NAME = FPKMessage;
 				SKIP_INSTALL = YES;
 				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
 				WRAPPER_EXTENSION = framework;
@@ -337,10 +320,6 @@
 		95C1C30014AB4CD400E74E62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
 				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
 				DEAD_CODE_STRIPPING = NO;
 				DEPLOYMENT_POSTPROCESSING = YES;
@@ -348,17 +327,18 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FPKShared/FPKShared-Prefix.pch";
-				INFOPLIST_FILE = "FPKShared/FPKShared-Info.plist";
+				GCC_PREFIX_HEADER = "FPK/FPKMessage-Prefix.pch";
+				INFOPLIST_FILE = "FPK/FPKMessage-Info.plist";
 				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
-				PRODUCT_NAME = FPKShared;
+				PRODUCT_NAME = FPKMessage;
 				SKIP_INSTALL = YES;
 				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
 				WRAPPER_EXTENSION = framework;
@@ -368,7 +348,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		95C1C2EA14AB4CD400E74E62 /* Build configuration list for PBXProject "FPKShared" */ = {
+		95C1C2EA14AB4CD400E74E62 /* Build configuration list for PBXProject "FPKMessage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95C1C2FC14AB4CD400E74E62 /* Debug */,
@@ -377,7 +357,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95C1C2FE14AB4CD400E74E62 /* Build configuration list for PBXNativeTarget "FPKShared" */ = {
+		95C1C2FE14AB4CD400E74E62 /* Build configuration list for PBXNativeTarget "FPKMessage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95C1C2FF14AB4CD400E74E62 /* Debug */,

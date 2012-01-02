@@ -27,6 +27,8 @@
 		95862E0314AC634E002E11E8 /* MainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95862E0114AC634E002E11E8 /* MainViewController_iPhone.xib */; };
 		95862E0614AC634E002E11E8 /* MainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95862E0414AC634E002E11E8 /* MainViewController_iPad.xib */; };
 		95862E6514AC7980002E11E8 /* OverlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E6314AC7980002E11E8 /* OverlayManager.m */; };
+		958B8A5814B1BEB500969E28 /* FPKMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958B8A5514B1BEB500969E28 /* FPKMessage.framework */; };
+		958B8A5914B1BEB500969E28 /* fpkmessage-info.png in Resources */ = {isa = PBXBuildFile; fileRef = 958B8A5714B1BEB500969E28 /* fpkmessage-info.png */; };
 		95B39F4D14B1B49200777401 /* FPKGalleryTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B39F4B14B1B49200777401 /* FPKGalleryTap.framework */; };
 		95DA062F14ADBC80005DBB26 /* FastPdfKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DA062A14ADBC80005DBB26 /* FastPdfKit.framework */; };
 		95DA063014ADBC80005DBB26 /* FastPdfKitFramework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 95DA062C14ADBC80005DBB26 /* FastPdfKitFramework.xcconfig */; };
@@ -63,6 +65,8 @@
 		95862E0514AC634E002E11E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPad.xib; sourceTree = "<group>"; };
 		95862E6214AC7980002E11E8 /* OverlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = OverlayManager.h; sourceTree = "<group>"; };
 		95862E6314AC7980002E11E8 /* OverlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayManager.m; sourceTree = "<group>"; };
+		958B8A5514B1BEB500969E28 /* FPKMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKMessage.framework; sourceTree = "<group>"; };
+		958B8A5714B1BEB500969E28 /* fpkmessage-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fpkmessage-info.png"; sourceTree = "<group>"; };
 		95B39F4B14B1B49200777401 /* FPKGalleryTap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKGalleryTap.framework; sourceTree = "<group>"; };
 		95DA062A14ADBC80005DBB26 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
 		95DA062C14ADBC80005DBB26 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 				95DA062F14ADBC80005DBB26 /* FastPdfKit.framework in Frameworks */,
 				953A0C0014AE055900200288 /* FPKGalleryFade.framework in Frameworks */,
 				95B39F4D14B1B49200777401 /* FPKGalleryTap.framework in Frameworks */,
+				958B8A5814B1BEB500969E28 /* FPKMessage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +200,7 @@
 		95862DEB14AC634E002E11E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				958B8A5414B1BEB500969E28 /* FPKMessage.embeddedframework */,
 				95B39F4A14B1B49200777401 /* FPKGalleryTap.embeddedframework */,
 				953A0BFD14AE055900200288 /* FPKGalleryFade.embeddedframework */,
 				95DA062914ADBC80005DBB26 /* FastPdfKit.embeddedframework */,
@@ -235,6 +241,24 @@
 			);
 			name = "Supporting Files";
 			path = SampleProject;
+			sourceTree = "<group>";
+		};
+		958B8A5414B1BEB500969E28 /* FPKMessage.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				958B8A5514B1BEB500969E28 /* FPKMessage.framework */,
+				958B8A5614B1BEB500969E28 /* Resources */,
+			);
+			name = FPKMessage.embeddedframework;
+			path = ../FPKMessage/FPKMessage.embeddedframework;
+			sourceTree = "<group>";
+		};
+		958B8A5614B1BEB500969E28 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				958B8A5714B1BEB500969E28 /* fpkmessage-info.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		95B39F4A14B1B49200777401 /* FPKGalleryTap.embeddedframework */ = {
@@ -337,6 +361,7 @@
 				953A0C0914AE060B00200288 /* img3.png in Resources */,
 				953A0C0A14AE060B00200288 /* img4.png in Resources */,
 				953A0C0C14AE07BD00200288 /* sample.pdf in Resources */,
+				958B8A5914B1BEB500969E28 /* fpkmessage-info.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +466,8 @@
 					"\"$(SRCROOT)/../FPKMap/FPKMap.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKGalleryFade/FPKGalleryFade.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKGalleryTap/FPKGalleryTap.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKMessage/FPKMessage.embeddedframework\"",
+					"\"$(SRCROOT)/FPKMessage.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
@@ -463,6 +490,8 @@
 					"\"$(SRCROOT)/../FPKMap/FPKMap.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKGalleryFade/FPKGalleryFade.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKGalleryTap/FPKGalleryTap.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKMessage/FPKMessage.embeddedframework\"",
+					"\"$(SRCROOT)/FPKMessage.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
