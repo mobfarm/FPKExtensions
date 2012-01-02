@@ -1,32 +1,32 @@
-# Create a new FastPdfKit Extension
+# FPKGalleryTap Extension
 
-Empty project to create your own FastPdfKit Extension.
+This extension let you add some annotations on the pdf page to control an image in the same page. Tapping on each overlay you can set the main image.
 
-## Get Started
+## Uri
 
-The first steps needed are to change the Extension name to the chosen one:
+### Prefix
 
-* Create a copy of the **FPKExtension** folder;
-* Open the **FPKExtension** project in Xcode;
-* Rename the project to your extension name;
+	gallerytap://
 
-	<img src="../docs/rename-project.png" />
+### Resources and Parameters
 
-* Rename the **ExtensionName** **.h/.m** documents;
-* Replace the placeholders `ExtensionName` with the extension name;
+* **IMAGE_PATH**
+	* *id* = **INT**
 
-Define the **prefix** that your Extension support:
+`gallerytap://img1.png?id=1`
 
-* Replace the placeholders `prefix` with the supported prefix(es) like `http`;
 
-Start writing your code:
+* **button**
+	* *target_id* = **INT**
+	* *src* = **STRING**
+	* *animate* = **BOOL**
+	* *time* = **FLOAT**
+	* *self* = **STRING**
+	* *id* = **INT**
+	* *r* = **INT**
+	* *g* = **INT**
+	* *b* = **INT**
+	* *others* = **ARRAY** of **INT** (comma separated)
 
-* Add your code from line 20 on the **.m** file.
 
-## Build
-
-**Warning:** always perform a *Clean* action before building. The fastest way is to press **⌘+⇧+K** (to clean) and then **⌘+B** (to build). This is an issue when compiling [fake frameworks](https://github.com/kstenerud/iOS-Universal-Framework/).
-
-When you build the target, a new **.embeddedframework** folder will be created in the root folder.
-
-To use the just created Extension just drag that folder to the Navigation bar of the **SampleProject** or in your own app and follow the [Readme](./README.html) for the Extension usage.
+`gallerytap://button?target_id=1&src=img4.png&animate=YES&time=1.0&self=img4.png&id=4&r=255&g=0&b=0&others=3,4`
