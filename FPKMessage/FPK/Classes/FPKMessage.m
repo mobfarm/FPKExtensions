@@ -28,7 +28,7 @@
             
             UITextView *message;
             if([[params objectForKey:@"params"] objectForKey:@"w"] && [[params objectForKey:@"params"] objectForKey:@"h"]){
-                message = [[UITextView alloc] initWithFrame:CGRectMake(0.0, 0.0, [[[params objectForKey:@"params"] objectForKey:@"w"] floatValue]-42.0, [[[params objectForKey:@"params"] objectForKey:@"h"] floatValue] - 81.0)];
+                message = [[UITextView alloc] initWithFrame:CGRectMake(0.0, 0.0, [[[params objectForKey:@"params"] objectForKey:@"w"] floatValue]-42.0, [[[params objectForKey:@"params"] objectForKey:@"h"] floatValue] - 71.0)];
             } else {
                 NSLog(@"FPKMessage - Parameter w and/or h not found, check the uri, it should be in the form: ");
                 NSLog(@"FPKMessage - message://?w=400.0&h=300.0");
