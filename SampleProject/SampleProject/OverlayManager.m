@@ -21,6 +21,7 @@
 #import <FPKMessage/FPKMessage.h>
 #import <FPKWebPopup/FPKWebPopup.h>
 #import <FPKGallerySlide/FPKGallerySlide.h>
+#import <FPKPayPal/FPKPayPal.h>
 
 @implementation OverlayManager
 
@@ -33,7 +34,7 @@
             Add Extensions to the array, or use the initWithExtension: method         
          */
                 
-		[self setExtensions:[[NSArray alloc] initWithObjects:@"FPKGallerySlide", @"FPKWebPopup", @"FPKMessage", @"FPKGalleryTap", @"FPKMap", @"FPKYouTube", @"FPKGalleryFade", nil]];
+		[self setExtensions:[[NSArray alloc] initWithObjects:@"FPKPayPal", @"FPKGallerySlide", @"FPKWebPopup", @"FPKMessage", @"FPKGalleryTap", @"FPKMap", @"FPKYouTube", @"FPKGalleryFade", nil]];
 	}
 	return self;
 }

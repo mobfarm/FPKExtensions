@@ -8,13 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		95862E2214AC6923002E11E8 /* FPKOverlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E2014AC6923002E11E8 /* FPKOverlayManager.m */; };
-		95862E2E14AC6979002E11E8 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E2D14AC6977002E11E8 /* OpenUDID.m */; };
-		95862E2F14AC697F002E11E8 /* OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E2C14AC6977002E11E8 /* OpenUDID.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95862E4C14AC7230002E11E8 /* FPKOverlayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E2814AC694D002E11E8 /* FPKOverlayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		958B8A7E14B1E1E300969E28 /* DDPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 958B8A7B14B1E1DF00969E28 /* DDPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		958B8A7F14B1E1EA00969E28 /* DDPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 958B8A7C14B1E1DF00969E28 /* DDPageControl.m */; };
-		95B39F5514B1B91C00777401 /* DDSocialDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B39F5314B1B90200777401 /* DDSocialDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95B39F5614B1B92000777401 /* DDSocialDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B39F5414B1B90200777401 /* DDSocialDialog.m */; };
 		95C1C34D14AB636C00E74E62 /* FPKShared-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 95C1C34C14AB636600E74E62 /* FPKShared-Prefix.pch */; };
 		95F1694214AC8D1700F8DE00 /* FPKView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F1694014AC8D0C00F8DE00 /* FPKView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95F1695C14AC9EED00F8DE00 /* FPKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F1695A14AC9EED00F8DE00 /* FPKWebView.m */; };
@@ -24,12 +18,6 @@
 /* Begin PBXFileReference section */
 		95862E2014AC6923002E11E8 /* FPKOverlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPKOverlayManager.m; sourceTree = "<group>"; };
 		95862E2814AC694D002E11E8 /* FPKOverlayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = FPKOverlayManager.h; sourceTree = "<group>"; };
-		95862E2C14AC6977002E11E8 /* OpenUDID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = OpenUDID.h; sourceTree = "<group>"; };
-		95862E2D14AC6977002E11E8 /* OpenUDID.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
-		958B8A7B14B1E1DF00969E28 /* DDPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = DDPageControl.h; sourceTree = "<group>"; };
-		958B8A7C14B1E1DF00969E28 /* DDPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPageControl.m; sourceTree = "<group>"; };
-		95B39F5314B1B90200777401 /* DDSocialDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = DDSocialDialog.h; sourceTree = "<group>"; };
-		95B39F5414B1B90200777401 /* DDSocialDialog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDSocialDialog.m; sourceTree = "<group>"; };
 		95C1C2F314AB4CD400E74E62 /* FPKShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C1C34A14AB636600E74E62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95C1C34B14AB636600E74E62 /* FPKShared-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKShared-Info.plist"; sourceTree = "<group>"; };
@@ -63,19 +51,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		95B39F5114B1B8E200777401 /* External */ = {
-			isa = PBXGroup;
-			children = (
-				95862E2C14AC6977002E11E8 /* OpenUDID.h */,
-				95862E2D14AC6977002E11E8 /* OpenUDID.m */,
-				95B39F5314B1B90200777401 /* DDSocialDialog.h */,
-				95B39F5414B1B90200777401 /* DDSocialDialog.m */,
-				958B8A7B14B1E1DF00969E28 /* DDPageControl.h */,
-				958B8A7C14B1E1DF00969E28 /* DDPageControl.m */,
-			);
-			name = External;
-			sourceTree = "<group>";
-		};
 		95C1C2E514AB4CD400E74E62 = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +77,6 @@
 				95F1695914AC9EED00F8DE00 /* FPKWebView.h */,
 				95F1695A14AC9EED00F8DE00 /* FPKWebView.m */,
 				95F1694014AC8D0C00F8DE00 /* FPKView.h */,
-				95B39F5114B1B8E200777401 /* External */,
 			);
 			name = Classes;
 			path = FPKShared/Classes;
@@ -146,11 +120,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95862E2F14AC697F002E11E8 /* OpenUDID.h in Headers */,
 				95862E4C14AC7230002E11E8 /* FPKOverlayManager.h in Headers */,
 				95F1695E14AC9EF900F8DE00 /* FPKWebView.h in Headers */,
-				958B8A7E14B1E1E300969E28 /* DDPageControl.h in Headers */,
-				95B39F5514B1B91C00777401 /* DDSocialDialog.h in Headers */,
 				95F1694214AC8D1700F8DE00 /* FPKView.h in Headers */,
 				95C1C34D14AB636C00E74E62 /* FPKShared-Prefix.pch in Headers */,
 			);
@@ -250,10 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95862E2214AC6923002E11E8 /* FPKOverlayManager.m in Sources */,
-				95862E2E14AC6979002E11E8 /* OpenUDID.m in Sources */,
 				95F1695C14AC9EED00F8DE00 /* FPKWebView.m in Sources */,
-				95B39F5614B1B92000777401 /* DDSocialDialog.m in Sources */,
-				958B8A7F14B1E1EA00969E28 /* DDPageControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

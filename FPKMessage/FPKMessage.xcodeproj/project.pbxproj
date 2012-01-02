@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95284EC114B20328002914EE /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Common.framework; sourceTree = "<group>"; };
 		953C457F14ADF87B00468EE6 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
 		953C458114ADF87B00468EE6 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
 		953C458214ADF87B00468EE6 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
@@ -39,6 +40,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95284EC014B20328002914EE /* Common.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				95284EC114B20328002914EE /* Common.framework */,
+				95284EC214B20328002914EE /* Resources */,
+			);
+			name = Common.embeddedframework;
+			path = ../Common/Common.embeddedframework;
+			sourceTree = "<group>";
+		};
+		95284EC214B20328002914EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		953C457E14ADF87B00468EE6 /* FastPdfKit.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +80,7 @@
 		95A4147714ACBC7C00249348 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95284EC014B20328002914EE /* Common.embeddedframework */,
 				953C457E14ADF87B00468EE6 /* FastPdfKit.embeddedframework */,
 				95A4148614ACBD0F00249348 /* FPKShared.embeddedframework */,
 			);
@@ -301,6 +320,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/../Common/Common.embeddedframework\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -329,6 +349,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/../Common/Common.embeddedframework\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
