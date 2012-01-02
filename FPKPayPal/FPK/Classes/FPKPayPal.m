@@ -100,7 +100,7 @@
             [self addSubview:button];
             [button release];
             
-            // [PayPal initializeWithAppID:@"anything" forEnvironment:ENV_NONE];
+            [PayPal initializeWithAppID:@"anything" forEnvironment:ENV_NONE];
             // [PayPal initializeWithAppID:@"APP-80W284485P519543T" forEnvironment:ENV_SANDBOX];
             // [PayPal initializeWithAppID:@"your live app id" forEnvironment:ENV_LIVE];
         }
