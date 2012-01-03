@@ -8,6 +8,8 @@
 #import <FPKPayPal/FPKPayPalItem.h>
 
 /**
+ <img src="../docs/fpkpaypal.png">
+ 
 This Extension is useful to let the user purchase a physical good or a service not consumable from inside the app using PayPal mobile checkout. To purchase services or digital goods that will be consumed inside the app you are supposed to use In-App purchases.
 This Extension contains a **UIPopover** so for now is compatible only with iPad. You can easily subclass the FPKPayPal class and write the conditional code to extend the support to iPhone and iPod touch.
 

@@ -9,9 +9,9 @@
 	<key>CFBundleName</key>
 	<string>FastPdfKit Extensions</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.9.0</string>
+	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
-	<string>0.9.0</string>
+	<string>1.0.0</string>
 	
 	
 	
@@ -19,7 +19,7 @@
 	<key>DocSetFeedName</key>
 	<string>FastPdfKit Extensions Documentation</string>
 	<key>DocSetFeedURL</key>
-	<string>http://doc.fastpdfkit.com/extensions/docset.atom</string>
+	<string>http://doc.fastpdfkit.com/Extensions/docset.atom</string>
 	<key>DocSetMinimumXcodeVersion</key>
 	<string>3.0</string>
 	

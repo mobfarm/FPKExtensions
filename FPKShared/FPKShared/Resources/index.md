@@ -1,5 +1,7 @@
 For the **FastPdfKit Reference** look at [doc.fastpdfkit.com](http://doc.fastpdfkit.com).
 
+The complete source code is available on [github](http://git.io/fpke).
+
 ## Overview
 
 Please read the [README](./docs/README.html) document that contains a brief introduction to the Extensions.

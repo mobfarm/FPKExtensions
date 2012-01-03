@@ -12,7 +12,7 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FPKOverlayManager/setDocumentViewController:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/FPKOverlayManager/documentViewController</TokenIdentifier>
 			<Abstract type="html">You need to assign to the FPKOverlayManager the MFDocumentViewController in order to access its MFDocumentManager and the coordinate conversion methods.</Abstract>
 			<DeclaredIn>FPKOverlayManager.h</DeclaredIn>			
 			
@@ -23,11 +23,22 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/FPKOverlayManager/documentViewController</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/FPKOverlayManager/documentViewController</TokenIdentifier>
 			<Abstract type="html">You need to assign to the FPKOverlayManager the MFDocumentViewController in order to access its MFDocumentManager and the coordinate conversion methods.</Abstract>
 			<DeclaredIn>FPKOverlayManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) MFDocumentViewController&lt;FPKOverlayManagerDelegate&gt; *documentViewController</Declaration>
+			<Declaration>- (MFDocumentViewController&lt;FPKOverlayManagerDelegate&gt; *)documentViewController</Declaration>
+			
+			
+			<Anchor>//api/name/documentViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FPKOverlayManager/setDocumentViewController:</TokenIdentifier>
+			<Abstract type="html">You need to assign to the FPKOverlayManager the MFDocumentViewController in order to access its MFDocumentManager and the coordinate conversion methods.</Abstract>
+			<DeclaredIn>FPKOverlayManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDocumentViewController:(MFDocumentViewController&lt;FPKOverlayManagerDelegate&gt; *)val</Declaration>
 			
 			
 			<Anchor>//api/name/documentViewController</Anchor>
