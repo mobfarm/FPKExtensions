@@ -21,7 +21,7 @@
 
  * **prefix** the part in the url before `://`
  * **path** the part in the url after `://`
- * **params** another NSDictionary that contains the parsed paramenters after the `://`
+ * **params** another NSDictionary that contains the parsed parameters after the `://`
      - **resource** the part before `?`
      - ... custom parameters included in the annotation separated by `&`
  * **load** YES if the call for the view is made when the pdf page is going to be loaded, NO if the call is made when the user taps on the annotation area

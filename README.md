@@ -10,43 +10,32 @@ We've chosen this approach to maintain separated the classes, images and xibs of
 
 ## Available Extensions
 
-FPK Prefix identifies an official extension and will be 
+FPK Prefix identifies an official extension
 
-* FPKYouTube
-* FPKMap
-* FPKMovie
-* FPKAudio
-* FPKWebUdid
-* FPKFadeGallery
-* FPKTouchGallery
-* FPKSlidingGallery
-* FPKMessagePopup
-* FPKiCarouselPopup
-* FPKWeb
-* FPKImagePopup
-* FPKVideoPopup
-* FPKNavigation
-* FPKEmail
-* FPKiMessage
-* FPKShareKit
-* FPKScreenshot
-* FPKVerticalImageGallery
+* **FPKGalleryFade**
+* **FPKGallerySlide**
+* **FPKGalleryTap**
+* **FPKMap**
+* **FPKMessage**
+* **FPKWebPopup**
+* **FPKYouTube**
 
-## Create an Extension
+**FPKShared** contains some shared classes needed for every official Extension. Probably you'll find useful classes.
 
-To create an Extension you can create a copy of the **FPKSampleExtension** folder and open it with Xcode.
+## In development Extensions
 
-Rename the target and the project with a descriptive name.
-
-Add your objects to the projects, classes, xibs and images. Please name the images and the xib document with a prefix, so they doesn't conflict with other extension ones. You can even pack the xibs and images in a bundle.
-
-Add every document to the framework target and build for iOS Device.
-
-A new folder called ExtensionName.embeddedframework will appear in the project root.
-
-You need to set as public just the headers that you need to access from the external project.
-
-If you need to use the same classes for many Extensions you should add them in a separate Framework. For ours we use the FPKShared extension.
+* **FPKConfig**
+* **FPKGlobalConfig**
+* **FPKPayPalExpress**
+* **FPKTextSelection**
+* **FPKiCarouselPopup**
+* **FPKImagePopup**
+* **FPKVideoPopup**
+* **FPKEmail**
+* **FPKiMessage**
+* **FPKShareKit**
+* **FPKScreenshot**
+* **FPKVerticalImageGallery**
 
 ## Use an Extensions
 
@@ -63,8 +52,7 @@ The standard `extensions` array should contain every supported Extension like
 											 		@"FPKTransitionGallery", 
 											 		@"YourExtensionName",
 											 		nil];
-											
-											
+
 											
 ## Add an Extension to your application
 
@@ -89,11 +77,23 @@ And add the Extension name as NSString to the Extensions array like `@"FPKYouTub
 		return self;
 	}
 
-## Official Extensions
 
-* FPKMap;
-* FPKYouTube.
+## Create an Extension
 
-More to come...
+To create an Extension you can create a copy of the **FPKSampleExtension** folder and open it with Xcode.
 
-If you've developed an Extension and want to share it with the community, please send a pull request on [github](http://git.io/fpke).
+Rename the target and the project with a descriptive name.
+
+Add your objects to the projects, classes, xibs and images. Please name the images and the xib document with a prefix, so they doesn't conflict with other extension ones. You can even pack the xibs and images in a bundle.
+
+Add every document to the framework target and build for iOS Device.
+
+A new folder called ExtensionName.embeddedframework will appear in the project root.
+
+You need to set as public just the headers that you need to access from the external project.
+
+If you need to use the same classes for many Extensions you should add them in a separate Framework. For ours we use the **FPKShared** extension.
+
+For code not developed by us, we've created the **Common** framework to help you get the latest code an avoid conflicts.
+
+If you've developed an Extension and want to **share it** with the community, please send a **pull request** on [github](http://git.io/fpke).
