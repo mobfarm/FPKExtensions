@@ -1,9 +1,6 @@
 //
 //  FPKOverlayManager.m
-//  Overlay
-//
-//  Created by Matteo Gavagnin on 11/1/11.
-//  Copyright (c) 2011 MobFarm S.r.l. All rights reserved.
+//  FPKShared
 //
 
 #import "FPKOverlayManager.h"

@@ -2,9 +2,6 @@
 //  MainViewController.m
 //  SampleProject
 //
-//  Created by Matteo Gavagnin on 12/29/11.
-//  Copyright (c) 2011 MobFarm s.a.s. All rights reserved.
-//
 
 #import "MainViewController.h"
 #import <FastPdfKit/ReaderViewController.h>
@@ -57,18 +54,6 @@
     
     /** Release the pdf controller*/
     [pdfViewController release];
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
