@@ -1,8 +1,13 @@
-# FPKMessage Extension
+# FPKMessage
 
-This extension let you present a message as popup if the user taps on an annotation.
+This Extension let you present a text message inside a Popup view like the Twitter login screen.
+It uses the **DDSocialDiaolog** from the **Common** framework.
 
-## Uri
+## Usage
+
+* Prefix: **message://**
+* Import: **#import <FPKMessage/FPKMessage.h>**
+* String: **@"FPKMessage"**
 
 ### Prefix
 
@@ -16,4 +21,6 @@ This extension let you present a message as popup if the user taps on an annotat
 	* *h* = **FLOAT**: popup height
 	* *w* = **FLOAT**: popup width
 
-`message://?title=Complete%20title&w=300.0&h=200.0&message=This%20is%20the%20message!`
+### Sample url
+
+	message://?title=The%20title&message=The%20message&h=400&w=300

@@ -1,32 +1,27 @@
-# Create a new FastPdfKit Extension
+# FPKWebPopup
 
-Empty project to create your own FastPdfKit Extension.
+This Extension is useful to open a web page in a popup view.
 
-## Get Started
+## Usage
 
-The first steps needed are to change the Extension name to the chosen one:
+* Prefix: **webpopup://** or **webpopups://**
+* Import: **#import <FPKWebPopup/FPKWebPopup.h>**
+* String: **@"FPKWebPopup"**
 
-* Create a copy of the **FPKExtension** folder;
-* Open the **FPKExtension** project in Xcode;
-* Rename the project to your extension name;
+### Prefixes
 
-	<img src="../docs/rename-project.png" />
+	webpopup://
+	webpopups://
+	
+Use *webpopup* in replacement of *http* protocol.
+Use *webpopups* in replacement of *https* protocol.
 
-* Rename the **ExtensionName** **.h/.m** documents;
-* Replace the placeholders `ExtensionName` with the extension name;
+### Resources and Parameters
 
-Define the **prefix** that your Extension support:
+* *URL* **STRING** 
+	* *h* = **FLOAT** popup width *(optional)*
+	* *w* = **FLOAT** popup height *(optional)*
 
-* Replace the placeholders `prefix` with the supported prefix(es) like `http`;
+### Sample url
 
-Start writing your code:
-
-* Add your code from line 20 on the **.m** file.
-
-## Build
-
-**Warning:** always perform a *Clean* action before building. The fastest way is to press **⌘+⇧+K** (to clean) and then **⌘+B** (to build). This is an issue when compiling [fake frameworks](https://github.com/kstenerud/iOS-Universal-Framework/).
-
-When you build the target, a new **.embeddedframework** folder will be created in the root folder.
-
-To use the just created Extension just drag that folder to the Navigation bar of the **SampleProject** or in your own app and follow the [Readme](./README.html) for the Extension usage.
+	webpopup://fastpdfkit.com?h=400&w=400

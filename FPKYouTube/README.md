@@ -1,22 +1,29 @@
 # FPKYouTube
 
-Extension to support YouTube video in overlay on the pdf page.
+This Extension is useful to place a YouTube video over the page
 
-## Supported uri:
+## Usage
 
-* utube://VIDEO_KEY
+* Prefix: **utube://**
+* Import: **#import <FPKYouTube/FPKYouTube.h>**
+* String: **@"FPKYouTube"**
 
-With VIDEO_KEY that represent the unique identifier assigned by YouTube to the video itself.
+### Prefixes
+
+	utube://xtmmuGIh0F4://
+
+### Resources and Parameters
+
+* *VIDEO_KEY* **STRING**
+
+With VIDEO_KEY that represents the unique identifier assigned by YouTube to the video itself.
 To obtain it open the video in a browser and look at the address bar. 
 
     http://www.youtube.com/watch?v=xtmmuGIh0F4
     
 the VIDEO_KEY is xtmmuGIh0F4
 
-So you can place that video over the pdf page using an annotation with the uri
+### Sample url
 
-    utube://xtmmuGIh0F4
-
-
-
+	utube://xtmmuGIh0F4
 

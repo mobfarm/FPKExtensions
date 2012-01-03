@@ -1,32 +1,23 @@
-# Create a new FastPdfKit Extension
+# FPKGallerySlide
 
-Empty project to create your own FastPdfKit Extension.
+This Extension is useful to create an image gallery with horizontal slide transitions and page indicator.
 
-## Get Started
+## Usage
 
-The first steps needed are to change the Extension name to the chosen one:
+* Prefix: **galleryslide://**
+* Import: **#import <FPKGallerySlide/FPKGallerySlide.h>**
+* String: **@"FPKGallerySlide"**
 
-* Create a copy of the **FPKExtension** folder;
-* Open the **FPKExtension** project in Xcode;
-* Rename the project to your extension name;
+### Prefix
 
-	<img src="../docs/rename-project.png" />
+	galleryslide://
 
-* Rename the **ExtensionName** **.h/.m** documents;
-* Replace the placeholders `ExtensionName` with the extension name;
+### Resources and Parameters
 
-Define the **prefix** that your Extension support:
+* any resource
+	* *images* = **ARRAY** **STRING** the list of images separated by commas `,`
+	* *loop* = **INT**: times that the automatic slide needs to be performed, `-1` to infinite, `0` for no loop
 
-* Replace the placeholders `prefix` with the supported prefix(es) like `http`;
+### Sample url
 
-Start writing your code:
-
-* Add your code from line 20 on the **.m** file.
-
-## Build
-
-**Warning:** always perform a *Clean* action before building. The fastest way is to press **⌘+⇧+K** (to clean) and then **⌘+B** (to build). This is an issue when compiling [fake frameworks](https://github.com/kstenerud/iOS-Universal-Framework/).
-
-When you build the target, a new **.embeddedframework** folder will be created in the root folder.
-
-To use the just created Extension just drag that folder to the Navigation bar of the **SampleProject** or in your own app and follow the [Readme](./README.html) for the Extension usage.
+	galleryslide://?images=img1.png,img2.png,img3.png&loop=1

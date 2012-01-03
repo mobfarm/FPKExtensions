@@ -19,14 +19,15 @@ FPK Prefix identifies an official extension
 * **FPKMessage**
 * **FPKWebPopup**
 * **FPKYouTube**
+* **FPKPayPal**
 
 **FPKShared** contains some shared classes needed for every official Extension. Probably you'll find useful classes.
+**Common** contains some third party shared classes.
 
 ## In development Extensions
 
 * **FPKConfig**
 * **FPKGlobalConfig**
-* **FPKPayPalExpress**
 * **FPKTextSelection**
 * **FPKiCarouselPopup**
 * **FPKImagePopup**
@@ -97,3 +98,5 @@ If you need to use the same classes for many Extensions you should add them in a
 For code not developed by us, we've created the **Common** framework to help you get the latest code an avoid conflicts.
 
 If you've developed an Extension and want to **share it** with the community, please send a **pull request** on [github](http://git.io/fpke).
+
+If you are using FastPdfKit let us know, we will be happy to list your app!

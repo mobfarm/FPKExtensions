@@ -1,32 +1,33 @@
-# Create a new FastPdfKit Extension
+# FPKPayPal
 
-Empty project to create your own FastPdfKit Extension.
+This Extension is useful to let the user purchase a physical good or a service not consumable from inside the app using PayPal mobile checkout. To purchase services or digital goods that will be consumed inside the app you are supposed to use In-App purchases.
+This Extension contains a **UIPopover** so for now is compatible only with iPad. You can easily subclass the FPKPayPal class and write the conditional code to extend the support to iPhone and iPod touch.
 
-## Get Started
+## Disclaimer
 
-The first steps needed are to change the Extension name to the chosen one:
+The PayPal classes are located inside the **Common** framework in the PayPal subfolder folder. There you can find some other sample projects and the specific documentation.
+The PayPal code and the library have been downloaded from the [x.com](http://www.x.com) PayPal development website.
 
-* Create a copy of the **FPKExtension** folder;
-* Open the **FPKExtension** project in Xcode;
-* Rename the project to your extension name;
+## Usage
 
-	<img src="../docs/rename-project.png" />
+* Prefix: **paypal://**
+* Import: **#import <FPKPaPal/FPKPaPal.h>**
+* String: **@"FPKPayPal"**
 
-* Rename the **ExtensionName** **.h/.m** documents;
-* Replace the placeholders `ExtensionName` with the extension name;
+### Prefix
 
-Define the **prefix** that your Extension support:
+	paypal://
 
-* Replace the placeholders `prefix` with the supported prefix(es) like `http`;
+### Resources and Parameters
 
-Start writing your code:
+* *Name* **STRING** 
+	* *price* = **FLOAT** item price 
+	* *tax* = **FLOAT** item tax that will be added to the price
+	* *ship* = **FLOAT** item ship cost that will be added to the price
+	* *mer* = **STRING** merchant name
+	* *desc* = **STRING** item description
+	* *cur* = **STRING** currency used for the payment, default *USD*
 
-* Add your code from line 20 on the **.m** file.
+### Sample url
 
-## Build
-
-**Warning:** always perform a *Clean* action before building. The fastest way is to press **⌘+⇧+K** (to clean) and then **⌘+B** (to build). This is an issue when compiling [fake frameworks](https://github.com/kstenerud/iOS-Universal-Framework/).
-
-When you build the target, a new **.embeddedframework** folder will be created in the root folder.
-
-To use the just created Extension just drag that folder to the Navigation bar of the **SampleProject** or in your own app and follow the [Readme](./README.html) for the Extension usage.
+	paypal://FastPdfKit?price=49.9&tax=3.49&ship=2&mer=MobFarm&desc=iOS%20PDF%20Library&cur=EUR

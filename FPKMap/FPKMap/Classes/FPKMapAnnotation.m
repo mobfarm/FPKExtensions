@@ -2,9 +2,6 @@
 //  MFMapAnnotation.m
 //  Overlay
 //
-//  Created by Matteo Gavagnin on 10/8/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
-//
 
 #import "FPKMapAnnotation.h"
 
