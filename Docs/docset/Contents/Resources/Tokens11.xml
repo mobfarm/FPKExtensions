@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MainViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MainViewController</TokenIdentifier>
+			<Abstract type="html">The controller opens the pdf view.</Abstract>
+			<DeclaredIn>MainViewController.h</DeclaredIn>
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MainViewController/actionOpenPlainDocument:</TokenIdentifier>
+			<Abstract type="html">The document to open a pdf document with FastPdfKit.</Abstract>
+			<DeclaredIn>MainViewController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)actionOpenPlainDocument:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>id</Name>
+					<Abstract type="html">Usually the UIButton that invoked the method.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/actionOpenPlainDocument:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MainViewController/shouldAutorotateToInterfaceOrientation:</TokenIdentifier>
+			<Abstract type="html">Release the pdf controller</Abstract>
+			<DeclaredIn>MainViewController.m</DeclaredIn>			
+			
+			<Declaration>- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutorotateToInterfaceOrientation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

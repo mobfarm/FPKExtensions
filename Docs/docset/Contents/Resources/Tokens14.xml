@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/FPKGallerySlide.html">
+	<File path="Protocols/FPKView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/FPKGallerySlide</TokenIdentifier>
-			<Abstract type="html">This Extension is useful to create an image gallery with horizontal slide transitions and page indicator.</Abstract>
-			<DeclaredIn>FPKGallerySlide.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/FPKView</TokenIdentifier>
+			<Abstract type="html">The FPKView protocol must be implemented on each Extension.
+It includes the methods that will be called by the FPKOverlayManager to instantiate and communicate with the Extension.</Abstract>
+			<DeclaredIn>FPKView.h</DeclaredIn>
 			
-			<NodeRef refid="2"/>
+			<NodeRef refid="14"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FPKGallerySlide/initWithParams:andFrame:from:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/FPKView/initWithParams:andFrame:from:</TokenIdentifier>
 			<Abstract type="html">This method is called by the FPKOverlayManager if the Extension supports the requested prefix.
 You should return the UIView to be placed over the page. You can also return nil and perform some other operations like presenting a modal view on the</Abstract>
-			<DeclaredIn>FPKGallerySlide.m</DeclaredIn>			
+			<DeclaredIn>FPKView.h</DeclaredIn>			
 			
 			<Declaration>- (UIView *)initWithParams:(NSDictionary *)params andFrame:(CGRect)frame from:(FPKOverlayManager *)manager</Declaration>
 			<Parameters>
@@ -42,26 +43,9 @@ You should return the UIView to be placed over the page. You can also return nil
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FPKGallerySlide/willRemoveOverlayView:</TokenIdentifier>
-			<Abstract type="html">The view will be notified if it will be removed from the screen.
-You can decide to perform some operations like stopping timers and release objects.</Abstract>
-			<DeclaredIn>FPKGallerySlide.m</DeclaredIn>			
-			
-			<Declaration>- (void)willRemoveOverlayView:(FPKOverlayManager *)manager</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>manager</Name>
-					<Abstract type="html">The manager is the sender. It could be useful.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/willRemoveOverlayView:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FPKGallerySlide/acceptedPrefixes</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/FPKView/acceptedPrefixes</TokenIdentifier>
 			<Abstract type="html">Get the accepted prefixes by an Extension encapsulated in an NSArray of NSString. Obviously you can support even just one prefix.</Abstract>
-			<DeclaredIn>FPKGallerySlide.m</DeclaredIn>			
+			<DeclaredIn>FPKView.h</DeclaredIn>			
 			
 			<Declaration>+ (NSArray *)acceptedPrefixes</Declaration>
 			
@@ -70,9 +54,9 @@ You can decide to perform some operations like stopping timers and release objec
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FPKGallerySlide/respondsToPrefix:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/FPKView/respondsToPrefix:</TokenIdentifier>
 			<Abstract type="html">You should implement this method to return a BOOL value only on supported prefixes.</Abstract>
-			<DeclaredIn>FPKGallerySlide.m</DeclaredIn>			
+			<DeclaredIn>FPKView.h</DeclaredIn>			
 			
 			<Declaration>+ (BOOL)respondsToPrefix:(NSString *)prefix</Declaration>
 			<Parameters>
@@ -86,10 +70,10 @@ You can decide to perform some operations like stopping timers and release objec
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FPKGallerySlide/rect</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/FPKView/rect</TokenIdentifier>
 			<Abstract type="html">The frame of the view can change when the pdf mode change and the device is rotated.
 The original frame is stored to perform the conversion on the fly when needed.</Abstract>
-			<DeclaredIn>FPKGallerySlide.m</DeclaredIn>			
+			<DeclaredIn>FPKView.h</DeclaredIn>			
 			
 			<Declaration>- (CGRect)rect</Declaration>
 			
@@ -98,11 +82,11 @@ The original frame is stored to perform the conversion on the fly when needed.</
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FPKGallerySlide/setRect:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/FPKView/setRect:</TokenIdentifier>
 			<Abstract type="html">Set the original frame. More info on rect.</Abstract>
-			<DeclaredIn>FPKGallerySlide.m</DeclaredIn>			
+			<DeclaredIn>FPKView.h</DeclaredIn>			
 			
-			<Declaration>- (void)setRect:(CGRect)aRect</Declaration>
+			<Declaration>- (void)setRect:(CGRect)rect</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>rect</Name>
@@ -111,6 +95,23 @@ The original frame is stored to perform the conversion on the fly when needed.</
 			</Parameters>
 			
 			<Anchor>//api/name/setRect:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FPKView/willRemoveOverlayView:</TokenIdentifier>
+			<Abstract type="html">The view will be notified if it will be removed from the screen.
+You can decide to perform some operations like stopping timers and release objects.</Abstract>
+			<DeclaredIn>FPKView.h</DeclaredIn>			
+			
+			<Declaration>- (void)willRemoveOverlayView:(FPKOverlayManager *)manager</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>manager</Name>
+					<Abstract type="html">The manager is the sender. It could be useful.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/willRemoveOverlayView:</Anchor>
 		</Token>
 		
 	</File>

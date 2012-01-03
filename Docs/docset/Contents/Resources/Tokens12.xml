@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OverlayManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OverlayManager</TokenIdentifier>
+			<Abstract type="html">This is the FPKOverlayManager simplest subclass.
+Open the document to find how to activate the Extensions.</Abstract>
+			<DeclaredIn>OverlayManager.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

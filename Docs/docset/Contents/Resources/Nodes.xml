@@ -17,6 +17,11 @@
 						<NodeRef refid="5"/>
 						<NodeRef refid="6"/>
 						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
 						
 					</Subnodes>
 				</Node>
@@ -27,8 +32,8 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="8"/>
-						<NodeRef refid="9"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
 						
 					</Subnodes>
 				</Node>
@@ -42,36 +47,56 @@
 			<Path>Classes/FPKGalleryFade.html</Path>
 		</Node>
 		<Node id="2">
+			<Name>FPKGallerySlide</Name>
+			<Path>Classes/FPKGallerySlide.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>FPKGalleryTap</Name>
+			<Path>Classes/FPKGalleryTap.html</Path>
+		</Node>
+		<Node id="4">
 			<Name>FPKMap</Name>
 			<Path>Classes/FPKMap.html</Path>
 		</Node>
-		<Node id="3">
+		<Node id="5">
+			<Name>FPKMessage</Name>
+			<Path>Classes/FPKMessage.html</Path>
+		</Node>
+		<Node id="6">
 			<Name>FPKOverlayManager</Name>
 			<Path>Classes/FPKOverlayManager.html</Path>
 		</Node>
-		<Node id="4">
+		<Node id="7">
+			<Name>FPKPayPal</Name>
+			<Path>Classes/FPKPayPal.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>FPKWebPopup</Name>
+			<Path>Classes/FPKWebPopup.html</Path>
+		</Node>
+		<Node id="9">
 			<Name>FPKWebView</Name>
 			<Path>Classes/FPKWebView.html</Path>
 		</Node>
-		<Node id="5">
+		<Node id="10">
 			<Name>FPKYouTube</Name>
 			<Path>Classes/FPKYouTube.html</Path>
 		</Node>
-		<Node id="6">
+		<Node id="11">
 			<Name>MainViewController</Name>
 			<Path>Classes/MainViewController.html</Path>
 		</Node>
-		<Node id="7">
+		<Node id="12">
 			<Name>OverlayManager</Name>
 			<Path>Classes/OverlayManager.html</Path>
 		</Node>
 		
 		
-		<Node id="8">
+		<Node id="13">
 			<Name>FPKOverlayManagerDelegate</Name>
 			<Path>Protocols/FPKOverlayManagerDelegate.html</Path>
 		</Node>
-		<Node id="9">
+		<Node id="14">
 			<Name>FPKView</Name>
 			<Path>Protocols/FPKView.html</Path>
 		</Node>

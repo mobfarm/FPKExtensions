@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/FPKOverlayManagerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/FPKOverlayManagerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FPKOverlayManager.h</DeclaredIn>
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FPKOverlayManagerDelegate/setGesturesDisabled:</TokenIdentifier>
+			<Abstract type="html">Enable or disable the gestures of the pdf view to interact just with the annotations.</Abstract>
+			<DeclaredIn>FPKOverlayManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)setGesturesDisabled:(BOOL)disabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>disabled</Name>
+					<Abstract type="html">YES to disable the gestures and NO to re-enable them.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setGesturesDisabled:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

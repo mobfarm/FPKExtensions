@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.0.5 (build 748)" />
+		<meta name="generator" content="appledoc 2.0.5 (build 752)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -57,6 +57,8 @@
 	
 	<option value="//api/name/setRect:">&nbsp;&nbsp;&nbsp;&nbsp;- setRect:</option>
 	
+	<option value="//api/name/willRemoveOverlayView:">&nbsp;&nbsp;&nbsp;&nbsp;- willRemoveOverlayView:</option>
+	
 	
 	
 </select>
@@ -99,6 +101,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setRect:">setRect:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willRemoveOverlayView:">willRemoveOverlayView:</a></span></li>
+	
 </ul></li>
 
 
@@ -136,9 +140,8 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<div class="bug"><p>Complete the description and remove the icon</p>
-
-<p><img src="../docs/fpk-icon.png" /></p></div>
+						<p>The <a href="FPKView.html">FPKView</a> protocol must be implemented on each Extension.
+It includes the methods that will be called by the <a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a> to instantiate and communicate with the Extension.</p>
 					</div>
 					
 					
@@ -157,7 +160,7 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithParams:andFrame:from:">&ndash;&nbsp;initWithParams:andFrame:from:</a></code>
-		<span class="tooltip"><p>This method is invocated by the <a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a> if the Extension supports the requested prefix.
+		<span class="tooltip"><p>This method is called by the <a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a> if the Extension supports the requested prefix.
 You should return the <strong>UIView</strong> to be placed over the page. You can also return <code>nil</code> and perform some other operations like presenting a modal view on the</p></span>
 	</span>
 	
@@ -165,31 +168,40 @@ You should return the <strong>UIView</strong> to be placed over the page. You ca
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/acceptedPrefixes">+&nbsp;acceptedPrefixes</a></code>
-		<span class="tooltip"><p>complete the description</p></span>
+		<span class="tooltip"><p>Get the accepted prefixes by an Extension encapsulated in an <strong>NSArray</strong> of <strong>NSString</strong>. Obviously you can support even just one prefix.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/respondsToPrefix:">+&nbsp;respondsToPrefix:</a></code>
-		<span class="tooltip"><p>complete the description</p></span>
+		<span class="tooltip"><p>You should implement this method to return a BOOL value only on supported prefixes.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/rect">&ndash;&nbsp;rect</a></code>
-		<span class="tooltip"><p>complete the description</p></span>
+		<span class="tooltip"><p>The frame of the view can change when the pdf mode change and the device is rotated.
+The original frame is stored to perform the conversion on the fly when needed.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setRect:">&ndash;&nbsp;setRect:</a></code>
-		<span class="tooltip"><p>complete the description</p></span>
+		<span class="tooltip"><p>Set the original frame. More info on <a href="../Protocols/FPKView.html#//api/name/rect">rect</a>.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/willRemoveOverlayView:">&ndash;&nbsp;willRemoveOverlayView:</a></code>
+		<span class="tooltip"><p>The view will be notified if it will be removed from the screen.
+You can decide to perform some operations like stopping timers and release objects.</p></span>
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -212,7 +224,7 @@ You should return the <strong>UIView</strong> to be placed over the page. You ca
 	
 	
 	<div class="method-subsection brief-description">
-		<p>complete the description</p>
+		<p>Get the accepted prefixes by an Extension encapsulated in an <strong>NSArray</strong> of <strong>NSString</strong>. Obviously you can support even just one prefix.</p>
 	</div>		
 	
 	
@@ -227,9 +239,12 @@ You should return the <strong>UIView</strong> to be placed over the page. You ca
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<div class="bug"><p>complete the description</p>
+		<p>Get the accepted prefixes by an Extension encapsulated in an <strong>NSArray</strong> of <strong>NSString</strong>. Obviously you can support even just one prefix.</p>
 
-<p>@return</p></div>
+<pre><code>[NSArray arrayWithObjects:@"map", nil];
+</code></pre>
+
+<p>@return</p>
 	</div>
 	
 	
@@ -253,14 +268,29 @@ You should return the <strong>UIView</strong> to be placed over the page. You ca
 	
 	
 	<div class="method-subsection brief-description">
-		<p>complete the description</p>
+		<p>You should implement this method to return a BOOL value only on supported prefixes.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>+ (BOOL)respondsToPrefix:(NSString *)<em>prefix</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>prefix</em></dt>
+			<dd><p>The prefix in the form <code>@"map"</code>.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES or NO if the prefix is support by the Extension.</p>
+	</div>
 	
 	
 	
@@ -268,10 +298,7 @@ You should return the <strong>UIView</strong> to be placed over the page. You ca
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<div class="bug"><p>complete the description</p>
-
-<p>@param prefix
-@return</p></div>
+		<p>You should implement this method to return a BOOL value only on supported prefixes.</p>
 	</div>
 	
 	
@@ -303,7 +330,7 @@ You should return the <strong>UIView</strong> to be placed over the page. You ca
 	
 	
 	<div class="method-subsection brief-description">
-		<p>This method is invocated by the <a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a> if the Extension supports the requested prefix.
+		<p>This method is called by the <a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a> if the Extension supports the requested prefix.
 You should return the <strong>UIView</strong> to be placed over the page. You can also return <code>nil</code> and perform some other operations like presenting a modal view on the</p>
 	</div>		
 	
@@ -321,7 +348,7 @@ You should return the <strong>UIView</strong> to be placed over the page. You ca
 <ul>
 <li><strong>prefix</strong> the part in the url before <code>://</code></li>
 <li><strong>path</strong> the part in the url after <code>://</code></li>
-<li><strong>params</strong> another NSDictionary that contains the parsed paramenters after the <code>://</code>
+<li><strong>params</strong> another NSDictionary that contains the parsed parameters after the <code>://</code>
 
 <ul>
 <li> <strong>resource</strong> the part before <code>?</code></li>
@@ -335,7 +362,7 @@ You should return the <strong>UIView</strong> to be placed over the page. You ca
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>frame</em></dt>
-			<dd><p>The annotation frame in pdf page coordinates. If the <code>padding</code> parameter is specified in the url, the frame is a CGRectInset of the real annotation frame. This feature is useful if the pdf have been created with Adobe InDesign that creates the annotation 2 pixel wider than the original object. Just specify in the url a param <code>?padding=2</code> and the frame will be setted accordingly.</p></dd>
+			<dd><p>The annotation frame in pdf page coordinates. If the <code>padding</code> parameter is specified in the url, the frame is a CGRectInset of the real annotation frame. This feature is useful if the pdf has been created with Adobe InDesign that creates the annotation 2 pixel wider than the original object. Just specify in the url a param <code>?padding=2</code> and the frame will be set accordingly.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -358,7 +385,7 @@ You should return the <strong>UIView</strong> to be placed over the page. You ca
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>This method is invocated by the <a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a> if the Extension supports the requested prefix.
+		<p>This method is called by the <a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a> if the Extension supports the requested prefix.
 You should return the <strong>UIView</strong> to be placed over the page. You can also return <code>nil</code> and perform some other operations like presenting a modal view on the</p>
 	</div>
 	
@@ -383,7 +410,8 @@ You should return the <strong>UIView</strong> to be placed over the page. You ca
 	
 	
 	<div class="method-subsection brief-description">
-		<p>complete the description</p>
+		<p>The frame of the view can change when the pdf mode change and the device is rotated.
+The original frame is stored to perform the conversion on the fly when needed.</p>
 	</div>		
 	
 	
@@ -394,7 +422,7 @@ You should return the <strong>UIView</strong> to be placed over the page. You ca
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p><a href="../Protocols/FPKView.html#//api/name/rect">rect</a></p>
+		<p><a href="../Protocols/FPKView.html#//api/name/rect">rect</a> The original frame of the <strong>UIView</strong>.</p>
 	</div>
 	
 	
@@ -403,7 +431,8 @@ You should return the <strong>UIView</strong> to be placed over the page. You ca
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<div class="bug"><p>complete the description</p></div>
+		<p>The frame of the view can change when the pdf mode change and the device is rotated.
+The original frame is stored to perform the conversion on the fly when needed.</p>
 	</div>
 	
 	
@@ -427,12 +456,22 @@ You should return the <strong>UIView</strong> to be placed over the page. You ca
 	
 	
 	<div class="method-subsection brief-description">
-		<p>complete the description</p>
+		<p>Set the original frame. More info on <a href="../Protocols/FPKView.html#//api/name/rect">rect</a>.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)setRect:(CGRect)<em>rect</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>The original frame.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -442,9 +481,58 @@ You should return the <strong>UIView</strong> to be placed over the page. You ca
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<div class="bug"><p>complete the description</p>
-
-<p>@param <a href="../Protocols/FPKView.html#//api/name/rect">rect</a></p></div>
+		<p>Set the original frame. More info on <a href="../Protocols/FPKView.html#//api/name/rect">rect</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FPKView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/willRemoveOverlayView:" title="willRemoveOverlayView:"></a>
+	<h3 class="subsubtitle method-title">willRemoveOverlayView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The view will be notified if it will be removed from the screen.
+You can decide to perform some operations like stopping timers and release objects.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)willRemoveOverlayView:(FPKOverlayManager *)<em>manager</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>manager</em></dt>
+			<dd><p>The manager is the sender. It could be useful.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The view will be notified if it will be removed from the screen.
+You can decide to perform some operations like stopping timers and release objects.</p>
 	</div>
 	
 	
@@ -474,9 +562,9 @@ You should return the <strong>UIView</strong> to be placed over the page. You ca
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2011 MobFarm. All rights reserved. (Last updated: 2011-12-30)</span><br />
+						<p><span class="copyright">&copy; 2012 MobFarm. All rights reserved. (Last updated: 2012-01-03)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 748)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
 						
 					</div>
 				</div>

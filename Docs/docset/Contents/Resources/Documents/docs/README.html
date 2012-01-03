@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />	
-		<meta name="generator" content="appledoc 2.0.5 (build 748)" />
+		<meta name="generator" content="appledoc 2.0.5 (build 752)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -37,46 +37,39 @@
 
 <h2>Available Extensions</h2>
 
-<p>FPK Prefix identifies an official extension and will be</p>
+<p>FPK Prefix identifies an official extension</p>
 
 <ul>
-<li><a href="../Classes/FPKYouTube.html">FPKYouTube</a></li>
-<li><a href="../Classes/FPKMap.html">FPKMap</a></li>
-<li>FPKMovie</li>
-<li>FPKAudio</li>
-<li>FPKWebUdid</li>
-<li>FPKFadeGallery</li>
-<li>FPKTouchGallery</li>
-<li>FPKSlidingGallery</li>
-<li>FPKMessagePopup</li>
-<li>FPKiCarouselPopup</li>
-<li>FPKWeb</li>
-<li>FPKImagePopup</li>
-<li>FPKVideoPopup</li>
-<li>FPKNavigation</li>
-<li>FPKEmail</li>
-<li>FPKiMessage</li>
-<li>FPKShareKit</li>
-<li>FPKScreenshot</li>
-<li>FPKVerticalImageGallery</li>
+<li><strong><a href="../Classes/FPKGalleryFade.html">FPKGalleryFade</a></strong></li>
+<li><strong><a href="../Classes/FPKGallerySlide.html">FPKGallerySlide</a></strong></li>
+<li><strong><a href="../Classes/FPKGalleryTap.html">FPKGalleryTap</a></strong></li>
+<li><strong><a href="../Classes/FPKMap.html">FPKMap</a></strong></li>
+<li><strong><a href="../Classes/FPKMessage.html">FPKMessage</a></strong></li>
+<li><strong><a href="../Classes/FPKWebPopup.html">FPKWebPopup</a></strong></li>
+<li><strong><a href="../Classes/FPKYouTube.html">FPKYouTube</a></strong></li>
+<li><strong><a href="../Classes/FPKPayPal.html">FPKPayPal</a></strong></li>
 </ul>
 
 
-<h2>Create an Extension</h2>
+<p><strong>FPKShared</strong> contains some shared classes needed for every official Extension. Probably you&rsquo;ll find useful classes.
+<strong>Common</strong> contains some third party shared classes.</p>
 
-<p>To create an Extension you can create a copy of the <strong>FPKSampleExtension</strong> folder and open it with Xcode.</p>
+<h2>In development Extensions</h2>
 
-<p>Rename the target and the project with a descriptive name.</p>
+<ul>
+<li><strong>FPKConfig</strong></li>
+<li><strong>FPKGlobalConfig</strong></li>
+<li><strong>FPKTextSelection</strong></li>
+<li><strong>FPKiCarouselPopup</strong></li>
+<li><strong>FPKImagePopup</strong></li>
+<li><strong>FPKVideoPopup</strong></li>
+<li><strong>FPKEmail</strong></li>
+<li><strong>FPKiMessage</strong></li>
+<li><strong>FPKShareKit</strong></li>
+<li><strong>FPKScreenshot</strong></li>
+<li><strong>FPKVerticalImageGallery</strong></li>
+</ul>
 
-<p>Add your objects to the projects, classes, xibs and images. Please name the images and the xib document with a prefix, so they doesn&rsquo;t conflict with other extension ones. You can even pack the xibs and images in a bundle.</p>
-
-<p>Add every document to the framework target and build for iOS Device.</p>
-
-<p>A new folder called ExtensionName.embeddedframework will appear in the project root.</p>
-
-<p>You need to set as public just the headers that you need to access from the external project.</p>
-
-<p>If you need to use the same classes for many Extensions you should add them in a separate Framework. For ours we use the FPKShared extension.</p>
 
 <h2>Use an Extensions</h2>
 
@@ -120,24 +113,34 @@ Then simply drag the desired Extension .embeddedframework folder to the Navigati
 }
 </code></pre>
 
-<h2>Official Extensions</h2>
+<h2>Create an Extension</h2>
 
-<ul>
-<li><a href="../Classes/FPKMap.html">FPKMap</a>;</li>
-<li><a href="../Classes/FPKYouTube.html">FPKYouTube</a>.</li>
-</ul>
+<p>To create an Extension you can create a copy of the <strong>FPKSampleExtension</strong> folder and open it with Xcode.</p>
 
+<p>Rename the target and the project with a descriptive name.</p>
 
-<p>More to come&hellip;</p>
+<p>Add your objects to the projects, classes, xibs and images. Please name the images and the xib document with a prefix, so they doesn&rsquo;t conflict with other extension ones. You can even pack the xibs and images in a bundle.</p>
 
-<p>If you&rsquo;ve developed an Extension and want to share it with the community, please send a pull request on <a href="http://git.io/fpke">github</a>.</p>
+<p>Add every document to the framework target and build for iOS Device.</p>
+
+<p>A new folder called ExtensionName.embeddedframework will appear in the project root.</p>
+
+<p>You need to set as public just the headers that you need to access from the external project.</p>
+
+<p>If you need to use the same classes for many Extensions you should add them in a separate Framework. For ours we use the <strong>FPKShared</strong> extension.</p>
+
+<p>For code not developed by us, we&rsquo;ve created the <strong>Common</strong> framework to help you get the latest code an avoid conflicts.</p>
+
+<p>If you&rsquo;ve developed an Extension and want to <strong>share it</strong> with the community, please send a <strong>pull request</strong> on <a href="http://git.io/fpke">github</a>.</p>
+
+<p>If you are using FastPdfKit let us know, we will be happy to list your app!</p>
 				</div>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2011 MobFarm. All rights reserved. (Last updated: 2011-12-30)</span><br />
+						<p><span class="copyright">&copy; 2012 MobFarm. All rights reserved. (Last updated: 2012-01-03)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 748)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
 						
 					
 					</div>

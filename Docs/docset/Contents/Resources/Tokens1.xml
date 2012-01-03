@@ -4,7 +4,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/FPKGalleryFade</TokenIdentifier>
-			<Abstract type="html">Complete Description</Abstract>
+			<Abstract type="html">This Extension is useful to create an image gallery with cross timed fade transitions.
+You can for example place it on the index page and show the article top photos.</Abstract>
 			<DeclaredIn>FPKGalleryFade.h</DeclaredIn>
 			
 			<NodeRef refid="1"/>
@@ -13,7 +14,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/FPKGalleryFade/initWithParams:andFrame:from:</TokenIdentifier>
-			<Abstract type="html">This method is invocated by the FPKOverlayManager if the Extension supports the requested prefix.
+			<Abstract type="html">This method is called by the FPKOverlayManager if the Extension supports the requested prefix.
 You should return the UIView to be placed over the page. You can also return nil and perform some other operations like presenting a modal view on the</Abstract>
 			<DeclaredIn>FPKGalleryFade.m</DeclaredIn>			
 			
@@ -25,13 +26,13 @@ You should return the UIView to be placed over the page. You can also return nil
 
 * prefix the part in the url before ://
 * path the part in the url after ://
-* params another NSDictionary that contains the parsed paramenters after the ://
+* params another NSDictionary that contains the parsed parameters after the ://
      - resource the part before ?
      - ... custom parameters included in the annotation separated by &amp;
 * load YES if the call for the view is made when the pdf page is going to be loaded, NO if the call is made when the user taps on the annotation area</Abstract>
 				</Parameter><Parameter>
 					<Name>frame</Name>
-					<Abstract type="html">The annotation frame in pdf page coordinates. If the padding parameter is specified in the url, the frame is a CGRectInset of the real annotation frame. This feature is useful if the pdf have been created with Adobe InDesign that creates the annotation 2 pixel wider than the original object. Just specify in the url a param ?padding=2 and the frame will be setted accordingly.</Abstract>
+					<Abstract type="html">The annotation frame in pdf page coordinates. If the padding parameter is specified in the url, the frame is a CGRectInset of the real annotation frame. This feature is useful if the pdf has been created with Adobe InDesign that creates the annotation 2 pixel wider than the original object. Just specify in the url a param ?padding=2 and the frame will be set accordingly.</Abstract>
 				</Parameter><Parameter>
 					<Name>manager</Name>
 					<Abstract type="html">The FPKOverlayManager that can be used to perform many operations like accessing the MFDocumentViewController or the MFDocumentManager.</Abstract>
@@ -43,7 +44,7 @@ You should return the UIView to be placed over the page. You can also return nil
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/FPKGalleryFade/acceptedPrefixes</TokenIdentifier>
-			<Abstract type="html">complete the description</Abstract>
+			<Abstract type="html">Get the accepted prefixes by an Extension encapsulated in an NSArray of NSString. Obviously you can support even just one prefix.</Abstract>
 			<DeclaredIn>FPKGalleryFade.m</DeclaredIn>			
 			
 			<Declaration>+ (NSArray *)acceptedPrefixes</Declaration>
@@ -54,33 +55,44 @@ You should return the UIView to be placed over the page. You can also return nil
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/FPKGalleryFade/respondsToPrefix:</TokenIdentifier>
-			<Abstract type="html">complete the description</Abstract>
+			<Abstract type="html">You should implement this method to return a BOOL value only on supported prefixes.</Abstract>
 			<DeclaredIn>FPKGalleryFade.m</DeclaredIn>			
 			
 			<Declaration>+ (BOOL)respondsToPrefix:(NSString *)prefix</Declaration>
-			
-			
+			<Parameters>
+				<Parameter>
+					<Name>prefix</Name>
+					<Abstract type="html">The prefix in the form @"map".</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES or NO if the prefix is support by the Extension.</Abstract></ReturnValue>
 			<Anchor>//api/name/respondsToPrefix:</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/FPKGalleryFade/rect</TokenIdentifier>
-			<Abstract type="html">complete the description</Abstract>
+			<Abstract type="html">The frame of the view can change when the pdf mode change and the device is rotated.
+The original frame is stored to perform the conversion on the fly when needed.</Abstract>
 			<DeclaredIn>FPKGalleryFade.m</DeclaredIn>			
 			
 			<Declaration>- (CGRect)rect</Declaration>
 			
-			<ReturnValue><Abstract type="html">rect</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">rect The original frame of the UIView.</Abstract></ReturnValue>
 			<Anchor>//api/name/rect</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/FPKGalleryFade/setRect:</TokenIdentifier>
-			<Abstract type="html">complete the description</Abstract>
+			<Abstract type="html">Set the original frame. More info on rect.</Abstract>
 			<DeclaredIn>FPKGalleryFade.m</DeclaredIn>			
 			
 			<Declaration>- (void)setRect:(CGRect)aRect</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">The original frame.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/setRect:</Anchor>
 		</Token>

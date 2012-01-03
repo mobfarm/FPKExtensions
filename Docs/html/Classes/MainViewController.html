@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.0.5 (build 748)" />
+		<meta name="generator" content="appledoc 2.0.5 (build 752)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -46,7 +46,7 @@
 	
 	<option value="//api/name/actionOpenPlainDocument:">&nbsp;&nbsp;&nbsp;&nbsp;- actionOpenPlainDocument:</option>
 	
-	<option value="//api/name/viewDidLoad">&nbsp;&nbsp;&nbsp;&nbsp;- viewDidLoad</option>
+	<option value="//api/name/shouldAutorotateToInterfaceOrientation:">&nbsp;&nbsp;&nbsp;&nbsp;- shouldAutorotateToInterfaceOrientation:</option>
 	
 	
 	
@@ -78,7 +78,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/actionOpenPlainDocument:">actionOpenPlainDocument:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidLoad">viewDidLoad</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldAutorotateToInterfaceOrientation:">shouldAutorotateToInterfaceOrientation:</a></span></li>
 	
 </ul></li>
 
@@ -117,7 +117,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<div class="bug"><p>Complete the documentation</p></div>
+						<p>The controller opens the pdf view.</p>
 					</div>
 					
 					
@@ -136,7 +136,7 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/actionOpenPlainDocument:">&ndash;&nbsp;actionOpenPlainDocument:</a></code>
-		<span class="tooltip"><p>Complete the documentation</p></span>
+		<span class="tooltip"><p>The document to open a pdf document with FastPdfKit.</p></span>
 	</span>
 	
 	
@@ -150,7 +150,7 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/viewDidLoad">&ndash;&nbsp;viewDidLoad</a></code>
+		<code><a href="#//api/name/shouldAutorotateToInterfaceOrientation:">&ndash;&nbsp;shouldAutorotateToInterfaceOrientation:</a></code>
 		<span class="tooltip"><p>Release the pdf controller</p></span>
 	</span>
 	
@@ -179,12 +179,22 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Complete the documentation</p>
+		<p>The document to open a pdf document with FastPdfKit.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (IBAction)actionOpenPlainDocument:(id)<em>sender</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>id</em></dt>
+			<dd><p>Usually the <strong>UIButton</strong> that invoked the method.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -194,7 +204,80 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<div class="bug"><p>Complete the documentation</p></div>
+		<p>The document to open a pdf document with FastPdfKit.</p>
+
+<p>Set document name</p>
+
+<pre><code> NSString *documentName = @"sample";
+</code></pre>
+
+<p>Get document from the App Bundle</p>
+
+<pre><code> NSURL *documentUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:documentName ofType:@"pdf"]];
+</code></pre>
+
+<p>Instancing the <strong>MFDocumentManager</strong></p>
+
+<pre><code>MFDocumentManager *documentManager = [[MFDocumentManager alloc]initWithFileUrl:documentUrl];
+</code></pre>
+
+<p>Instancing the <strong>ReaderViewController</strong></p>
+
+<pre><code> ReaderViewController *pdfViewController = [[ReaderViewController alloc]initWithDocumentManager:documentManager];
+</code></pre>
+
+<p>Set resources folder on the manager</p>
+
+<pre><code> documentManager.resourceFolder = [[NSBundle mainBundle] resourcePath];
+</code></pre>
+
+<p>Set document id for thumbnail generation</p>
+
+<pre><code> pdfViewController.documentId = documentName;
+</code></pre>
+
+<p>Set the padding around page to 0.0</p>
+
+<pre><code> [pdfViewController setPadding:0.0];
+</code></pre>
+
+<p>Instantiating the <a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a> (you can find in the the FPKShared framework) to manage extensions.</p>
+
+<p>You can use initWithExtensions:</p>
+
+<pre><code> NSArray *extensions = [[NSArray alloc] initWithObjects:@"FPKYouTube", nil];
+ OverlayManager *_overlayManager = [[[OverlayManager alloc] initWithExtensions:extensions] autorelease];
+</code></pre>
+
+<p>Or set them manually subclassing the init method</p>
+
+<pre><code> OverlayManager *_overlayManager = [[[OverlayManager alloc] init] autorelease];
+</code></pre>
+
+<p>Add the <a href="../Classes/FPKOverlayManager.html">FPKOverlayManager</a> as OverlayViewDataSource to the ReaderViewController</p>
+
+<pre><code> [pdfViewController addOverlayViewDataSource:_overlayManager];
+</code></pre>
+
+<p>Register as documentDelegate to receive tap</p>
+
+<pre><code> [pdfViewController addDocumentDelegate:_overlayManager];
+</code></pre>
+
+<p>Set the DocumentViewController to obtain access the the conversion methods</p>
+
+<pre><code> [_overlayManager setDocumentViewController:(MFDocumentViewController &lt;FPKOverlayManagerDelegate&gt; *)pdfViewController];
+</code></pre>
+
+<p>Present the pdf on screen in a modal view</p>
+
+<pre><code> [self presentModalViewController:pdfViewController animated:YES]; 
+</code></pre>
+
+<p>Release the pdf controller</p>
+
+<pre><code> [pdfViewController release];
+</code></pre>
 	</div>
 	
 	
@@ -212,8 +295,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/viewDidLoad" title="viewDidLoad"></a>
-	<h3 class="subsubtitle method-title">viewDidLoad</h3>
+	<a name="//api/name/shouldAutorotateToInterfaceOrientation:" title="shouldAutorotateToInterfaceOrientation:"></a>
+	<h3 class="subsubtitle method-title">shouldAutorotateToInterfaceOrientation:</h3>
 	
 	
 	
@@ -222,7 +305,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)viewDidLoad</code></div>
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)<em>interfaceOrientation</em></code></div>
 	
 	
 	
@@ -263,9 +346,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2011 MobFarm. All rights reserved. (Last updated: 2011-12-30)</span><br />
+						<p><span class="copyright">&copy; 2012 MobFarm. All rights reserved. (Last updated: 2012-01-03)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 748)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
 						
 					</div>
 				</div>
