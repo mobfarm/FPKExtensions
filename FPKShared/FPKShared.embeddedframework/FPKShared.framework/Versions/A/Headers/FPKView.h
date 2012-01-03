@@ -70,4 +70,14 @@
  */
 
 - (void)setRect:(CGRect)rect;
+
+@optional
+
+/**
+ @bug complete the description
+ 
+ @param manager
+ */
+
+- (void)willRemoveOverlayView:(FPKOverlayManager *)manager;
 @end

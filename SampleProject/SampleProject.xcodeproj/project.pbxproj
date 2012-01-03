@@ -17,6 +17,9 @@
 		953A0C0914AE060B00200288 /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 953A0C0514AE060B00200288 /* img3.png */; };
 		953A0C0A14AE060B00200288 /* img4.png in Resources */ = {isa = PBXBuildFile; fileRef = 953A0C0614AE060B00200288 /* img4.png */; };
 		953A0C0C14AE07BD00200288 /* sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 953A0C0B14AE07BD00200288 /* sample.pdf */; };
+		953DB46914B2163200241822 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953DB46614B2163200241822 /* Common.framework */; };
+		953DB46A14B2163200241822 /* libPayPalMPL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 953DB46814B2163200241822 /* libPayPalMPL.a */; };
+		953DB46E14B2163A00241822 /* FPKPayPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953DB46C14B2163A00241822 /* FPKPayPal.framework */; };
 		95862DED14AC634E002E11E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95862DEC14AC634E002E11E8 /* UIKit.framework */; };
 		95862DEF14AC634E002E11E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95862DEE14AC634E002E11E8 /* Foundation.framework */; };
 		95862DF114AC634E002E11E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95862DF014AC634E002E11E8 /* CoreGraphics.framework */; };
@@ -31,6 +34,9 @@
 		958B8A5914B1BEB500969E28 /* fpkmessage-info.png in Resources */ = {isa = PBXBuildFile; fileRef = 958B8A5714B1BEB500969E28 /* fpkmessage-info.png */; };
 		958B8A6A14B1C9EA00969E28 /* FPKWebPopup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958B8A6714B1C9EA00969E28 /* FPKWebPopup.framework */; };
 		958B8A6B14B1C9EA00969E28 /* fpkwebpopup-safari.png in Resources */ = {isa = PBXBuildFile; fileRef = 958B8A6914B1C9EA00969E28 /* fpkwebpopup-safari.png */; };
+		95927F8314B2139500FDF02F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 95927F8214B2139500FDF02F /* libxml2.dylib */; };
+		95927F8514B213AD00FDF02F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 95927F8414B213AD00FDF02F /* libz.dylib */; };
+		95927F8C14B213DE00FDF02F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95927F8B14B213DE00FDF02F /* Security.framework */; };
 		95B39F4D14B1B49200777401 /* FPKGalleryTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B39F4B14B1B49200777401 /* FPKGalleryTap.framework */; };
 		95BE37B514B1E72A008D9A49 /* FPKGallerySlide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BE37B314B1E72A008D9A49 /* FPKGallerySlide.framework */; };
 		95DA062F14ADBC80005DBB26 /* FastPdfKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DA062A14ADBC80005DBB26 /* FastPdfKit.framework */; };
@@ -52,6 +58,9 @@
 		953A0C0514AE060B00200288 /* img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
 		953A0C0614AE060B00200288 /* img4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img4.png; sourceTree = "<group>"; };
 		953A0C0B14AE07BD00200288 /* sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sample.pdf; sourceTree = "<group>"; };
+		953DB46614B2163200241822 /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Common.framework; sourceTree = "<group>"; };
+		953DB46814B2163200241822 /* libPayPalMPL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMPL.a; sourceTree = "<group>"; };
+		953DB46C14B2163A00241822 /* FPKPayPal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKPayPal.framework; sourceTree = "<group>"; };
 		95862DE814AC634E002E11E8 /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95862DEC14AC634E002E11E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		95862DEE14AC634E002E11E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,6 +81,9 @@
 		958B8A5714B1BEB500969E28 /* fpkmessage-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fpkmessage-info.png"; sourceTree = "<group>"; };
 		958B8A6714B1C9EA00969E28 /* FPKWebPopup.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKWebPopup.framework; sourceTree = "<group>"; };
 		958B8A6914B1C9EA00969E28 /* fpkwebpopup-safari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fpkwebpopup-safari.png"; sourceTree = "<group>"; };
+		95927F8214B2139500FDF02F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		95927F8414B213AD00FDF02F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		95927F8B14B213DE00FDF02F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		95B39F4B14B1B49200777401 /* FPKGalleryTap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKGalleryTap.framework; sourceTree = "<group>"; };
 		95BE37B314B1E72A008D9A49 /* FPKGallerySlide.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKGallerySlide.framework; sourceTree = "<group>"; };
 		95DA062A14ADBC80005DBB26 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
@@ -85,6 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95927F8C14B213DE00FDF02F /* Security.framework in Frameworks */,
+				95927F8514B213AD00FDF02F /* libz.dylib in Frameworks */,
+				95927F8314B2139500FDF02F /* libxml2.dylib in Frameworks */,
 				9517AA4514AE332700DF2082 /* QuartzCore.framework in Frameworks */,
 				952ADE5E14ACC09500805BE1 /* MapKit.framework in Frameworks */,
 				95862DED14AC634E002E11E8 /* UIKit.framework in Frameworks */,
@@ -99,6 +114,9 @@
 				958B8A5814B1BEB500969E28 /* FPKMessage.framework in Frameworks */,
 				958B8A6A14B1C9EA00969E28 /* FPKWebPopup.framework in Frameworks */,
 				95BE37B514B1E72A008D9A49 /* FPKGallerySlide.framework in Frameworks */,
+				953DB46914B2163200241822 /* Common.framework in Frameworks */,
+				953DB46A14B2163200241822 /* libPayPalMPL.a in Frameworks */,
+				953DB46E14B2163A00241822 /* FPKPayPal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +204,41 @@
 			path = SampleProject/Resources;
 			sourceTree = "<group>";
 		};
+		953DB46514B2163200241822 /* Common.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				953DB46614B2163200241822 /* Common.framework */,
+				953DB46714B2163200241822 /* Resources */,
+			);
+			name = Common.embeddedframework;
+			path = ../Common/Common.embeddedframework;
+			sourceTree = "<group>";
+		};
+		953DB46714B2163200241822 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				953DB46814B2163200241822 /* libPayPalMPL.a */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		953DB46B14B2163A00241822 /* FPKPayPal.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				953DB46C14B2163A00241822 /* FPKPayPal.framework */,
+				953DB46D14B2163A00241822 /* Resources */,
+			);
+			name = FPKPayPal.embeddedframework;
+			path = ../FPKPayPal/FPKPayPal.embeddedframework;
+			sourceTree = "<group>";
+		};
+		953DB46D14B2163A00241822 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		95862DDD14AC634E002E11E8 = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +261,8 @@
 		95862DEB14AC634E002E11E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				953DB46B14B2163A00241822 /* FPKPayPal.embeddedframework */,
+				953DB46514B2163200241822 /* Common.embeddedframework */,
 				95BE37B214B1E72A008D9A49 /* FPKGallerySlide.embeddedframework */,
 				958B8A6614B1C9EA00969E28 /* FPKWebPopup.embeddedframework */,
 				958B8A5414B1BEB500969E28 /* FPKMessage.embeddedframework */,
@@ -217,11 +272,14 @@
 				9523C04F14ACC63700171F7D /* FPKShared.embeddedframework */,
 				952ADE5814ACC01A00805BE1 /* FPKMap.embeddedframework */,
 				952C0E7B14AC885D004E7D98 /* FPKYouTube.embeddedframework */,
+				95927F8B14B213DE00FDF02F /* Security.framework */,
 				95862DEC14AC634E002E11E8 /* UIKit.framework */,
 				95862DEE14AC634E002E11E8 /* Foundation.framework */,
 				952ADE5D14ACC09500805BE1 /* MapKit.framework */,
 				95862DF014AC634E002E11E8 /* CoreGraphics.framework */,
 				9517AA4414AE332700DF2082 /* QuartzCore.framework */,
+				95927F8214B2139500FDF02F /* libxml2.dylib */,
+				95927F8414B213AD00FDF02F /* libz.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -515,11 +573,17 @@
 					"\"$(SRCROOT)/../FPKMessage/FPKMessage.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKWebPopup/FPKWebPopup.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKGallerySlide/FPKGallerySlide.embeddedframework\"",
+					"\"$(SRCROOT)/../Common/Common.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKPayPal/FPKPayPal.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
 				INFOPLIST_FILE = "SampleProject/SampleProject-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Common/Common.embeddedframework/Resources\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -540,11 +604,17 @@
 					"\"$(SRCROOT)/../FPKMessage/FPKMessage.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKWebPopup/FPKWebPopup.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKGallerySlide/FPKGallerySlide.embeddedframework\"",
+					"\"$(SRCROOT)/../Common/Common.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKPayPal/FPKPayPal.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleProject/SampleProject-Prefix.pch";
 				INFOPLIST_FILE = "SampleProject/SampleProject-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Common/Common.embeddedframework/Resources\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

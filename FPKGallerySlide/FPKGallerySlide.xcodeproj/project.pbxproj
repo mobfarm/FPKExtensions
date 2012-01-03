@@ -18,6 +18,8 @@
 		953C458114ADF87B00468EE6 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
 		953C458214ADF87B00468EE6 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
 		953C458314ADF87B00468EE6 /* Snippets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snippets.txt; sourceTree = "<group>"; };
+		9550C54014B244C600196C1D /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Common.framework; sourceTree = "<group>"; };
+		9550C54214B244C600196C1D /* libPayPalMPL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMPL.a; sourceTree = "<group>"; };
 		95862E5414AC75AD002E11E8 /* FPKGallerySlide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = FPKGallerySlide.h; sourceTree = "<group>"; };
 		95862E5514AC75AD002E11E8 /* FPKGallerySlide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPKGallerySlide.m; sourceTree = "<group>"; };
 		958B8A7614B1E19500969E28 /* UIImagesScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = UIImagesScrollView.h; sourceTree = "<group>"; };
@@ -60,9 +62,28 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		9550C53F14B244C600196C1D /* Common.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				9550C54014B244C600196C1D /* Common.framework */,
+				9550C54114B244C600196C1D /* Resources */,
+			);
+			name = Common.embeddedframework;
+			path = ../Common/Common.embeddedframework;
+			sourceTree = "<group>";
+		};
+		9550C54114B244C600196C1D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9550C54214B244C600196C1D /* libPayPalMPL.a */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		95A4147714ACBC7C00249348 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9550C53F14B244C600196C1D /* Common.embeddedframework */,
 				953C457E14ADF87B00468EE6 /* FastPdfKit.embeddedframework */,
 				95A4148614ACBD0F00249348 /* FPKShared.embeddedframework */,
 			);
@@ -303,6 +324,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/../Common/Common.embeddedframework\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -331,6 +353,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/../Common/Common.embeddedframework\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

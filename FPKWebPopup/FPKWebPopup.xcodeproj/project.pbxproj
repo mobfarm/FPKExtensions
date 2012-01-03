@@ -9,18 +9,19 @@
 /* Begin PBXBuildFile section */
 		95862E5714AC7627002E11E8 /* FPKWebPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E5414AC75AD002E11E8 /* FPKWebPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95862E5814AC7629002E11E8 /* FPKWebPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E5514AC75AD002E11E8 /* FPKWebPopup.m */; };
-		958B8A6514B1C9AA00969E28 /* fpkwebpopup-safari.png in Resources */ = {isa = PBXBuildFile; fileRef = 958B8A6414B1C9AA00969E28 /* fpkwebpopup-safari.png */; };
+		95927F9214B2143100FDF02F /* fpkwebpopup-safari.png in Resources */ = {isa = PBXBuildFile; fileRef = 95927F9114B2143100FDF02F /* fpkwebpopup-safari.png */; };
 		95C534B914ADEC28005B130E /* FPKWebPopup-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 95C534B614ADEC17005B130E /* FPKWebPopup-Prefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95284ECA14B20359002914EE /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Common.framework; sourceTree = "<group>"; };
 		953C457F14ADF87B00468EE6 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
 		953C458114ADF87B00468EE6 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
 		953C458214ADF87B00468EE6 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
 		953C458314ADF87B00468EE6 /* Snippets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snippets.txt; sourceTree = "<group>"; };
 		95862E5414AC75AD002E11E8 /* FPKWebPopup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = FPKWebPopup.h; sourceTree = "<group>"; };
 		95862E5514AC75AD002E11E8 /* FPKWebPopup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPKWebPopup.m; sourceTree = "<group>"; };
-		958B8A6414B1C9AA00969E28 /* fpkwebpopup-safari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fpkwebpopup-safari.png"; path = "../../../Overlay/Overlay/fpkwebpopup-safari.png"; sourceTree = "<group>"; };
+		95927F9114B2143100FDF02F /* fpkwebpopup-safari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fpkwebpopup-safari.png"; sourceTree = "<group>"; };
 		95A4148714ACBD0F00249348 /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
 		95C1C2F314AB4CD400E74E62 /* FPKWebPopup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKWebPopup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C534B514ADEC17005B130E /* FPKWebPopup-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKWebPopup-Info.plist"; sourceTree = "<group>"; };
@@ -39,6 +40,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95284EC914B20359002914EE /* Common.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				95284ECA14B20359002914EE /* Common.framework */,
+				95284ECB14B20359002914EE /* Resources */,
+			);
+			name = Common.embeddedframework;
+			path = ../Common/Common.embeddedframework;
+			sourceTree = "<group>";
+		};
+		95284ECB14B20359002914EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		953C457E14ADF87B00468EE6 /* FastPdfKit.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +80,7 @@
 		95A4147714ACBC7C00249348 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95284EC914B20359002914EE /* Common.embeddedframework */,
 				953C457E14ADF87B00468EE6 /* FastPdfKit.embeddedframework */,
 				95A4148614ACBD0F00249348 /* FPKShared.embeddedframework */,
 			);
@@ -116,7 +135,7 @@
 		95C1C33A14AB630300E74E62 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				958B8A6414B1C9AA00969E28 /* fpkwebpopup-safari.png */,
+				95927F9114B2143100FDF02F /* fpkwebpopup-safari.png */,
 				95C534B714ADEC1E005B130E /* InfoPlist.strings */,
 				95C534B514ADEC17005B130E /* FPKWebPopup-Info.plist */,
 				95C534B614ADEC17005B130E /* FPKWebPopup-Prefix.pch */,
@@ -191,7 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				958B8A6514B1C9AA00969E28 /* fpkwebpopup-safari.png in Resources */,
+				95927F9214B2143100FDF02F /* fpkwebpopup-safari.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +320,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/../Common/Common.embeddedframework\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -329,6 +349,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/../Common/Common.embeddedframework\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

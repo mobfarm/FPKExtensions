@@ -4,7 +4,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <FPKShared/DDPageControl.h>
+#import <Common/DDPageControl.h>
 
 @interface UIImagesScrollView : UIView <UIScrollViewDelegate> {
 	UIScrollView* scrollView;
@@ -28,5 +28,5 @@
 
 - (IBAction)changePage:(id)sender;
 - (id)initWithFrame:(CGRect)frame andArrayImg:(NSArray *)image andLoop:(NSInteger)loop;
-
+- (void)invalidateTimer;
 @end

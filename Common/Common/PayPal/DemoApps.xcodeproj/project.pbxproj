@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2B08F30E126F3A2B0033687B /* GlobalSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B08F30D126F3A2B0033687B /* GlobalSettingsViewController.m */; };
+		2B08F314126F3B2E0033687B /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B08F313126F3B2E0033687B /* PaymentViewController.m */; };
+		2B08F332126F3EA80033687B /* TextFieldTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B08F331126F3EA80033687B /* TextFieldTableViewController.m */; };
+		2B2823A6128C961A00CB4A3A /* PreapprovalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2823A5128C961A00CB4A3A /* PreapprovalViewController.m */; };
+		2B516965126E12DA001E3E94 /* distribution.plist in Resources */ = {isa = PBXBuildFile; fileRef = A33AD6D6107FD528009EEA08 /* distribution.plist */; };
+		2B516971126E12DA001E3E94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		2B516972126E12DA001E3E94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2B516973126E12DA001E3E94 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2B516974126E12DA001E3E94 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F7037D10D6FD0500D5B5DD /* AddressBook.framework */; };
+		2B516981126E139D001E3E94 /* SimpleDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B51697E126E139D001E3E94 /* SimpleDemoAppDelegate.m */; };
+		2B516983126E139D001E3E94 /* SimpleDemoMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B516980126E139D001E3E94 /* SimpleDemoMain.m */; };
+		2B516987126E1519001E3E94 /* FourButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B516986126E1519001E3E94 /* FourButtonViewController.m */; };
+		2B51698A126E1537001E3E94 /* SuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B516989126E1537001E3E94 /* SuccessViewController.m */; };
+		2BBF8F1512D798F3000AEA39 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A37BA7FE12CBC0E100A67FC6 /* libz.dylib */; };
+		2BBF8F1612D798F9000AEA39 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D03D1912302944007CC73E /* libxml2.dylib */; };
+		2BD6DDF01294757C00C609CA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD6DDEF1294757C00C609CA /* Security.framework */; };
+		2BD6DE04129475B400C609CA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD6DDEF1294757C00C609CA /* Security.framework */; };
+		2BF9C987126CD1BF00A1D53E /* InteractiveDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9C984126CD1BF00A1D53E /* InteractiveDemoAppDelegate.m */; };
+		2BF9C998126CD20B00A1D53E /* InvoiceDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9C98B126CD20B00A1D53E /* InvoiceDataViewController.m */; };
+		2BF9C999126CD20B00A1D53E /* InvoiceItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9C98D126CD20B00A1D53E /* InvoiceItemViewController.m */; };
+		2BF9C99A126CD20B00A1D53E /* ReceiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9C98F126CD20B00A1D53E /* ReceiverViewController.m */; };
+		2BF9C99B126CD20B00A1D53E /* ListChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9C991126CD20B00A1D53E /* ListChoiceViewController.m */; };
+		2BF9C99E126CD20B00A1D53E /* PaymentSuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9C997126CD20B00A1D53E /* PaymentSuccessViewController.m */; };
+		2BF9C9AC126CD2DF00A1D53E /* InteractiveDemoMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9C9AB126CD2DF00A1D53E /* InteractiveDemoMain.m */; };
+		A33AD6D7107FD528009EEA08 /* distribution.plist in Resources */ = {isa = PBXBuildFile; fileRef = A33AD6D6107FD528009EEA08 /* distribution.plist */; };
+		A37BA7FF12CBC0E100A67FC6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A37BA7FE12CBC0E100A67FC6 /* libz.dylib */; };
+		A3F7037E10D6FD0500D5B5DD /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F7037D10D6FD0500D5B5DD /* AddressBook.framework */; };
+		A5035EBC13892A23009F8CF6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5035EBB13892A23009F8CF6 /* SystemConfiguration.framework */; };
+		A5035EBE1389BF0A009F8CF6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5035EBD1389BF0A009F8CF6 /* SystemConfiguration.framework */; };
+		A54E08DA1354276800012C17 /* libPayPalMPL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A54E08D91354276800012C17 /* libPayPalMPL.a */; };
+		A54E08DB1354276800012C17 /* libPayPalMPL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A54E08D91354276800012C17 /* libPayPalMPL.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* InteractiveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2B08F30C126F3A2B0033687B /* GlobalSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalSettingsViewController.h; path = InteractiveDemo/GlobalSettingsViewController.h; sourceTree = "<group>"; };
+		2B08F30D126F3A2B0033687B /* GlobalSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlobalSettingsViewController.m; path = InteractiveDemo/GlobalSettingsViewController.m; sourceTree = "<group>"; };
+		2B08F312126F3B2E0033687B /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentViewController.h; path = InteractiveDemo/PaymentViewController.h; sourceTree = "<group>"; };
+		2B08F313126F3B2E0033687B /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentViewController.m; path = InteractiveDemo/PaymentViewController.m; sourceTree = "<group>"; };
+		2B08F330126F3EA80033687B /* TextFieldTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextFieldTableViewController.h; path = InteractiveDemo/TextFieldTableViewController.h; sourceTree = "<group>"; };
+		2B08F331126F3EA80033687B /* TextFieldTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextFieldTableViewController.m; path = InteractiveDemo/TextFieldTableViewController.m; sourceTree = "<group>"; };
+		2B2823A4128C961A00CB4A3A /* PreapprovalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreapprovalViewController.h; path = InteractiveDemo/PreapprovalViewController.h; sourceTree = "<group>"; };
+		2B2823A5128C961A00CB4A3A /* PreapprovalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreapprovalViewController.m; path = InteractiveDemo/PreapprovalViewController.m; sourceTree = "<group>"; };
+		2B51697A126E12DA001E3E94 /* SimpleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B51697D126E139D001E3E94 /* SimpleDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleDemoAppDelegate.h; path = SimpleDemo/SimpleDemoAppDelegate.h; sourceTree = "<group>"; };
+		2B51697E126E139D001E3E94 /* SimpleDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleDemoAppDelegate.m; path = SimpleDemo/SimpleDemoAppDelegate.m; sourceTree = "<group>"; };
+		2B51697F126E139D001E3E94 /* SimpleDemoInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = SimpleDemoInfo.plist; path = SimpleDemo/SimpleDemoInfo.plist; sourceTree = "<group>"; };
+		2B516980126E139D001E3E94 /* SimpleDemoMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleDemoMain.m; path = SimpleDemo/SimpleDemoMain.m; sourceTree = "<group>"; };
+		2B516985126E1519001E3E94 /* FourButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FourButtonViewController.h; path = SimpleDemo/FourButtonViewController.h; sourceTree = "<group>"; };
+		2B516986126E1519001E3E94 /* FourButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FourButtonViewController.m; path = SimpleDemo/FourButtonViewController.m; sourceTree = "<group>"; };
+		2B516988126E1537001E3E94 /* SuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuccessViewController.h; path = SimpleDemo/SuccessViewController.h; sourceTree = "<group>"; };
+		2B516989126E1537001E3E94 /* SuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuccessViewController.m; path = SimpleDemo/SuccessViewController.m; sourceTree = "<group>"; };
+		2B726194124AA81000B726AE /* PayPalPreapprovalDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalPreapprovalDetails.h; path = Library/PayPalPreapprovalDetails.h; sourceTree = "<group>"; };
+		2BD6DDEF1294757C00C609CA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2BF9C982126CD1BF00A1D53E /* InteractiveDemoInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = InteractiveDemoInfo.plist; path = InteractiveDemo/InteractiveDemoInfo.plist; sourceTree = "<group>"; };
+		2BF9C983126CD1BF00A1D53E /* InteractiveDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InteractiveDemoAppDelegate.h; path = InteractiveDemo/InteractiveDemoAppDelegate.h; sourceTree = "<group>"; };
+		2BF9C984126CD1BF00A1D53E /* InteractiveDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InteractiveDemoAppDelegate.m; path = InteractiveDemo/InteractiveDemoAppDelegate.m; sourceTree = "<group>"; };
+		2BF9C98A126CD20B00A1D53E /* InvoiceDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InvoiceDataViewController.h; path = InteractiveDemo/InvoiceDataViewController.h; sourceTree = "<group>"; };
+		2BF9C98B126CD20B00A1D53E /* InvoiceDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InvoiceDataViewController.m; path = InteractiveDemo/InvoiceDataViewController.m; sourceTree = "<group>"; };
+		2BF9C98C126CD20B00A1D53E /* InvoiceItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InvoiceItemViewController.h; path = InteractiveDemo/InvoiceItemViewController.h; sourceTree = "<group>"; };
+		2BF9C98D126CD20B00A1D53E /* InvoiceItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InvoiceItemViewController.m; path = InteractiveDemo/InvoiceItemViewController.m; sourceTree = "<group>"; };
+		2BF9C98E126CD20B00A1D53E /* ReceiverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReceiverViewController.h; path = InteractiveDemo/ReceiverViewController.h; sourceTree = "<group>"; };
+		2BF9C98F126CD20B00A1D53E /* ReceiverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReceiverViewController.m; path = InteractiveDemo/ReceiverViewController.m; sourceTree = "<group>"; };
+		2BF9C990126CD20B00A1D53E /* ListChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListChoiceViewController.h; path = InteractiveDemo/ListChoiceViewController.h; sourceTree = "<group>"; };
+		2BF9C991126CD20B00A1D53E /* ListChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListChoiceViewController.m; path = InteractiveDemo/ListChoiceViewController.m; sourceTree = "<group>"; };
+		2BF9C996126CD20B00A1D53E /* PaymentSuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentSuccessViewController.h; path = InteractiveDemo/PaymentSuccessViewController.h; sourceTree = "<group>"; };
+		2BF9C997126CD20B00A1D53E /* PaymentSuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentSuccessViewController.m; path = InteractiveDemo/PaymentSuccessViewController.m; sourceTree = "<group>"; };
+		2BF9C9AB126CD2DF00A1D53E /* InteractiveDemoMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InteractiveDemoMain.m; path = InteractiveDemo/InteractiveDemoMain.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		A33AD6D6107FD528009EEA08 /* distribution.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = distribution.plist; sourceTree = "<group>"; };
+		A37BA7FE12CBC0E100A67FC6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A3D03D1912302944007CC73E /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		A3D0418C12307AF7007CC73E /* PayPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPal.h; path = Library/PayPal.h; sourceTree = "<group>"; };
+		A3D0418D12307AF7007CC73E /* PayPalAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalAddress.h; path = Library/PayPalAddress.h; sourceTree = "<group>"; };
+		A3D0418E12307AF7007CC73E /* PayPalAdvancedPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalAdvancedPayment.h; path = Library/PayPalAdvancedPayment.h; sourceTree = "<group>"; };
+		A3D0418F12307AF7007CC73E /* PayPalAmounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalAmounts.h; path = Library/PayPalAmounts.h; sourceTree = "<group>"; };
+		A3D0419012307AF7007CC73E /* PayPalContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalContext.h; path = Library/PayPalContext.h; sourceTree = "<group>"; };
+		A3D0419112307AF7007CC73E /* PayPalInvoiceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalInvoiceData.h; path = Library/PayPalInvoiceData.h; sourceTree = "<group>"; };
+		A3D0419212307AF7007CC73E /* PayPalInvoiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalInvoiceItem.h; path = Library/PayPalInvoiceItem.h; sourceTree = "<group>"; };
+		A3D0419312307AF7007CC73E /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalPayment.h; path = Library/PayPalPayment.h; sourceTree = "<group>"; };
+		A3D0419412307AF7007CC73E /* PayPalReceiverAmounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalReceiverAmounts.h; path = Library/PayPalReceiverAmounts.h; sourceTree = "<group>"; };
+		A3F7037D10D6FD0500D5B5DD /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = /System/Library/Frameworks/AddressBook.framework; sourceTree = "<absolute>"; };
+		A5035EBB13892A23009F8CF6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A5035EBD1389BF0A009F8CF6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A54E08D91354276800012C17 /* libPayPalMPL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPayPalMPL.a; path = Library/libPayPalMPL.a; sourceTree = "<group>"; };
+		A54E08DC1354278000012C17 /* PayPalReceiverPaymentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalReceiverPaymentDetails.h; path = Library/PayPalReceiverPaymentDetails.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5035EBE1389BF0A009F8CF6 /* SystemConfiguration.framework in Frameworks */,
+				2BD6DDF01294757C00C609CA /* Security.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				A3F7037E10D6FD0500D5B5DD /* AddressBook.framework in Frameworks */,
+				A37BA7FF12CBC0E100A67FC6 /* libz.dylib in Frameworks */,
+				A54E08DA1354276800012C17 /* libPayPalMPL.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B516970126E12DA001E3E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5035EBC13892A23009F8CF6 /* SystemConfiguration.framework in Frameworks */,
+				2BBF8F1612D798F9000AEA39 /* libxml2.dylib in Frameworks */,
+				2BBF8F1512D798F3000AEA39 /* libz.dylib in Frameworks */,
+				2BD6DE04129475B400C609CA /* Security.framework in Frameworks */,
+				2B516971126E12DA001E3E94 /* Foundation.framework in Frameworks */,
+				2B516972126E12DA001E3E94 /* UIKit.framework in Frameworks */,
+				2B516973126E12DA001E3E94 /* CoreGraphics.framework in Frameworks */,
+				2B516974126E12DA001E3E94 /* AddressBook.framework in Frameworks */,
+				A54E08DB1354276800012C17 /* libPayPalMPL.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* InteractiveDemo.app */,
+				2B51697A126E12DA001E3E94 /* SimpleDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9C980126CD17600A1D53E /* SimpleDemo */,
+				2BF9C97F126CD16B00A1D53E /* InteractiveDemo */,
+				A3F7030210D6FC6200D5B5DD /* Library */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				A33AD6D6107FD528009EEA08 /* distribution.plist */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5035EBD1389BF0A009F8CF6 /* SystemConfiguration.framework */,
+				A5035EBB13892A23009F8CF6 /* SystemConfiguration.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				A3F7037D10D6FD0500D5B5DD /* AddressBook.framework */,
+				2BD6DDEF1294757C00C609CA /* Security.framework */,
+				A3D03D1912302944007CC73E /* libxml2.dylib */,
+				A37BA7FE12CBC0E100A67FC6 /* libz.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B516984126E1425001E3E94 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B516985126E1519001E3E94 /* FourButtonViewController.h */,
+				2B516986126E1519001E3E94 /* FourButtonViewController.m */,
+				2B516988126E1537001E3E94 /* SuccessViewController.h */,
+				2B516989126E1537001E3E94 /* SuccessViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2BF9C97F126CD16B00A1D53E /* InteractiveDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9C988126CD1C500A1D53E /* ViewControllers */,
+				2BF9C983126CD1BF00A1D53E /* InteractiveDemoAppDelegate.h */,
+				2BF9C984126CD1BF00A1D53E /* InteractiveDemoAppDelegate.m */,
+				2BF9C9AB126CD2DF00A1D53E /* InteractiveDemoMain.m */,
+				2BF9C982126CD1BF00A1D53E /* InteractiveDemoInfo.plist */,
+			);
+			name = InteractiveDemo;
+			sourceTree = "<group>";
+		};
+		2BF9C980126CD17600A1D53E /* SimpleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2B516984126E1425001E3E94 /* ViewControllers */,
+				2B51697D126E139D001E3E94 /* SimpleDemoAppDelegate.h */,
+				2B51697E126E139D001E3E94 /* SimpleDemoAppDelegate.m */,
+				2B51697F126E139D001E3E94 /* SimpleDemoInfo.plist */,
+				2B516980126E139D001E3E94 /* SimpleDemoMain.m */,
+			);
+			name = SimpleDemo;
+			sourceTree = "<group>";
+		};
+		2BF9C988126CD1C500A1D53E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B08F330126F3EA80033687B /* TextFieldTableViewController.h */,
+				2B08F331126F3EA80033687B /* TextFieldTableViewController.m */,
+				2B08F30C126F3A2B0033687B /* GlobalSettingsViewController.h */,
+				2B08F30D126F3A2B0033687B /* GlobalSettingsViewController.m */,
+				2B08F312126F3B2E0033687B /* PaymentViewController.h */,
+				2B08F313126F3B2E0033687B /* PaymentViewController.m */,
+				2B2823A4128C961A00CB4A3A /* PreapprovalViewController.h */,
+				2B2823A5128C961A00CB4A3A /* PreapprovalViewController.m */,
+				2BF9C990126CD20B00A1D53E /* ListChoiceViewController.h */,
+				2BF9C991126CD20B00A1D53E /* ListChoiceViewController.m */,
+				2BF9C98E126CD20B00A1D53E /* ReceiverViewController.h */,
+				2BF9C98F126CD20B00A1D53E /* ReceiverViewController.m */,
+				2BF9C98A126CD20B00A1D53E /* InvoiceDataViewController.h */,
+				2BF9C98B126CD20B00A1D53E /* InvoiceDataViewController.m */,
+				2BF9C98C126CD20B00A1D53E /* InvoiceItemViewController.h */,
+				2BF9C98D126CD20B00A1D53E /* InvoiceItemViewController.m */,
+				2BF9C996126CD20B00A1D53E /* PaymentSuccessViewController.h */,
+				2BF9C997126CD20B00A1D53E /* PaymentSuccessViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A3F7030210D6FC6200D5B5DD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A54E08D91354276800012C17 /* libPayPalMPL.a */,
+				A3D0418C12307AF7007CC73E /* PayPal.h */,
+				A3D0418D12307AF7007CC73E /* PayPalAddress.h */,
+				A3D0418E12307AF7007CC73E /* PayPalAdvancedPayment.h */,
+				A3D0418F12307AF7007CC73E /* PayPalAmounts.h */,
+				A3D0419012307AF7007CC73E /* PayPalContext.h */,
+				A3D0419112307AF7007CC73E /* PayPalInvoiceData.h */,
+				A3D0419212307AF7007CC73E /* PayPalInvoiceItem.h */,
+				A3D0419312307AF7007CC73E /* PayPalPayment.h */,
+				2B726194124AA81000B726AE /* PayPalPreapprovalDetails.h */,
+				A3D0419412307AF7007CC73E /* PayPalReceiverAmounts.h */,
+				A54E08DC1354278000012C17 /* PayPalReceiverPaymentDetails.h */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* InteractiveDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "InteractiveDemo" */;
+			buildPhases = (
+				2B72613F124A973C00B726AE /* ShellScript */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InteractiveDemo;
+			productName = PPMEP;
+			productReference = 1D6058910D05DD3D006BFB54 /* InteractiveDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B516962126E12DA001E3E94 /* SimpleDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B516976126E12DA001E3E94 /* Build configuration list for PBXNativeTarget "SimpleDemo" */;
+			buildPhases = (
+				2B516963126E12DA001E3E94 /* ShellScript */,
+				2B516964126E12DA001E3E94 /* Resources */,
+				2B516966126E12DA001E3E94 /* Sources */,
+				2B516970126E12DA001E3E94 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleDemo;
+			productName = PPMEP;
+			productReference = 2B51697A126E12DA001E3E94 /* SimpleDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DemoApps" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				ja_JP,
+				fr_FR,
+				da_DK,
+				de_DE,
+				es_ES,
+				it_IT,
+				nl_NL,
+				no_NO,
+				pl_PL,
+				pt_BR,
+				ru_RU,
+				sv_SE,
+				zh_CN,
+				zh_TW,
+				pt,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* InteractiveDemo */,
+				2B516962126E12DA001E3E94 /* SimpleDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33AD6D7107FD528009EEA08 /* distribution.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B516964126E12DA001E3E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B516965126E12DA001E3E94 /* distribution.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B516963126E12DA001E3E94 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Get location of parsed Info.plist\nGS_INFO_PLIST_PATH=\"$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME/Info\"\n\n# Append local SVN revision number\nexport GS_NEW_VERSION=1.5.5.001s\necho Version is $GS_NEW_VERSION\n\n# Write new version number to parsed Info.plist\ndefaults write \"$GS_INFO_PLIST_PATH\" CFBundleVersion $GS_NEW_VERSION";
+		};
+		2B72613F124A973C00B726AE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Get location of parsed Info.plist\nGS_INFO_PLIST_PATH=\"$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME/Info\"\n\n# Append local SVN revision number\nexport GS_NEW_VERSION=1.5.5.001i\necho Version is $GS_NEW_VERSION\n\n# Write new version number to parsed Info.plist\ndefaults write \"$GS_INFO_PLIST_PATH\" CFBundleVersion $GS_NEW_VERSION";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9C987126CD1BF00A1D53E /* InteractiveDemoAppDelegate.m in Sources */,
+				2BF9C998126CD20B00A1D53E /* InvoiceDataViewController.m in Sources */,
+				2BF9C999126CD20B00A1D53E /* InvoiceItemViewController.m in Sources */,
+				2BF9C99A126CD20B00A1D53E /* ReceiverViewController.m in Sources */,
+				2BF9C99B126CD20B00A1D53E /* ListChoiceViewController.m in Sources */,
+				2BF9C99E126CD20B00A1D53E /* PaymentSuccessViewController.m in Sources */,
+				2BF9C9AC126CD2DF00A1D53E /* InteractiveDemoMain.m in Sources */,
+				2B08F30E126F3A2B0033687B /* GlobalSettingsViewController.m in Sources */,
+				2B08F314126F3B2E0033687B /* PaymentViewController.m in Sources */,
+				2B08F332126F3EA80033687B /* TextFieldTableViewController.m in Sources */,
+				2B2823A6128C961A00CB4A3A /* PreapprovalViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B516966126E12DA001E3E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B516981126E139D001E3E94 /* SimpleDemoAppDelegate.m in Sources */,
+				2B516983126E139D001E3E94 /* SimpleDemoMain.m in Sources */,
+				2B516987126E1519001E3E94 /* FourButtonViewController.m in Sources */,
+				2B51698A126E1537001E3E94 /* SuccessViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				INFOPLIST_FILE = InteractiveDemo/InteractiveDemoInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Library\"",
+				);
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = InteractiveDemo;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				INFOPLIST_FILE = InteractiveDemo/InteractiveDemoInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Library\"",
+				);
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = InteractiveDemo;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B516977126E12DA001E3E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				INFOPLIST_FILE = SimpleDemo/SimpleDemoInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Library\"",
+				);
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = SimpleDemo;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B516978126E12DA001E3E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = SimpleDemo/SimpleDemoInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Library\"",
+				);
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = SimpleDemo;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B516979126E12DA001E3E94 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = SimpleDemo/SimpleDemoInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Library\"",
+				);
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = SimpleDemo;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Distribution;
+		};
+		A3311102107FE72100D35659 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CODE_SIGN_ENTITLEMENTS = distribution.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PayPal Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: PayPal Inc.";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "1EAC2B80-1F99-465C-85D7-B94278701A06";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1EAC2B80-1F99-465C-85D7-B94278701A06";
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Distribution;
+		};
+		A3311103107FE72100D35659 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				INFOPLIST_FILE = InteractiveDemo/InteractiveDemoInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Library\"",
+				);
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = InteractiveDemo;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Distribution;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = distribution.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PayPal Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: PayPal Inc.";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "1EAC2B80-1F99-465C-85D7-B94278701A06";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1EAC2B80-1F99-465C-85D7-B94278701A06";
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PayPal Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: PayPal Inc.";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "1EAC2B80-1F99-465C-85D7-B94278701A06";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1EAC2B80-1F99-465C-85D7-B94278701A06";
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "InteractiveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				A3311103107FE72100D35659 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B516976126E12DA001E3E94 /* Build configuration list for PBXNativeTarget "SimpleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B516977126E12DA001E3E94 /* Debug */,
+				2B516978126E12DA001E3E94 /* Release */,
+				2B516979126E12DA001E3E94 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DemoApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				A3311102107FE72100D35659 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95284E9014B2024C002914EE /* DDPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 958DC44114B2017F009F9499 /* DDPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95284E9114B2024C002914EE /* DDSocialDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 958DC44314B2017F009F9499 /* DDSocialDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95284E9214B2024C002914EE /* OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = 958DC44514B2019C009F9499 /* OpenUDID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95284EAA14B202CE002914EE /* libPayPalMPL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95284EA914B202CE002914EE /* libPayPalMPL.a */; };
+		95284EB214B202EE002914EE /* PayPal.h in Headers */ = {isa = PBXBuildFile; fileRef = 95284E9E14B202C6002914EE /* PayPal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95284EB314B202EE002914EE /* PayPalAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 95284E9F14B202C6002914EE /* PayPalAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95284EB414B202EE002914EE /* PayPalAdvancedPayment.h in Headers */ = {isa = PBXBuildFile; fileRef = 95284EA014B202C6002914EE /* PayPalAdvancedPayment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95284EB514B202EE002914EE /* PayPalAmounts.h in Headers */ = {isa = PBXBuildFile; fileRef = 95284EA114B202C6002914EE /* PayPalAmounts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95284EB614B202EE002914EE /* PayPalContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 95284EA214B202C6002914EE /* PayPalContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95284EB714B202EE002914EE /* PayPalInvoiceData.h in Headers */ = {isa = PBXBuildFile; fileRef = 95284EA314B202C6002914EE /* PayPalInvoiceData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95284EB814B202EE002914EE /* PayPalInvoiceItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 95284EA414B202C6002914EE /* PayPalInvoiceItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95284EB914B202EE002914EE /* PayPalPayment.h in Headers */ = {isa = PBXBuildFile; fileRef = 95284EA514B202C6002914EE /* PayPalPayment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95284EBA14B202EE002914EE /* PayPalPreapprovalDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 95284EA614B202C6002914EE /* PayPalPreapprovalDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95284EBB14B202EE002914EE /* PayPalReceiverAmounts.h in Headers */ = {isa = PBXBuildFile; fileRef = 95284EA714B202C6002914EE /* PayPalReceiverAmounts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95284EBC14B202EE002914EE /* PayPalReceiverPaymentDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 95284EA814B202C6002914EE /* PayPalReceiverPaymentDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95284F0F14B212B0002914EE /* DDPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 958DC44214B2017F009F9499 /* DDPageControl.m */; };
+		95284F1114B212B4002914EE /* DDSocialDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 958DC44414B2017F009F9499 /* DDSocialDialog.m */; };
+		958DC44714B2019C009F9499 /* OpenUDID.h in Sources */ = {isa = PBXBuildFile; fileRef = 958DC44514B2019C009F9499 /* OpenUDID.h */; };
+		958DC45814B201B1009F9499 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 958DC44614B2019C009F9499 /* OpenUDID.m */; };
+		95927F7914B2135900FDF02F /* libPayPalMPL.a in Resources */ = {isa = PBXBuildFile; fileRef = 95284EA914B202CE002914EE /* libPayPalMPL.a */; };
+		95C534B914ADEC28005B130E /* Common-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 95C534B614ADEC17005B130E /* Common-Prefix.pch */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		95284E9E14B202C6002914EE /* PayPal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = PayPal.h; sourceTree = "<group>"; };
+		95284E9F14B202C6002914EE /* PayPalAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = PayPalAddress.h; sourceTree = "<group>"; };
+		95284EA014B202C6002914EE /* PayPalAdvancedPayment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = PayPalAdvancedPayment.h; sourceTree = "<group>"; };
+		95284EA114B202C6002914EE /* PayPalAmounts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = PayPalAmounts.h; sourceTree = "<group>"; };
+		95284EA214B202C6002914EE /* PayPalContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = PayPalContext.h; sourceTree = "<group>"; };
+		95284EA314B202C6002914EE /* PayPalInvoiceData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = PayPalInvoiceData.h; sourceTree = "<group>"; };
+		95284EA414B202C6002914EE /* PayPalInvoiceItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = PayPalInvoiceItem.h; sourceTree = "<group>"; };
+		95284EA514B202C6002914EE /* PayPalPayment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		95284EA614B202C6002914EE /* PayPalPreapprovalDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = PayPalPreapprovalDetails.h; sourceTree = "<group>"; };
+		95284EA714B202C6002914EE /* PayPalReceiverAmounts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = PayPalReceiverAmounts.h; sourceTree = "<group>"; };
+		95284EA814B202C6002914EE /* PayPalReceiverPaymentDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = PayPalReceiverPaymentDetails.h; sourceTree = "<group>"; };
+		95284EA914B202CE002914EE /* libPayPalMPL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMPL.a; sourceTree = "<group>"; };
+		953C457F14ADF87B00468EE6 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
+		953C458114ADF87B00468EE6 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
+		953C458214ADF87B00468EE6 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
+		953C458314ADF87B00468EE6 /* Snippets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snippets.txt; sourceTree = "<group>"; };
+		958DC44114B2017F009F9499 /* DDPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = DDPageControl.h; sourceTree = "<group>"; };
+		958DC44214B2017F009F9499 /* DDPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPageControl.m; sourceTree = "<group>"; };
+		958DC44314B2017F009F9499 /* DDSocialDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = DDSocialDialog.h; sourceTree = "<group>"; };
+		958DC44414B2017F009F9499 /* DDSocialDialog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDSocialDialog.m; sourceTree = "<group>"; };
+		958DC44514B2019C009F9499 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; name = OpenUDID.h; path = Common/OpenUDID/OpenUDID.h; sourceTree = SOURCE_ROOT; };
+		958DC44614B2019C009F9499 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenUDID.m; path = Common/OpenUDID/OpenUDID.m; sourceTree = SOURCE_ROOT; };
+		95A4148714ACBD0F00249348 /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
+		95C1C2F314AB4CD400E74E62 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C534B514ADEC17005B130E /* Common-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Common-Info.plist"; sourceTree = "<group>"; };
+		95C534B614ADEC17005B130E /* Common-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Common-Prefix.pch"; sourceTree = "<group>"; };
+		95C534B814ADEC1E005B130E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95C1C2EE14AB4CD400E74E62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95284EAA14B202CE002914EE /* libPayPalMPL.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		953C457E14ADF87B00468EE6 /* FastPdfKit.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				953C457F14ADF87B00468EE6 /* FastPdfKit.framework */,
+				953C458014ADF87B00468EE6 /* Resources */,
+			);
+			name = FastPdfKit.embeddedframework;
+			path = ../FPKShared/FastPdfKit.embeddedframework;
+			sourceTree = "<group>";
+		};
+		953C458014ADF87B00468EE6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				953C458114ADF87B00468EE6 /* FastPdfKitFramework.xcconfig */,
+				953C458214ADF87B00468EE6 /* FPKReaderBundle.bundle */,
+				953C458314ADF87B00468EE6 /* Snippets.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		958DC41F14B1FFFC009F9499 /* PayPal */ = {
+			isa = PBXGroup;
+			children = (
+				95284E9E14B202C6002914EE /* PayPal.h */,
+				95284E9F14B202C6002914EE /* PayPalAddress.h */,
+				95284EA014B202C6002914EE /* PayPalAdvancedPayment.h */,
+				95284EA114B202C6002914EE /* PayPalAmounts.h */,
+				95284EA214B202C6002914EE /* PayPalContext.h */,
+				95284EA314B202C6002914EE /* PayPalInvoiceData.h */,
+				95284EA414B202C6002914EE /* PayPalInvoiceItem.h */,
+				95284EA514B202C6002914EE /* PayPalPayment.h */,
+				95284EA614B202C6002914EE /* PayPalPreapprovalDetails.h */,
+				95284EA714B202C6002914EE /* PayPalReceiverAmounts.h */,
+				95284EA814B202C6002914EE /* PayPalReceiverPaymentDetails.h */,
+				95284EA914B202CE002914EE /* libPayPalMPL.a */,
+			);
+			name = PayPal;
+			path = Common/PayPal/Library;
+			sourceTree = "<group>";
+		};
+		958DC42014B20013009F9499 /* OpenUDID */ = {
+			isa = PBXGroup;
+			children = (
+				958DC44514B2019C009F9499 /* OpenUDID.h */,
+				958DC44614B2019C009F9499 /* OpenUDID.m */,
+			);
+			name = OpenUDID;
+			path = FPK/Classes/Common/OpenUDID;
+			sourceTree = "<group>";
+		};
+		958DC42614B20031009F9499 /* DD */ = {
+			isa = PBXGroup;
+			children = (
+				958DC44114B2017F009F9499 /* DDPageControl.h */,
+				958DC44214B2017F009F9499 /* DDPageControl.m */,
+				958DC44314B2017F009F9499 /* DDSocialDialog.h */,
+				958DC44414B2017F009F9499 /* DDSocialDialog.m */,
+			);
+			name = DD;
+			path = Common/DD;
+			sourceTree = "<group>";
+		};
+		95A4147714ACBC7C00249348 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				953C457E14ADF87B00468EE6 /* FastPdfKit.embeddedframework */,
+				95A4148614ACBD0F00249348 /* FPKShared.embeddedframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95A4148614ACBD0F00249348 /* FPKShared.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				95A4148714ACBD0F00249348 /* FPKShared.framework */,
+				95A4148814ACBD0F00249348 /* Resources */,
+			);
+			name = FPKShared.embeddedframework;
+			path = ../FPKShared/FPKShared.embeddedframework;
+			sourceTree = "<group>";
+		};
+		95A4148814ACBD0F00249348 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		95C1C2E514AB4CD400E74E62 = {
+			isa = PBXGroup;
+			children = (
+				958DC42614B20031009F9499 /* DD */,
+				958DC42014B20013009F9499 /* OpenUDID */,
+				958DC41F14B1FFFC009F9499 /* PayPal */,
+				95A4147714ACBC7C00249348 /* Frameworks */,
+				95C1C33A14AB630300E74E62 /* Supporting Files */,
+				95C1C2F414AB4CD400E74E62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95C1C2F414AB4CD400E74E62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95C1C2F314AB4CD400E74E62 /* Common.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95C1C33A14AB630300E74E62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95C534B714ADEC1E005B130E /* InfoPlist.strings */,
+				95C534B514ADEC17005B130E /* Common-Info.plist */,
+				95C534B614ADEC17005B130E /* Common-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		95C1C2EF14AB4CD400E74E62 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95284EB214B202EE002914EE /* PayPal.h in Headers */,
+				95284EB314B202EE002914EE /* PayPalAddress.h in Headers */,
+				95284EB414B202EE002914EE /* PayPalAdvancedPayment.h in Headers */,
+				95284EB514B202EE002914EE /* PayPalAmounts.h in Headers */,
+				95284EB614B202EE002914EE /* PayPalContext.h in Headers */,
+				95284EB714B202EE002914EE /* PayPalInvoiceData.h in Headers */,
+				95284EB814B202EE002914EE /* PayPalInvoiceItem.h in Headers */,
+				95284EB914B202EE002914EE /* PayPalPayment.h in Headers */,
+				95284EBA14B202EE002914EE /* PayPalPreapprovalDetails.h in Headers */,
+				95284EBB14B202EE002914EE /* PayPalReceiverAmounts.h in Headers */,
+				95284EBC14B202EE002914EE /* PayPalReceiverPaymentDetails.h in Headers */,
+				95284E9014B2024C002914EE /* DDPageControl.h in Headers */,
+				95284E9114B2024C002914EE /* DDSocialDialog.h in Headers */,
+				95284E9214B2024C002914EE /* OpenUDID.h in Headers */,
+				95C534B914ADEC28005B130E /* Common-Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		95C1C2F214AB4CD400E74E62 /* Common */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C1C2FE14AB4CD400E74E62 /* Build configuration list for PBXNativeTarget "Common" */;
+			buildPhases = (
+				95C1C2EC14AB4CD400E74E62 /* ShellScript */,
+				95C1C2ED14AB4CD400E74E62 /* Sources */,
+				95C1C2EE14AB4CD400E74E62 /* Frameworks */,
+				95C1C2EF14AB4CD400E74E62 /* Headers */,
+				95C1C2F014AB4CD400E74E62 /* Resources */,
+				95C1C2F114AB4CD400E74E62 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Common;
+			productName = FPKSampleExtension;
+			productReference = 95C1C2F314AB4CD400E74E62 /* Common.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95C1C2E714AB4CD400E74E62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "MobFarm s.a.s.";
+			};
+			buildConfigurationList = 95C1C2EA14AB4CD400E74E62 /* Build configuration list for PBXProject "Common" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 95C1C2E514AB4CD400E74E62;
+			productRefGroup = 95C1C2F414AB4CD400E74E62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95C1C2F214AB4CD400E74E62 /* Common */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95C1C2F014AB4CD400E74E62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95927F7914B2135900FDF02F /* libPayPalMPL.a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95C1C2EC14AB4CD400E74E62 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n";
+		};
+		95C1C2F114AB4CD400E74E62 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Make sure the other platform gets built\n\necho \"Build other platform\"\n\necho xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n\n\n# Build the fat static library binary\n\necho \"Create universal static library\"\n\necho \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\necho mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nmv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n\n\n# Build framework structure\n\necho \"Build symlinks\"\n\necho ln -sf A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\nln -sf A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\necho ln -sf Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\nln -sf Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\necho ln -sf Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\nln -sf Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\necho ln -sf \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\nln -sf \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\n\n\n# Link to binary for unit tests\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework\"\nln -sf \"../${WRAPPER_NAME}/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework/.fake_fw_testing\"\n\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\n# Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n\necho \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n\necho rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\necho cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n\necho \"Copying the Framework to the project directory\"\nrm -rf \"${PROJECT_DIR}/${PRODUCT_NAME}.embeddedframework\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}/${PRODUCT_NAME}.embeddedframework\" \"${PROJECT_DIR}/\"\nrm -rf \"${PROJECT_DIR}/build\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95C1C2ED14AB4CD400E74E62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958DC44714B2019C009F9499 /* OpenUDID.h in Sources */,
+				958DC45814B201B1009F9499 /* OpenUDID.m in Sources */,
+				95284F0F14B212B0002914EE /* DDPageControl.m in Sources */,
+				95284F1114B212B4002914EE /* DDSocialDialog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95C534B714ADEC1E005B130E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95C534B814ADEC1E005B130E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95C1C2FC14AB4CD400E74E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		95C1C2FD14AB4CD400E74E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95C1C2FF14AB4CD400E74E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Common/Common-Prefix.pch";
+				INFOPLIST_FILE = "Common/Common-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Common/PayPal\"",
+					"\"$(SRCROOT)/Common/PayPal/Library\"",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = Common;
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		95C1C30014AB4CD400E74E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Common/Common-Prefix.pch";
+				INFOPLIST_FILE = "Common/Common-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Common/PayPal\"",
+					"\"$(SRCROOT)/Common/PayPal/Library\"",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = Common;
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95C1C2EA14AB4CD400E74E62 /* Build configuration list for PBXProject "Common" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C1C2FC14AB4CD400E74E62 /* Debug */,
+				95C1C2FD14AB4CD400E74E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C1C2FE14AB4CD400E74E62 /* Build configuration list for PBXNativeTarget "Common" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C1C2FF14AB4CD400E74E62 /* Debug */,
+				95C1C30014AB4CD400E74E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95C1C2E714AB4CD400E74E62 /* Project object */;
+}
