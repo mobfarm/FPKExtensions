@@ -14,17 +14,16 @@ Visit [fastpdfkit.com](http://fastpdfkit.com) to learn more about **FastPdfKit**
 Extensions are designed to easily create the custom views.
 
 ## Available Extensions
+**FPK** as name prefix identifies an official extension
 
-FPK prefix identifies an official extension
-
-* [**FPKPayPal**](http://doc.fastpdfkit.com/Extensions/Classes/FPKPayPal.html) to create **catalogs** with **items** that can be **purchased** directly **from the app**;
-* [**FPKYouTube**](http://doc.fastpdfkit.com/Extensions/Classes/FPKYouTube.html) to place **YouTube** video on the page.
-* [**FPKGallerySlide**](http://doc.fastpdfkit.com/Extensions/Classes/FPKGallerySlide.html) interactive **image gallery** with manual or automatic advancement;
-* [**FPKMap**](http://doc.fastpdfkit.com/Extensions/Classes/FPKMap.html) to render an interactive google map;
-* [**FPKGalleryFade**](http://doc.fastpdfkit.com/Extensions/Classes/FPKGalleryFade.html) image gallery useful for the table of contents;
-* [**FPKGalleryTap**](http://doc.fastpdfkit.com/Extensions/Classes/FPKGalleryTap.html) to create a multi interactive image gallery;
-* [**FPKMessage**](http://doc.fastpdfkit.com/Extensions/Classes/FPKMessage.html) to show details or alerts;
-* [**FPKWebPopup**](http://doc.fastpdfkit.com/Extensions/Classes/FPKWebPopup.html) to open a **web page** in a popup view;
+* [FPKPayPal](http://doc.fastpdfkit.com/Extensions/Classes/FPKPayPal.html) to create **catalogs** with **items** that can be **purchased** directly **from the app**;
+* [FPKYouTube](http://doc.fastpdfkit.com/Extensions/Classes/FPKYouTube.html) to place **YouTube** video on the page.
+* [FPKGallerySlide](http://doc.fastpdfkit.com/Extensions/Classes/FPKGallerySlide.html) interactive **image gallery** with manual or automatic advancement;
+* [FPKMap](http://doc.fastpdfkit.com/Extensions/Classes/FPKMap.html) to render an interactive google map;
+* [FPKGalleryFade](http://doc.fastpdfkit.com/Extensions/Classes/FPKGalleryFade.html) image gallery useful for the table of contents;
+* [FPKGalleryTap](http://doc.fastpdfkit.com/Extensions/Classes/FPKGalleryTap.html) to create a multi interactive image gallery;
+* [FPKMessage](http://doc.fastpdfkit.com/Extensions/Classes/FPKMessage.html) to show details or alerts;
+* [FPKWebPopup](http://doc.fastpdfkit.com/Extensions/Classes/FPKWebPopup.html) to open a **web page** in a popup view;
 
 **FPKShared** contains some shared classes needed for every official Extension. Probably you'll find useful classes.
 
@@ -35,7 +34,7 @@ FastPdfKit supports some overlays out of the box like videos, sounds and web pag
 
 **Remote** is something on the web.
 
-**Local** is something that resides in the [`resourceFolder`](http://doc.fastpdfkit.com/Classes/MFDocumentManager.html#//api/name/resourceFolder) defined in the [`MFDocumentManager`](http://doc.fastpdfkit.com/Classes/MFDocumentManager.html).
+**Local** is something that resides in the [resourceFolder](http://doc.fastpdfkit.com/Classes/MFDocumentManager.html#//api/name/resourceFolder) defined in the [MFDocumentManager](http://doc.fastpdfkit.com/Classes/MFDocumentManager.html).
 
 <table>
     <tr>
@@ -103,7 +102,7 @@ The standard `extensions` array should contain every supported Extension like
 											
 ## Support Extensions in your FastPdfKit application
 
-To add an Extension to your application you need create a subclass of [**FPKOverlayManager**](http://doc.fastpdfkit.com/Extensions/Classes/FPKOverlayManager.html), just like [**OverlayManager**](https://github.com/mobfarm/FPKExtensions/blob/master/SampleProject/SampleProject/OverlayManager.m) in the sample project.
+To add an Extension to your application you need create a subclass of [FPKOverlayManager](http://doc.fastpdfkit.com/Extensions/Classes/FPKOverlayManager.html), just like [OverlayManager](https://github.com/mobfarm/FPKExtensions/blob/master/SampleProject/SampleProject/OverlayManager.m) in the sample project.
 
 Add the **FPKShared.embeddedframework** to the Navigation bar.
 Then simply drag the desired Extension .embeddedframework folder to the Navigation bar, for example the **FPKYouTube.embeddedframework**. 
