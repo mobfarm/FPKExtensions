@@ -25,7 +25,7 @@
 		95862E5514AC75AD002E11E8 /* FPKGalleryFade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPKGalleryFade.m; sourceTree = "<group>"; };
 		95A4148714ACBD0F00249348 /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
 		95C1C2F314AB4CD400E74E62 /* FPKGalleryFade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKGalleryFade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		95C534B514ADEC17005B130E /* FPKGalleryFade-Info.plist */ = {isa = PBXFileReference; path = "FPKGalleryFade-Info.plist"; sourceTree = "<group>"; };
+		95C534B514ADEC17005B130E /* FPKGalleryFade-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKGalleryFade-Info.plist"; sourceTree = "<group>"; };
 		95C534B614ADEC17005B130E /* FPKGalleryFade-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPKGalleryFade-Prefix.pch"; sourceTree = "<group>"; };
 		95C534B814ADEC1E005B130E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -296,6 +296,10 @@
 		95C1C2FF14AB4CD400E74E62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
 				DEAD_CODE_STRIPPING = NO;
 				DEPLOYMENT_POSTPROCESSING = YES;
@@ -324,6 +328,10 @@
 		95C1C30014AB4CD400E74E62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
 				DEAD_CODE_STRIPPING = NO;
 				DEPLOYMENT_POSTPROCESSING = YES;
