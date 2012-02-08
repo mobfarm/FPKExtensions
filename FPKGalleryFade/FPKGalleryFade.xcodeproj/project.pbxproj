@@ -23,6 +23,8 @@
 		9544D2C014AE014A00470945 /* TransitionGalleryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionGalleryView.m; sourceTree = "<group>"; };
 		95862E5414AC75AD002E11E8 /* FPKGalleryFade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = FPKGalleryFade.h; sourceTree = "<group>"; };
 		95862E5514AC75AD002E11E8 /* FPKGalleryFade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPKGalleryFade.m; sourceTree = "<group>"; };
+		958F9C9314E2671F00857E00 /* Params.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Params.plist; sourceTree = "<group>"; };
+		958F9C9514E2673A00857E00 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		95A4148714ACBD0F00249348 /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
 		95C1C2F314AB4CD400E74E62 /* FPKGalleryFade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKGalleryFade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C534B514ADEC17005B130E /* FPKGalleryFade-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKGalleryFade-Info.plist"; sourceTree = "<group>"; };
@@ -123,6 +125,8 @@
 				95C534B714ADEC1E005B130E /* InfoPlist.strings */,
 				95C534B514ADEC17005B130E /* FPKGalleryFade-Info.plist */,
 				95C534B614ADEC17005B130E /* FPKGalleryFade-Prefix.pch */,
+				958F9C9314E2671F00857E00 /* Params.plist */,
+				958F9C9514E2673A00857E00 /* README.md */,
 			);
 			name = "Supporting Files";
 			path = FPK;

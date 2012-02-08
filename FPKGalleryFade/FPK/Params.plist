@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Prefixes</key>
+	<array>
+		<string>galleryfade</string>
+	</array>
+	<key>Resource</key>
+	<dict>
+		<key>Required</key>
+		<false/>
+	</dict>
+	<key>Parameters</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>time</string>
+			<key>Required</key>
+			<string>NO</string>
+			<key>Type</key>
+			<string>Float</string>
+			<key>Default</key>
+			<string>1.0</string>
+			<key>Description</key>
+			<string>Time interval between automatic transitions</string>
+			<key>Min</key>
+			<real>1</real>
+			<key>Max</key>
+			<string>20</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>Array</string>
+			<key>Name</key>
+			<string>images</string>
+			<key>SubType</key>
+			<string>Image</string>
+			<key>Required</key>
+			<true/>
+			<key>Description</key>
+			<string>The list of images separated by commas</string>
+		</dict>
+	</array>
+	<key>Info</key>
+	<dict>
+		<key>Description</key>
+		<string>This Extension is useful to create an image gallery with cross timed fade transitions.
+You can for example place it on the index page and show the article top photos.</string>
+		<key>Name</key>
+		<string>FPKGalleryFade</string>
+		<key>Sample</key>
+		<string>galleryfade://?time=2.0&amp;images=img1.png,img2.png,img3.png,img4.png</string>
+	</dict>
+</dict>
+</plist>
