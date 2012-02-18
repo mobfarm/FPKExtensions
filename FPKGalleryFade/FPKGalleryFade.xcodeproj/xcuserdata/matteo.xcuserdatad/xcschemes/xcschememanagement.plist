@@ -9,9 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>FPKGalleryFadeBundle.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>FPKGalleryFadeHelper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>957A979D14EBEDE3006930EB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>95A4CF4614EBE6F50081D0E6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>95C1C2F214AB4CD400E74E62</key>
 		<dict>
 			<key>primary</key>

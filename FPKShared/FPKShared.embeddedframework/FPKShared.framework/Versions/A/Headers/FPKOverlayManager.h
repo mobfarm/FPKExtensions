@@ -1,30 +1,25 @@
 //
 //  FPKOverlayManager.h
-//  FastPdfKit Extension
+//  FPKShared
 //
 
 #import <FastPdfKit/MFDocumentViewController.h>
-
-/**
- @bug complete the description
- */
-
 
 @protocol FPKOverlayManagerDelegate <NSObject>
 @optional
 
 /**
- @bug complete the description
- @param disabled
+ Enable or disable the gestures of the pdf view to interact just with the annotations.
+ 
+ @param disabled *YES* to disable the gestures and *NO* to re-enable them.
  */
 
 - (void)setGesturesDisabled:(BOOL)disabled;
 @end
 
 /**
- @bug complete the description
+ This class is the core for the Extensions. You are supposed to subclass it (OverlayManager is an example) to enable or disable extensions.
  */
-
 
 @interface FPKOverlayManager : NSObject <FPKOverlayViewDataSource, MFDocumentViewControllerDelegate>{
     NSMutableArray *overlays;
@@ -73,8 +68,11 @@
  */
 - (UIView *)showAnnotationForOverlay:(BOOL)load withRect:(CGRect)rect andUri:(NSString *)uri onPage:(NSUInteger)page;
 
-/** 
- @bug complete description
+/**
+This method will search on the subviews for the one with a desired tag.
+ 
+ @param tap The tag of the desired view.
+ @return The view for the corresponding tag.
  */
 -(UIView *)overlayViewWithTag:(int)tag;
 @end

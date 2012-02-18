@@ -20,6 +20,15 @@
         [self setFrame:frame];
         _rect = frame;
         
+        NSLog(@"Entered"); 
+        
+        NSString * resource;
+        if([manager isMemberOfClass:NSClassFromString(@"FPKOverlayManager")]){
+            resource = [[[manager documentViewController] document] resourceFolder];
+        } else {
+            resource = [manager performSelector:@selector(resourcePath)];
+        }
+        
         NSMutableArray *items = [NSMutableArray array];
         NSArray *images = [[[params objectForKey:@"params"] objectForKey:@"images"] componentsSeparatedByString:@","];
         if([images count] == 0){
@@ -28,7 +37,8 @@
         }
         
         for(NSString *image in images){
-            UIImage *imageI = [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@",[[[manager documentViewController] document] resourceFolder], image]];
+            
+            UIImage *imageI = [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@",resource, image]];
             if (imageI) {
                 [items addObject:imageI];
             } else {
@@ -50,7 +60,7 @@
             [gallery release];
         } else {
             NSLog(@"FPKGalleryFade - Images not found at path that you specified:");
-            NSLog(@"FPKGalleryFade - %@", [[[manager documentViewController] document] resourceFolder]);
+            NSLog(@"FPKGalleryFade - %@", resource);
         }
     }
     return self;  

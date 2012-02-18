@@ -7,25 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9538642C14EFB6B900101910 /* icon-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 9538642A14EFB6B900101910 /* icon-gray.png */; };
+		9538642D14EFB6B900101910 /* icon-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 9538642B14EFB6B900101910 /* icon-white.png */; };
 		953A0BED14AE030B00200288 /* TransitionGalleryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9544D2BF14AE014A00470945 /* TransitionGalleryView.h */; };
 		9544D2C214AE014C00470945 /* TransitionGalleryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9544D2C014AE014A00470945 /* TransitionGalleryView.m */; };
+		9577142314EFCA0E00D4B8DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A4CF7114EBE7AF0081D0E6 /* UIKit.framework */; };
+		957A979F14EBEDE3006930EB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A4CF4814EBE6F50081D0E6 /* Cocoa.framework */; };
+		957A97AA14EBEDEA006930EB /* FPKGalleryFade.h in Sources */ = {isa = PBXBuildFile; fileRef = 95862E5414AC75AD002E11E8 /* FPKGalleryFade.h */; };
+		957A97AB14EBEDED006930EB /* FPKGalleryFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E5514AC75AD002E11E8 /* FPKGalleryFade.m */; };
+		957A97AC14EBEDED006930EB /* TransitionGalleryView.h in Sources */ = {isa = PBXBuildFile; fileRef = 9544D2BF14AE014A00470945 /* TransitionGalleryView.h */; };
+		957A97AD14EBEDED006930EB /* TransitionGalleryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9544D2C014AE014A00470945 /* TransitionGalleryView.m */; };
 		95862E5714AC7627002E11E8 /* FPKGalleryFade.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E5414AC75AD002E11E8 /* FPKGalleryFade.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95862E5814AC7629002E11E8 /* FPKGalleryFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E5514AC75AD002E11E8 /* FPKGalleryFade.m */; };
 		95C534B914ADEC28005B130E /* FPKGalleryFade-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 95C534B614ADEC17005B130E /* FPKGalleryFade-Prefix.pch */; };
+		95F0B8E814EE5BF800957D56 /* Params.plist in Resources */ = {isa = PBXBuildFile; fileRef = 958F9C9314E2671F00857E00 /* Params.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9538642A14EFB6B900101910 /* icon-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-gray.png"; sourceTree = "<group>"; };
+		9538642B14EFB6B900101910 /* icon-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-white.png"; sourceTree = "<group>"; };
+		9538642F14EFC92C00101910 /* FPKGalleryFadeBundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKGalleryFadeBundle-Info.plist"; sourceTree = "<group>"; };
+		9538643014EFC92C00101910 /* FPKGalleryFadeBundle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPKGalleryFadeBundle-Prefix.pch"; sourceTree = "<group>"; };
 		953C457414ADF84B00468EE6 /* FastPdfKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FastPdfKit.framework; sourceTree = "<group>"; };
 		953C457614ADF84B00468EE6 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
 		953C457714ADF84B00468EE6 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
 		953C457814ADF84B00468EE6 /* Snippets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snippets.txt; sourceTree = "<group>"; };
 		9544D2BF14AE014A00470945 /* TransitionGalleryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = TransitionGalleryView.h; sourceTree = "<group>"; };
 		9544D2C014AE014A00470945 /* TransitionGalleryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionGalleryView.m; sourceTree = "<group>"; };
+		957A979E14EBEDE3006930EB /* FPKGalleryFadeBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKGalleryFadeBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		95862E5414AC75AD002E11E8 /* FPKGalleryFade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = FPKGalleryFade.h; sourceTree = "<group>"; };
 		95862E5514AC75AD002E11E8 /* FPKGalleryFade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPKGalleryFade.m; sourceTree = "<group>"; };
 		958F9C9314E2671F00857E00 /* Params.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Params.plist; sourceTree = "<group>"; };
 		958F9C9514E2673A00857E00 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		95A4148714ACBD0F00249348 /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
+		95A4CF4814EBE6F50081D0E6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		95A4CF4B14EBE6F50081D0E6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		95A4CF4C14EBE6F50081D0E6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		95A4CF4D14EBE6F50081D0E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		95A4CF7114EBE7AF0081D0E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = ../Common/UIKit.framework; sourceTree = "<group>"; };
 		95C1C2F314AB4CD400E74E62 /* FPKGalleryFade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKGalleryFade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C534B514ADEC17005B130E /* FPKGalleryFade-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKGalleryFade-Info.plist"; sourceTree = "<group>"; };
 		95C534B614ADEC17005B130E /* FPKGalleryFade-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPKGalleryFade-Prefix.pch"; sourceTree = "<group>"; };
@@ -33,6 +52,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		957A979B14EBEDE3006930EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957A979F14EBEDE3006930EB /* Cocoa.framework in Frameworks */,
+				9577142314EFCA0E00D4B8DB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95C1C2EE14AB4CD400E74E62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,8 +94,11 @@
 		95A4147714ACBC7C00249348 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95A4CF7114EBE7AF0081D0E6 /* UIKit.framework */,
 				953C457314ADF84B00468EE6 /* FastPdfKit.embeddedframework */,
 				95A4148614ACBD0F00249348 /* FPKShared.embeddedframework */,
+				95A4CF4814EBE6F50081D0E6 /* Cocoa.framework */,
+				95A4CF4A14EBE6F50081D0E6 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,6 +120,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		95A4CF4A14EBE6F50081D0E6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95A4CF4B14EBE6F50081D0E6 /* AppKit.framework */,
+				95A4CF4C14EBE6F50081D0E6 /* CoreData.framework */,
+				95A4CF4D14EBE6F50081D0E6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
 		95C1C2E514AB4CD400E74E62 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				95C1C2F314AB4CD400E74E62 /* FPKGalleryFade.framework */,
+				957A979E14EBEDE3006930EB /* FPKGalleryFadeBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,9 +164,13 @@
 		95C1C33A14AB630300E74E62 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9538642A14EFB6B900101910 /* icon-gray.png */,
+				9538642B14EFB6B900101910 /* icon-white.png */,
 				95C534B714ADEC1E005B130E /* InfoPlist.strings */,
 				95C534B514ADEC17005B130E /* FPKGalleryFade-Info.plist */,
 				95C534B614ADEC17005B130E /* FPKGalleryFade-Prefix.pch */,
+				9538642F14EFC92C00101910 /* FPKGalleryFadeBundle-Info.plist */,
+				9538643014EFC92C00101910 /* FPKGalleryFadeBundle-Prefix.pch */,
 				958F9C9314E2671F00857E00 /* Params.plist */,
 				958F9C9514E2673A00857E00 /* README.md */,
 			);
@@ -148,6 +194,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		957A979D14EBEDE3006930EB /* FPKGalleryFadeBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 957A97A714EBEDE3006930EB /* Build configuration list for PBXNativeTarget "FPKGalleryFadeBundle" */;
+			buildPhases = (
+				957A979A14EBEDE3006930EB /* Sources */,
+				957A979B14EBEDE3006930EB /* Frameworks */,
+				957A979C14EBEDE3006930EB /* Resources */,
+				957A97AE14EBEE13006930EB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FPKGalleryFadeBundle;
+			productName = FPKGalleryFadeBundle;
+			productReference = 957A979E14EBEDE3006930EB /* FPKGalleryFadeBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		95C1C2F214AB4CD400E74E62 /* FPKGalleryFade */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95C1C2FE14AB4CD400E74E62 /* Build configuration list for PBXNativeTarget "FPKGalleryFade" */;
@@ -190,11 +254,22 @@
 			projectRoot = "";
 			targets = (
 				95C1C2F214AB4CD400E74E62 /* FPKGalleryFade */,
+				957A979D14EBEDE3006930EB /* FPKGalleryFadeBundle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		957A979C14EBEDE3006930EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F0B8E814EE5BF800957D56 /* Params.plist in Resources */,
+				9538642C14EFB6B900101910 /* icon-gray.png in Resources */,
+				9538642D14EFB6B900101910 /* icon-white.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95C1C2F014AB4CD400E74E62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,6 +280,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		957A97AE14EBEE13006930EB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Copying the Framework to the project directory\"\nrm -rf \"${PROJECT_DIR}/FPKGalleryFade.bundle\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}/FPKGalleryFadeBundle.bundle\" \"${PROJECT_DIR}/\"\n// mv \"${PROJECT_DIR}/FPKGalleryFadeBundle.bundle\" \"FPKGalleryFade.bundle\"\nrm -rf \"${PROJECT_DIR}/build\"";
+		};
 		95C1C2EC14AB4CD400E74E62 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,6 +322,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		957A979A14EBEDE3006930EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957A97AA14EBEDEA006930EB /* FPKGalleryFade.h in Sources */,
+				957A97AB14EBEDED006930EB /* FPKGalleryFade.m in Sources */,
+				957A97AC14EBEDED006930EB /* TransitionGalleryView.h in Sources */,
+				957A97AD14EBEDED006930EB /* TransitionGalleryView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95C1C2ED14AB4CD400E74E62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,6 +356,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		957A97A814EBEDE3006930EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../Common\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FPK/FPKGalleryFadeBundle-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "FPK/FPKGalleryFadeBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		957A97A914EBEDE3006930EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../Common\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FPK/FPKGalleryFadeBundle-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "FPK/FPKGalleryFadeBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		95C1C2FC14AB4CD400E74E62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -364,6 +515,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		957A97A714EBEDE3006930EB /* Build configuration list for PBXNativeTarget "FPKGalleryFadeBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				957A97A814EBEDE3006930EB /* Debug */,
+				957A97A914EBEDE3006930EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		95C1C2EA14AB4CD400E74E62 /* Build configuration list for PBXProject "FPKGalleryFade" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
