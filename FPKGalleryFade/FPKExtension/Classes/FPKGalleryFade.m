@@ -20,8 +20,6 @@
         [self setFrame:frame];
         _rect = frame;
         
-        NSLog(@"Entered"); 
-        
         NSString * resource;
         if([manager isMemberOfClass:NSClassFromString(@"FPKOverlayManager")]){
             resource = [[[manager documentViewController] document] resourceFolder];

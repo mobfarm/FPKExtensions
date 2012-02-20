@@ -28,15 +28,22 @@
                 // Defaulting to 0
                 loop = 0;
             }
+            
+            NSString * resource;
+            if([manager isMemberOfClass:NSClassFromString(@"FPKOverlayManager")]){
+                resource = [[[manager documentViewController] document] resourceFolder];
+            } else {
+                resource = [manager performSelector:@selector(resourcePath)];
+            }
                 
             NSArray * images = [[[params objectForKey:@"params"] objectForKey:@"images"] componentsSeparatedByString:@","];
             
             if ([images count] > 0){
-                
                 NSMutableArray * uiImages = [[NSMutableArray alloc] init];
                 
                 for(NSString *image in images){
-                    UIImage *imageI = [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@",[[[manager documentViewController] document] resourceFolder], image]];
+                    UIImage *imageI = [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@",resource , image]];
+                    NSLog(@"%@", [NSString stringWithFormat:@"%@/%@",resource , image]);
                     if (imageI) {
                         [uiImages addObject:imageI];
                     } else {

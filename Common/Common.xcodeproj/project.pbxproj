@@ -24,6 +24,12 @@
 		95284EBC14B202EE002914EE /* PayPalReceiverPaymentDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 95284EA814B202C6002914EE /* PayPalReceiverPaymentDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95284F0F14B212B0002914EE /* DDPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 958DC44214B2017F009F9499 /* DDPageControl.m */; };
 		95284F1114B212B4002914EE /* DDSocialDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 958DC44414B2017F009F9499 /* DDSocialDialog.m */; };
+		954DA10D14F2BD15001791C0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954DA10C14F2BD15001791C0 /* Cocoa.framework */; };
+		954DA11714F2BD15001791C0 /* CommonLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 954DA11614F2BD15001791C0 /* CommonLib.m */; };
+		954DA11C14F2BD2F001791C0 /* DDPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 958DC44214B2017F009F9499 /* DDPageControl.m */; };
+		954DA11D14F2BD2F001791C0 /* DDSocialDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 958DC44414B2017F009F9499 /* DDSocialDialog.m */; };
+		954DA11E14F2BD32001791C0 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 958DC44614B2019C009F9499 /* OpenUDID.m */; };
+		954DA12314F2BDB2001791C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954DA12214F2BDB2001791C0 /* UIKit.framework */; };
 		958DC44714B2019C009F9499 /* OpenUDID.h in Sources */ = {isa = PBXBuildFile; fileRef = 958DC44514B2019C009F9499 /* OpenUDID.h */; };
 		958DC45814B201B1009F9499 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 958DC44614B2019C009F9499 /* OpenUDID.m */; };
 		95927F7914B2135900FDF02F /* libPayPalMPL.a in Resources */ = {isa = PBXBuildFile; fileRef = 95284EA914B202CE002914EE /* libPayPalMPL.a */; };
@@ -47,6 +53,15 @@
 		953C458114ADF87B00468EE6 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
 		953C458214ADF87B00468EE6 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
 		953C458314ADF87B00468EE6 /* Snippets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snippets.txt; sourceTree = "<group>"; };
+		954DA10B14F2BD15001791C0 /* libCommonLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCommonLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		954DA10C14F2BD15001791C0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		954DA10F14F2BD15001791C0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		954DA11014F2BD15001791C0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		954DA11114F2BD15001791C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		954DA11414F2BD15001791C0 /* CommonLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommonLib-Prefix.pch"; sourceTree = "<group>"; };
+		954DA11514F2BD15001791C0 /* CommonLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonLib.h; sourceTree = "<group>"; };
+		954DA11614F2BD15001791C0 /* CommonLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonLib.m; sourceTree = "<group>"; };
+		954DA12214F2BDB2001791C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIKit.framework; sourceTree = "<group>"; };
 		958DC44114B2017F009F9499 /* DDPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = DDPageControl.h; sourceTree = "<group>"; };
 		958DC44214B2017F009F9499 /* DDPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPageControl.m; sourceTree = "<group>"; };
 		958DC44314B2017F009F9499 /* DDSocialDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = DDSocialDialog.h; sourceTree = "<group>"; };
@@ -61,6 +76,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		954DA10814F2BD15001791C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954DA10D14F2BD15001791C0 /* Cocoa.framework in Frameworks */,
+				954DA12314F2BDB2001791C0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95C1C2EE14AB4CD400E74E62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,6 +114,34 @@
 				953C458314ADF87B00468EE6 /* Snippets.txt */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		954DA10E14F2BD15001791C0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				954DA10F14F2BD15001791C0 /* AppKit.framework */,
+				954DA11014F2BD15001791C0 /* CoreData.framework */,
+				954DA11114F2BD15001791C0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		954DA11214F2BD15001791C0 /* CommonLib */ = {
+			isa = PBXGroup;
+			children = (
+				954DA11514F2BD15001791C0 /* CommonLib.h */,
+				954DA11614F2BD15001791C0 /* CommonLib.m */,
+				954DA11314F2BD15001791C0 /* Supporting Files */,
+			);
+			path = CommonLib;
+			sourceTree = "<group>";
+		};
+		954DA11314F2BD15001791C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				954DA11414F2BD15001791C0 /* CommonLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		958DC41F14B1FFFC009F9499 /* PayPal */ = {
@@ -137,8 +189,11 @@
 		95A4147714ACBC7C00249348 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				954DA12214F2BDB2001791C0 /* UIKit.framework */,
 				953C457E14ADF87B00468EE6 /* FastPdfKit.embeddedframework */,
 				95A4148614ACBD0F00249348 /* FPKShared.embeddedframework */,
+				954DA10C14F2BD15001791C0 /* Cocoa.framework */,
+				954DA10E14F2BD15001791C0 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,6 +221,7 @@
 				958DC42614B20031009F9499 /* DD */,
 				958DC42014B20013009F9499 /* OpenUDID */,
 				958DC41F14B1FFFC009F9499 /* PayPal */,
+				954DA11214F2BD15001791C0 /* CommonLib */,
 				95A4147714ACBC7C00249348 /* Frameworks */,
 				95C1C33A14AB630300E74E62 /* Supporting Files */,
 				95C1C2F414AB4CD400E74E62 /* Products */,
@@ -176,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				95C1C2F314AB4CD400E74E62 /* Common.framework */,
+				954DA10B14F2BD15001791C0 /* libCommonLib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,6 +251,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		954DA10914F2BD15001791C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95C1C2EF14AB4CD400E74E62 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +283,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		954DA10A14F2BD15001791C0 /* CommonLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 954DA11A14F2BD15001791C0 /* Build configuration list for PBXNativeTarget "CommonLib" */;
+			buildPhases = (
+				954DA10714F2BD15001791C0 /* Sources */,
+				954DA10814F2BD15001791C0 /* Frameworks */,
+				954DA10914F2BD15001791C0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommonLib;
+			productName = CommonLib;
+			productReference = 954DA10B14F2BD15001791C0 /* libCommonLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		95C1C2F214AB4CD400E74E62 /* Common */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95C1C2FE14AB4CD400E74E62 /* Build configuration list for PBXNativeTarget "Common" */;
@@ -261,6 +342,7 @@
 			projectRoot = "";
 			targets = (
 				95C1C2F214AB4CD400E74E62 /* Common */,
+				954DA10A14F2BD15001791C0 /* CommonLib */,
 			);
 		};
 /* End PBXProject section */
@@ -306,6 +388,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		954DA10714F2BD15001791C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954DA11714F2BD15001791C0 /* CommonLib.m in Sources */,
+				954DA11C14F2BD2F001791C0 /* DDPageControl.m in Sources */,
+				954DA11D14F2BD2F001791C0 /* DDSocialDialog.m in Sources */,
+				954DA11E14F2BD32001791C0 /* OpenUDID.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95C1C2ED14AB4CD400E74E62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,6 +424,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		954DA11814F2BD15001791C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CommonLib/CommonLib-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		954DA11914F2BD15001791C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CommonLib/CommonLib-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		95C1C2FC14AB4CD400E74E62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -387,6 +522,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -425,6 +561,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
 					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)\"",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -450,6 +587,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		954DA11A14F2BD15001791C0 /* Build configuration list for PBXNativeTarget "CommonLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				954DA11814F2BD15001791C0 /* Debug */,
+				954DA11914F2BD15001791C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		95C1C2EA14AB4CD400E74E62 /* Build configuration list for PBXProject "Common" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

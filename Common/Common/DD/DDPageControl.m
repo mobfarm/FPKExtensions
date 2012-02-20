@@ -7,7 +7,7 @@
 //
 
 #import "DDPageControl.h"
-
+#import <UIKit/UIKit.h>
 
 #define kDotDiameter	4.0f
 #define kDotSpace		12.0f

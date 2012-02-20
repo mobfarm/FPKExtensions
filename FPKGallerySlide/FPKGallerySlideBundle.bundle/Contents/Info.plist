@@ -7,15 +7,15 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>UIKit</string>
+	<string>FPKGallerySlideBundle</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.chameleonproject.UIKit</string>
+	<string>com.mobfarm.fpkgalleryslide.FPKGallerySlideBundle</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>UIKit</string>
+	<string>FPKGallerySlideBundle</string>
 	<key>CFBundlePackageType</key>
-	<string>FMWK</string>
+	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
@@ -36,5 +36,7 @@
 	<string>0430</string>
 	<key>DTXcodeBuild</key>
 	<string>4E109</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2012 MobFarm s.a.s. All rights reserved.</string>
 </dict>
 </plist>

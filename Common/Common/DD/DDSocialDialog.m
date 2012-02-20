@@ -42,6 +42,7 @@
  */
 
 #import "DDSocialDialog.h"
+#import <UIKit/UIKit.h>
 
 static CGFloat kDDSocialDialogBorderWidth = 10;
 static CGFloat kDDSocialDialogTransitionDuration = 0.3;

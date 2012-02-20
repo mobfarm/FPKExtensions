@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Prefixes</key>
+	<array>
+		<string>galleryslide</string>
+	</array>
+	<key>Parameters</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>loop</string>
+			<key>Required</key>
+			<string>NO</string>
+			<key>Type</key>
+			<string>Integer</string>
+			<key>Default</key>
+			<string>0</string>
+			<key>Description</key>
+			<string>Times that the automatic slide needs to be performed, `-1` to infinite, `0` for no loop</string>
+			<key>Min</key>
+			<integer>-1</integer>
+			<key>Max</key>
+			<string>20</string>
+			<key>Help</key>
+			<string>Help to understand this parameter</string>
+			<key>Weight</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>Array</string>
+			<key>Name</key>
+			<string>images</string>
+			<key>SubType</key>
+			<string>Image</string>
+			<key>Required</key>
+			<true/>
+			<key>Description</key>
+			<string>The list of images separated by commas</string>
+			<key>Help</key>
+			<string>Help to understand this second parameter</string>
+			<key>Weight</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>Info</key>
+	<dict>
+		<key>Help</key>
+		<string>This Extension is useful to create an image gallery with horizontal slide transitions and page indicator.</string>
+		<key>Name</key>
+		<string>FPKGallerySlide</string>
+		<key>Sample</key>
+		<string>galleryslide://?images=img1.png,img2.png,img3.png&amp;loop=1</string>
+		<key>Default Prefix</key>
+		<integer>0</integer>
+		<key>Resource</key>
+		<false/>
+		<key>Title</key>
+		<string>Slide Gallery</string>
+	</dict>
+</dict>
+</plist>

@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		954DA10314F2BBFE001791C0 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9550C54014B244C600196C1D /* Common.framework */; };
+		954DA12C14F2BF81001791C0 /* libCommonLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 954DA12B14F2BF81001791C0 /* libCommonLib.a */; };
+		954DA12E14F2BFB0001791C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954DA12D14F2BFB0001791C0 /* UIKit.framework */; };
+		954DA13014F2C037001791C0 /* Params.plist in Resources */ = {isa = PBXBuildFile; fileRef = 954DA12F14F2C037001791C0 /* Params.plist */; };
+		954DA13314F2C042001791C0 /* icon-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 954DA13114F2C042001791C0 /* icon-gray.png */; };
+		954DA13414F2C042001791C0 /* icon-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 954DA13214F2C042001791C0 /* icon-white.png */; };
 		95862E5714AC7627002E11E8 /* FPKGallerySlide.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E5414AC75AD002E11E8 /* FPKGallerySlide.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95862E5814AC7629002E11E8 /* FPKGallerySlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E5514AC75AD002E11E8 /* FPKGallerySlide.m */; };
+		95BB1D7F14F2BAE1001316D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BB1D7E14F2BAE1001316D3 /* Cocoa.framework */; };
+		95BB1D9214F2BB24001316D3 /* FPKGallerySlide.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E5414AC75AD002E11E8 /* FPKGallerySlide.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95BB1D9314F2BB24001316D3 /* FPKGallerySlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E5514AC75AD002E11E8 /* FPKGallerySlide.m */; };
+		95BB1D9414F2BB24001316D3 /* UIImagesScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 958B8A7614B1E19500969E28 /* UIImagesScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95BB1D9514F2BB24001316D3 /* UIImagesScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 958B8A7714B1E19500969E28 /* UIImagesScrollView.m */; };
 		95BE37B614B1E750008D9A49 /* UIImagesScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 958B8A7714B1E19500969E28 /* UIImagesScrollView.m */; };
 		95C534B914ADEC28005B130E /* FPKGallerySlide-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 95C534B614ADEC17005B130E /* FPKGallerySlide-Prefix.pch */; };
 /* End PBXBuildFile section */
@@ -18,6 +29,12 @@
 		953C458114ADF87B00468EE6 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
 		953C458214ADF87B00468EE6 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
 		953C458314ADF87B00468EE6 /* Snippets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snippets.txt; sourceTree = "<group>"; };
+		954DA12B14F2BF81001791C0 /* libCommonLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCommonLib.a; sourceTree = "<group>"; };
+		954DA12D14F2BFB0001791C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = ../Common/UIKit.framework; sourceTree = "<group>"; };
+		954DA12F14F2C037001791C0 /* Params.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Params.plist; sourceTree = "<group>"; };
+		954DA13114F2C042001791C0 /* icon-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-gray.png"; sourceTree = "<group>"; };
+		954DA13214F2C042001791C0 /* icon-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-white.png"; sourceTree = "<group>"; };
+		954DA13514F2C05C001791C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		9550C54014B244C600196C1D /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Common.framework; sourceTree = "<group>"; };
 		9550C54214B244C600196C1D /* libPayPalMPL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMPL.a; sourceTree = "<group>"; };
 		95862E5414AC75AD002E11E8 /* FPKGallerySlide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = FPKGallerySlide.h; sourceTree = "<group>"; };
@@ -25,6 +42,13 @@
 		958B8A7614B1E19500969E28 /* UIImagesScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = UIImagesScrollView.h; sourceTree = "<group>"; };
 		958B8A7714B1E19500969E28 /* UIImagesScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImagesScrollView.m; sourceTree = "<group>"; };
 		95A4148714ACBD0F00249348 /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
+		95BB1D7D14F2BAE1001316D3 /* FPKGallerySlideBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKGallerySlideBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BB1D7E14F2BAE1001316D3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		95BB1D8114F2BAE1001316D3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		95BB1D8214F2BAE1001316D3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		95BB1D8314F2BAE1001316D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		95BB1D8F14F2BB08001316D3 /* FPKGallerySlideBundle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FPKGallerySlideBundle-Info.plist"; sourceTree = "<group>"; };
+		95BB1D9014F2BB08001316D3 /* FPKGallerySlideBundle-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FPKGallerySlideBundle-Prefix.pch"; sourceTree = "<group>"; };
 		95C1C2F314AB4CD400E74E62 /* FPKGallerySlide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKGallerySlide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C534B514ADEC17005B130E /* FPKGallerySlide-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPKGallerySlide-Info.plist"; sourceTree = "<group>"; };
 		95C534B614ADEC17005B130E /* FPKGallerySlide-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPKGallerySlide-Prefix.pch"; sourceTree = "<group>"; };
@@ -32,6 +56,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		95BB1D7A14F2BAE1001316D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BB1D7F14F2BAE1001316D3 /* Cocoa.framework in Frameworks */,
+				954DA10314F2BBFE001791C0 /* Common.framework in Frameworks */,
+				954DA12C14F2BF81001791C0 /* libCommonLib.a in Frameworks */,
+				954DA12E14F2BFB0001791C0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95C1C2EE14AB4CD400E74E62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,9 +118,13 @@
 		95A4147714ACBC7C00249348 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				954DA12D14F2BFB0001791C0 /* UIKit.framework */,
+				954DA12B14F2BF81001791C0 /* libCommonLib.a */,
 				9550C53F14B244C600196C1D /* Common.embeddedframework */,
 				953C457E14ADF87B00468EE6 /* FastPdfKit.embeddedframework */,
 				95A4148614ACBD0F00249348 /* FPKShared.embeddedframework */,
+				95BB1D7E14F2BAE1001316D3 /* Cocoa.framework */,
+				95BB1D8014F2BAE1001316D3 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +146,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		95BB1D8014F2BAE1001316D3 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95BB1D8114F2BAE1001316D3 /* AppKit.framework */,
+				95BB1D8214F2BAE1001316D3 /* CoreData.framework */,
+				95BB1D8314F2BAE1001316D3 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
 		95C1C2E514AB4CD400E74E62 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				95C1C2F314AB4CD400E74E62 /* FPKGallerySlide.framework */,
+				95BB1D7D14F2BAE1001316D3 /* FPKGallerySlideBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,9 +190,15 @@
 		95C1C33A14AB630300E74E62 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				954DA13514F2C05C001791C0 /* README.md */,
+				954DA13114F2C042001791C0 /* icon-gray.png */,
+				954DA13214F2C042001791C0 /* icon-white.png */,
+				954DA12F14F2C037001791C0 /* Params.plist */,
 				95C534B714ADEC1E005B130E /* InfoPlist.strings */,
 				95C534B514ADEC17005B130E /* FPKGallerySlide-Info.plist */,
 				95C534B614ADEC17005B130E /* FPKGallerySlide-Prefix.pch */,
+				95BB1D8F14F2BB08001316D3 /* FPKGallerySlideBundle-Info.plist */,
+				95BB1D9014F2BB08001316D3 /* FPKGallerySlideBundle-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			path = FPK;
@@ -151,6 +207,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		95BB1D9614F2BB3E001316D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BB1D9214F2BB24001316D3 /* FPKGallerySlide.h in Headers */,
+				95BB1D9414F2BB24001316D3 /* UIImagesScrollView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95C1C2EF14AB4CD400E74E62 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +228,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		95BB1D7C14F2BAE1001316D3 /* FPKGallerySlideBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95BB1D8D14F2BAE1001316D3 /* Build configuration list for PBXNativeTarget "FPKGallerySlideBundle" */;
+			buildPhases = (
+				95BB1D7914F2BAE1001316D3 /* Sources */,
+				95BB1D7A14F2BAE1001316D3 /* Frameworks */,
+				95BB1D7B14F2BAE1001316D3 /* Resources */,
+				95BB1D9614F2BB3E001316D3 /* Headers */,
+				954DA13614F2C0EB001791C0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FPKGallerySlideBundle;
+			productName = FPKGallerySlideBundle;
+			productReference = 95BB1D7D14F2BAE1001316D3 /* FPKGallerySlideBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		95C1C2F214AB4CD400E74E62 /* FPKGallerySlide */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95C1C2FE14AB4CD400E74E62 /* Build configuration list for PBXNativeTarget "FPKGallerySlide" */;
@@ -205,11 +289,22 @@
 			projectRoot = "";
 			targets = (
 				95C1C2F214AB4CD400E74E62 /* FPKGallerySlide */,
+				95BB1D7C14F2BAE1001316D3 /* FPKGallerySlideBundle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		95BB1D7B14F2BAE1001316D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954DA13014F2C037001791C0 /* Params.plist in Resources */,
+				954DA13314F2C042001791C0 /* icon-gray.png in Resources */,
+				954DA13414F2C042001791C0 /* icon-white.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95C1C2F014AB4CD400E74E62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,6 +315,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		954DA13614F2C0EB001791C0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Copying the Framework to the project directory\"\nrm -rf \"${PROJECT_DIR}/FPKGalleryFade.bundle\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}/FPKGallerySlideBundle.bundle\" \"${PROJECT_DIR}/\"\n// mv \"${PROJECT_DIR}/FPKGalleryFadeBundle.bundle\" \"FPKGalleryFade.bundle\"\nrm -rf \"${PROJECT_DIR}/build\"";
+		};
 		95C1C2EC14AB4CD400E74E62 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,6 +357,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		95BB1D7914F2BAE1001316D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BB1D9314F2BB24001316D3 /* FPKGallerySlide.m in Sources */,
+				95BB1D9514F2BB24001316D3 /* UIImagesScrollView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95C1C2ED14AB4CD400E74E62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,6 +389,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		95BB1D8B14F2BAE1001316D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/../Common/Common.embeddedframework\"",
+					"\"$(SRCROOT)/../Common\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FPK/FPKGallerySlideBundle-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "FPK/FPKGallerySlideBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		95BB1D8C14F2BAE1001316D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/../Common/Common.embeddedframework\"",
+					"\"$(SRCROOT)/../Common\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FPK/FPKGallerySlideBundle-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "FPK/FPKGallerySlideBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		95C1C2FC14AB4CD400E74E62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -381,6 +562,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		95BB1D8D14F2BAE1001316D3 /* Build configuration list for PBXNativeTarget "FPKGallerySlideBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95BB1D8B14F2BAE1001316D3 /* Debug */,
+				95BB1D8C14F2BAE1001316D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		95C1C2EA14AB4CD400E74E62 /* Build configuration list for PBXProject "FPKGallerySlide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

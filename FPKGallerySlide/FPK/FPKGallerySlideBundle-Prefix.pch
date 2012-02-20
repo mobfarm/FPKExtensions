@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'FPKGallerySlideBundle' target in the 'FPKGallerySlideBundle' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

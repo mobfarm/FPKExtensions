@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>FPKGallerySlideBundle.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>95BB1D7C14F2BAE1001316D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>95C1C2F214AB4CD400E74E62</key>
 		<dict>
 			<key>primary</key>
