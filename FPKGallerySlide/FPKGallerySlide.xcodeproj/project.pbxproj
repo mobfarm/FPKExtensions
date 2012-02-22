@@ -326,7 +326,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Copying the Framework to the project directory\"\nrm -rf \"${PROJECT_DIR}/FPKGalleryFade.bundle\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}/FPKGallerySlideBundle.bundle\" \"${PROJECT_DIR}/\"\n// mv \"${PROJECT_DIR}/FPKGalleryFadeBundle.bundle\" \"FPKGalleryFade.bundle\"\nrm -rf \"${PROJECT_DIR}/build\"";
+			shellScript = "echo \"Copying the Framework to the project directory\"\nrm -rf \"${PROJECT_DIR}/FPKGallerySlideBundle.bundle\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}/FPKGallerySlideBundle.bundle\" \"${PROJECT_DIR}/\"\n// mv \"${PROJECT_DIR}/FPKGalleryFadeBundle.bundle\" \"FPKGalleryFade.bundle\"\nrm -rf \"${PROJECT_DIR}/build\"";
 		};
 		95C1C2EC14AB4CD400E74E62 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;

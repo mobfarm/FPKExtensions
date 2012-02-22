@@ -3,6 +3,11 @@
 //
 
 #import "FPKMessage.h"
+#import <Common/DDSocialDialog.h>
+
+@interface FPKMessage (Private) <DDSocialDialogDelegate>
+@end
+
 
 @implementation FPKMessage
 
@@ -28,7 +33,7 @@
             
             UITextView *message;
             if([[params objectForKey:@"params"] objectForKey:@"w"] && [[params objectForKey:@"params"] objectForKey:@"h"]){
-                message = [[UITextView alloc] initWithFrame:CGRectMake(0.0, 0.0, [[[params objectForKey:@"params"] objectForKey:@"w"] floatValue]-42.0, [[[params objectForKey:@"params"] objectForKey:@"h"] floatValue] - 71.0)];
+                message = [[UITextView alloc] initWithFrame:CGRectMake(0.0, 71.0, [[[params objectForKey:@"params"] objectForKey:@"w"] floatValue]-42.0, [[[params objectForKey:@"params"] objectForKey:@"h"] floatValue] - 71.0)];
             } else {
                 NSLog(@"FPKMessage - Parameter w and/or h not found, check the uri, it should be in the form: ");
                 NSLog(@"FPKMessage - message://?w=400.0&h=300.0");
@@ -54,6 +59,7 @@
             [view addSubview:image];
             [view setAutoresizesSubviews:YES];
             [image release];
+            [self setUserInteractionEnabled:NO];
             [self addSubview:view];
             [view release];
         }

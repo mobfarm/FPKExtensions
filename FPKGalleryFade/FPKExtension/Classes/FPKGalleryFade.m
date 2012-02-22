@@ -37,6 +37,7 @@
         for(NSString *image in images){
             
             UIImage *imageI = [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@",resource, image]];
+            
             if (imageI) {
                 [items addObject:imageI];
             } else {

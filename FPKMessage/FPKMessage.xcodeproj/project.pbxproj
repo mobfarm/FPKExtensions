@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9574983714F5450A00EA15BC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9574983614F5450A00EA15BC /* Cocoa.framework */; };
+		9574984E14F5453E00EA15BC /* Params.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9574984D14F5453E00EA15BC /* Params.plist */; };
+		9574985114F5454600EA15BC /* icon-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 9574984F14F5454600EA15BC /* icon-gray.png */; };
+		9574985214F5454600EA15BC /* icon-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 9574985014F5454600EA15BC /* icon-white.png */; };
+		9574985414F5455600EA15BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9574985314F5455600EA15BC /* UIKit.framework */; };
+		9574985614F5456200EA15BC /* libCommonLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9574985514F5456200EA15BC /* libCommonLib.a */; };
+		9574985A14F5469100EA15BC /* FPKMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E5514AC75AD002E11E8 /* FPKMessage.m */; };
+		9574985C14F546AB00EA15BC /* FPKMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E5414AC75AD002E11E8 /* FPKMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9574986314F5488200EA15BC /* FPKMessageBundle-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 9574986114F5488200EA15BC /* FPKMessageBundle-Prefix.pch */; };
 		95862E5714AC7627002E11E8 /* FPKMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 95862E5414AC75AD002E11E8 /* FPKMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95862E5814AC7629002E11E8 /* FPKMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 95862E5514AC75AD002E11E8 /* FPKMessage.m */; };
 		95B39F6B14B1BCD000777401 /* fpkmessage-info.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B39F6A14B1BCD000777401 /* fpkmessage-info.png */; };
@@ -19,6 +28,19 @@
 		953C458114ADF87B00468EE6 /* FastPdfKitFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FastPdfKitFramework.xcconfig; sourceTree = "<group>"; };
 		953C458214ADF87B00468EE6 /* FPKReaderBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FPKReaderBundle.bundle; sourceTree = "<group>"; };
 		953C458314ADF87B00468EE6 /* Snippets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snippets.txt; sourceTree = "<group>"; };
+		9574983514F5450A00EA15BC /* FPKMessageBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPKMessageBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9574983614F5450A00EA15BC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		9574983914F5450A00EA15BC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9574983A14F5450A00EA15BC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9574983B14F5450A00EA15BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9574984D14F5453E00EA15BC /* Params.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Params.plist; sourceTree = "<group>"; };
+		9574984F14F5454600EA15BC /* icon-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-gray.png"; sourceTree = "<group>"; };
+		9574985014F5454600EA15BC /* icon-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-white.png"; sourceTree = "<group>"; };
+		9574985314F5455600EA15BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIKit.framework; sourceTree = "<group>"; };
+		9574985514F5456200EA15BC /* libCommonLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCommonLib.a; sourceTree = "<group>"; };
+		9574985914F545AA00EA15BC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9574986014F5488200EA15BC /* FPKMessageBundle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FPKMessageBundle-Info.plist"; sourceTree = "<group>"; };
+		9574986114F5488200EA15BC /* FPKMessageBundle-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FPKMessageBundle-Prefix.pch"; sourceTree = "<group>"; };
 		95862E5414AC75AD002E11E8 /* FPKMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = FPKMessage.h; sourceTree = "<group>"; };
 		95862E5514AC75AD002E11E8 /* FPKMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPKMessage.m; sourceTree = "<group>"; };
 		95A4148714ACBD0F00249348 /* FPKShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPKShared.framework; sourceTree = "<group>"; };
@@ -30,6 +52,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9574983214F5450A00EA15BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9574983714F5450A00EA15BC /* Cocoa.framework in Frameworks */,
+				9574985414F5455600EA15BC /* UIKit.framework in Frameworks */,
+				9574985614F5456200EA15BC /* libCommonLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95C1C2EE14AB4CD400E74E62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,12 +109,26 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		9574983814F5450A00EA15BC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9574983914F5450A00EA15BC /* AppKit.framework */,
+				9574983A14F5450A00EA15BC /* CoreData.framework */,
+				9574983B14F5450A00EA15BC /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
 		95A4147714ACBC7C00249348 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9574985514F5456200EA15BC /* libCommonLib.a */,
+				9574985314F5455600EA15BC /* UIKit.framework */,
 				95284EC014B20328002914EE /* Common.embeddedframework */,
 				953C457E14ADF87B00468EE6 /* FastPdfKit.embeddedframework */,
 				95A4148614ACBD0F00249348 /* FPKShared.embeddedframework */,
+				9574983614F5450A00EA15BC /* Cocoa.framework */,
+				9574983814F5450A00EA15BC /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				95C1C2F314AB4CD400E74E62 /* FPKMessage.framework */,
+				9574983514F5450A00EA15BC /* FPKMessageBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,7 +182,13 @@
 		95C1C33A14AB630300E74E62 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9574986014F5488200EA15BC /* FPKMessageBundle-Info.plist */,
+				9574986114F5488200EA15BC /* FPKMessageBundle-Prefix.pch */,
 				95B39F6A14B1BCD000777401 /* fpkmessage-info.png */,
+				9574985914F545AA00EA15BC /* README.md */,
+				9574984F14F5454600EA15BC /* icon-gray.png */,
+				9574985014F5454600EA15BC /* icon-white.png */,
+				9574984D14F5453E00EA15BC /* Params.plist */,
 				95C534B714ADEC1E005B130E /* InfoPlist.strings */,
 				95C534B514ADEC17005B130E /* FPKMessage-Info.plist */,
 				95C534B614ADEC17005B130E /* FPKMessage-Prefix.pch */,
@@ -147,6 +200,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		9574985B14F546A700EA15BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9574985C14F546AB00EA15BC /* FPKMessage.h in Headers */,
+				9574986314F5488200EA15BC /* FPKMessageBundle-Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95C1C2EF14AB4CD400E74E62 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,6 +221,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		9574983414F5450A00EA15BC /* FPKMessageBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9574984514F5450A00EA15BC /* Build configuration list for PBXNativeTarget "FPKMessageBundle" */;
+			buildPhases = (
+				9574983114F5450A00EA15BC /* Sources */,
+				9574983214F5450A00EA15BC /* Frameworks */,
+				9574983314F5450A00EA15BC /* Resources */,
+				9574985714F5457100EA15BC /* ShellScript */,
+				9574985B14F546A700EA15BC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FPKMessageBundle;
+			productName = FPKMessageBundle;
+			productReference = 9574983514F5450A00EA15BC /* FPKMessageBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		95C1C2F214AB4CD400E74E62 /* FPKMessage */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95C1C2FE14AB4CD400E74E62 /* Build configuration list for PBXNativeTarget "FPKMessage" */;
@@ -201,11 +282,22 @@
 			projectRoot = "";
 			targets = (
 				95C1C2F214AB4CD400E74E62 /* FPKMessage */,
+				9574983414F5450A00EA15BC /* FPKMessageBundle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9574983314F5450A00EA15BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9574984E14F5453E00EA15BC /* Params.plist in Resources */,
+				9574985114F5454600EA15BC /* icon-gray.png in Resources */,
+				9574985214F5454600EA15BC /* icon-white.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95C1C2F014AB4CD400E74E62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,6 +309,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9574985714F5457100EA15BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Copying the Framework to the project directory\"\nrm -rf \"${PROJECT_DIR}/FPKMessageBundle.bundle\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}/FPKMessageBundle.bundle\" \"${PROJECT_DIR}/\"\n// mv \"${PROJECT_DIR}/FPKGalleryFadeBundle.bundle\" \"FPKGalleryFade.bundle\"\nrm -rf \"${PROJECT_DIR}/build\"";
+		};
 		95C1C2EC14AB4CD400E74E62 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +351,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9574983114F5450A00EA15BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9574985A14F5469100EA15BC /* FPKMessage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95C1C2ED14AB4CD400E74E62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,6 +381,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9574984314F5450A00EA15BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/../Common/Common.embeddedframework\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FPK/FPKMessageBundle-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "FPK/FPKMessageBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9574984414F5450A00EA15BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../FPKShared/FPKShared.embeddedframework\"",
+					"\"$(SRCROOT)/../FPKShared/FastPdfKit.embeddedframework\"",
+					"\"$(SRCROOT)/../Common/Common.embeddedframework\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FPK/FPKMessageBundle-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "FPK/FPKMessageBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		95C1C2FC14AB4CD400E74E62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -377,6 +552,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9574984514F5450A00EA15BC /* Build configuration list for PBXNativeTarget "FPKMessageBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9574984314F5450A00EA15BC /* Debug */,
+				9574984414F5450A00EA15BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		95C1C2EA14AB4CD400E74E62 /* Build configuration list for PBXProject "FPKMessage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

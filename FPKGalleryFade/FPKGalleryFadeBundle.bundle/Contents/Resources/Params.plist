@@ -29,28 +29,6 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>Name</key>
-			<string></string>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>Integer</string>
-			<key>Default</key>
-			<string>3</string>
-			<key>Description</key>
-			<string>The description for the resource</string>
-			<key>Min</key>
-			<integer>1</integer>
-			<key>Max</key>
-			<integer>5</integer>
-			<key>Help</key>
-			<string>The help for the resource</string>
-			<key>Resource</key>
-			<true/>
-			<key>Weight</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
 			<key>Type</key>
 			<string>Array</string>
 			<key>Name</key>
